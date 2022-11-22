@@ -1,0 +1,117 @@
+[
+  {
+    "name": "Authenticating",
+    "severity": "critical",
+    "uuid": "dd88aee5-9d40-4ad2-8983-0c791ddec47c"
+  },
+  {
+    "name": "Behavioral Information",
+    "severity": "high",
+    "uuid": "8099225c-7e49-414f-aac2-e7045379bb40"
+  },
+  {
+    "name": "Communication",
+    "severity": "high",
+    "uuid": "79a36d6e-c5ca-4f61-ba53-0d7ad42cbe5a"
+  },
+  {
+    "name": "Computer Device",
+    "severity": "medium",
+    "uuid": "b5a3b0fd-dd5c-420d-91ce-dd2dddc8cc38"
+  },
+  {
+    "name": "Contact",
+    "severity": "high",
+    "uuid": "cef587dd-76db-430b-9e18-7b031e1a193b"
+  },
+  {
+    "name": "Credit History",
+    "severity": "medium",
+    "uuid": "4eda81b6-1314-47e2-bc4e-59d6024be4f4"
+  },
+  {
+    "name": "Criminal Records",
+    "severity": "high",
+    "uuid": "5ab40519-89e8-4e4e-b2ef-2dabc13b352a"
+  },
+  {
+    "name": "Demographic",
+    "severity": "medium",
+    "uuid": "c3119d43-0562-48ac-9a8e-7217aa8686b8"
+  },
+  {
+    "name": "Ethnicity",
+    "severity": "medium",
+    "uuid": "35b94efa-9b67-49b2-abb9-29b6a759a030"
+  },
+  {
+    "name": "Location",
+    "severity": "high",
+    "uuid": "c6622b62-bc22-4c0c-a2e4-5fc97d99e11a"
+  },
+  {
+    "name": "Financial Accounts",
+    "severity": "high",
+    "uuid": "7a794bd6-a6d1-429d-91a2-377acce9e9db"
+  },
+  {
+    "name": "Identification",
+    "severity": "critical",
+    "uuid": "14124881-6b92-4fc5-8005-ea7c1c09592e"
+  },
+  {
+    "name": "Personal Ownership",
+    "severity": "high",
+    "uuid": "ebaa9c6a-8fbf-4e45-85e1-40799dfac414"
+  },
+  {
+    "name": "Medical and Health",
+    "severity": "high",
+    "uuid": "7b1d36e7-46f9-4664-85a2-44fb15fbefd1"
+  },
+  {
+    "name": "Family",
+    "severity": "medium",
+    "uuid": "e4d1e39a-6380-4da0-9596-642777f1b76d"
+  },
+  {
+    "name": "Social Network",
+    "severity": "medium",
+    "uuid": "68631dba-5696-4cc0-b6a8-0175ca99a7a2"
+  },
+  {
+    "name": "Public Life",
+    "severity": "high",
+    "uuid": "e354099e-b80c-47b5-a86c-8d936b520387"
+  },
+  {
+    "name": "Sexual",
+    "severity": "high",
+    "uuid": "1d4000a7-93ec-4dd5-9f3b-0f2ff7026a0c"
+  },
+  {
+    "name": "Professional Information",
+    "severity": "high",
+    "uuid": "ef613213-a222-4c01-ae38-c3043b68f738"
+  },
+  {
+    "name": "Preference",
+    "severity": "medium",
+    "uuid": "bc536e1e-e0d1-4b88-96d2-a2eaad1620d4"
+  },
+  {
+    "name": "Knowledge and Belief",
+    "severity": "medium",
+    "uuid": "623a4f94-0e23-411e-9bb3-481602f1757d"
+  },
+  {
+    "name": "Transactional",
+    "severity": "high",
+    "uuid": "deda0a0f-029c-44ee-9cac-9f059866723e"
+  },
+  {
+    "name": "Physical Characteristic",
+    "severity": "high",
+    "uuid": "94007e1e-57d8-43e8-90f2-246236dc5dde"
+  }
+]

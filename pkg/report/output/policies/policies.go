@@ -59,6 +59,5 @@ func GetOutput(dataflow *dataflow.DataFlow, config settings.Config) ([]rego.Vars
 		}
 	}
 
-	// Create a prepared query that can be evaluated.
 	return result, nil
 }

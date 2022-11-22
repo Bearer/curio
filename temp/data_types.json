@@ -1,0 +1,734 @@
+[
+  {
+    "data_category_name": "Passwords",
+    "default_category": "Authenticating",
+    "id": 1,
+    "uuid": "02bb0d3a-2c8c-4842-be1c-c057f0dccd63"
+  },
+  {
+    "data_category_name": "PIN",
+    "default_category": "Authenticating",
+    "id": 2,
+    "uuid": "c897613c-55f4-4df0-a817-e4e4a2b1ec5c"
+  },
+  {
+    "data_category_name": "Mother's Maiden Name",
+    "default_category": "Authenticating",
+    "id": 3,
+    "uuid": "c897613c-55f4-4df0-a817-e2e4a2b1ec5d"
+  },
+  {
+    "data_category_name": "Browsing Behavior",
+    "default_category": "Behavioral Information",
+    "id": 4,
+    "uuid": "c73ae276-b1b1-4b70-b6d5-ed73a83e87ed"
+  },
+  {
+    "data_category_name": "Telephone Recordings",
+    "default_category": "Communication",
+    "id": 5,
+    "uuid": "400ec4ad-6861-450e-822d-23544125c3cf"
+  },
+  {
+    "data_category_name": "Voice Mail",
+    "default_category": "Communication",
+    "id": 6,
+    "uuid": "1045d17c-7028-4171-854e-99f8b231fa17"
+  },
+  {
+    "data_category_name": "Emails",
+    "default_category": "Communication",
+    "id": 7,
+    "uuid": "e07133d8-b62b-47ed-abcd-9c9d189b362a"
+  },
+  {
+    "data_category_name": "IP address",
+    "default_category": "Computer Device",
+    "id": 8,
+    "uuid": "044bc1f0-dc7b-4b23-80dc-a35d1f491017"
+  },
+  {
+    "data_category_name": "Mac address",
+    "default_category": "Computer Device",
+    "id": 9,
+    "uuid": "84eb0f89-05f7-47a3-a8fb-67cc40e603c6"
+  },
+  {
+    "data_category_name": "Device identifier",
+    "default_category": "Computer Device",
+    "id": 10,
+    "uuid": "b0b856cb-f28f-46b5-a004-b4a02f0cd042"
+  },
+  {
+    "data_category_name": "Browser Fingerprint",
+    "default_category": "Computer Device",
+    "id": 11,
+    "uuid": "f4205e44-bf53-451c-809f-11d2562da1ae"
+  },
+  {
+    "data_category_name": "Email Address",
+    "default_category": "Contact",
+    "id": 12,
+    "uuid": "22e24c62-82d3-4b72-827c-e261533331bd"
+  },
+  {
+    "data_category_name": "Physical Address",
+    "default_category": "Contact",
+    "id": 13,
+    "uuid": "5a80a938-6fb2-4d9a-9c47-8d377e036506"
+  },
+  {
+    "data_category_name": "Telephone Number",
+    "default_category": "Contact",
+    "id": 14,
+    "uuid": "198a6ae4-5cfd-4429-9272-fb102817cbbd"
+  },
+  {
+    "data_category_name": "Credit Records",
+    "default_category": "Credit History",
+    "id": 15,
+    "uuid": "cd599850-9929-40c8-9f75-eb2538e309fb"
+  },
+  {
+    "data_category_name": "Credit Worthiness",
+    "default_category": "Credit History",
+    "id": 16,
+    "uuid": "189c96fe-4417-443f-9235-6ae082b52400"
+  },
+  {
+    "data_category_name": "Credit Standing",
+    "default_category": "Credit History",
+    "id": 17,
+    "uuid": "5ea382aa-c8c2-4045-90e8-1757478676be"
+  },
+  {
+    "data_category_name": "Credit Capacity",
+    "default_category": "Credit History",
+    "id": 18,
+    "uuid": "802041a1-e893-42f4-acc2-882a8fa0237e"
+  },
+  {
+    "data_category_name": "Convictions",
+    "default_category": "Criminal Records",
+    "id": 19,
+    "uuid": "d2c51707-9673-48b4-add6-4a9e6a2cc5f3"
+  },
+  {
+    "data_category_name": "Charges",
+    "default_category": "Criminal Records",
+    "id": 20,
+    "uuid": "cd714a59-d2f4-4ced-ad20-a9d0a5d92763"
+  },
+  {
+    "data_category_name": "Pardons",
+    "default_category": "Criminal Records",
+    "id": 21,
+    "uuid": "b28fc987-0c18-489f-81cd-0a491386a5c6"
+  },
+  {
+    "data_category_name": "Age Range",
+    "default_category": "Demographic",
+    "id": 22,
+    "uuid": "31583120-fdb1-4522-9450-487acb6d5656"
+  },
+  {
+    "data_category_name": "Physical Traits",
+    "default_category": "Demographic",
+    "id": 23,
+    "uuid": "fc9c98f4-261f-4539-a9a8-1bb11a5f6645"
+  },
+  {
+    "data_category_name": "Income Brackets",
+    "default_category": "Demographic",
+    "id": 24,
+    "uuid": "3b9488a8-e1df-4539-8fd5-55031119bf49"
+  },
+  {
+    "data_category_name": "Geographic",
+    "default_category": "Demographic",
+    "id": 25,
+    "uuid": "a0d99e34-a1e0-4d5a-9614-e8649933542c"
+  },
+  {
+    "data_category_name": "Spoken Languages",
+    "default_category": "Ethnicity",
+    "id": 26,
+    "uuid": "c2f07a15-6cc1-451b-b8b4-7598bc0117e8"
+  },
+  {
+    "data_category_name": "Race",
+    "default_category": "Ethnicity",
+    "id": 27,
+    "uuid": "e4049ef1-da74-46dc-ac4e-f6b4aa0672ea"
+  },
+  {
+    "data_category_name": "Biometric Data",
+    "default_category": "Ethnicity",
+    "id": 28,
+    "uuid": "85599b0c-37b6-4855-af54-5789edc27c00"
+  },
+  {
+    "data_category_name": "National origin",
+    "default_category": "Ethnicity",
+    "id": 29,
+    "uuid": "f35491a4-c71b-43f1-b053-bd12dc5a0dac"
+  },
+  {
+    "data_category_name": "Ethnic Origin",
+    "default_category": "Ethnicity",
+    "id": 30,
+    "uuid": "89ef58a9-94be-4ca6-a86b-61e7f47d3a37"
+  },
+  {
+    "data_category_name": "Accents",
+    "default_category": "Ethnicity",
+    "id": 31,
+    "uuid": "7a7e79a5-dfdb-4d69-9f73-a140b72f932a"
+  },
+  {
+    "data_category_name": "Country",
+    "default_category": "Location",
+    "id": 32,
+    "uuid": "070e6670-c3d6-42e4-8007-af8eae2647f5"
+  },
+  {
+    "data_category_name": "Credit Card Number",
+    "default_category": "Financial Accounts",
+    "id": 33,
+    "uuid": "f38aab1a-1551-43dc-9a90-59abf2c9f08c"
+  },
+  {
+    "data_category_name": "Bank Account",
+    "default_category": "Financial Accounts",
+    "id": 34,
+    "uuid": "257e9570-e57c-4d7c-b3de-a893008bfdba"
+  },
+  {
+    "data_category_name": "Passport Number",
+    "default_category": "Identification",
+    "id": 35,
+    "uuid": "318d53ae-8b46-490e-9a44-1bc597205197"
+  },
+  {
+    "data_category_name": "Cars",
+    "default_category": "Personal Ownership",
+    "id": 36,
+    "uuid": "8c4f7dd0-1cdc-4edf-bc6d-e7846bb2af21"
+  },
+  {
+    "data_category_name": "Personal health history",
+    "default_category": "Medical and Health",
+    "id": 37,
+    "uuid": "d442a6b7-bf22-4cc3-9cff-6be69e8b05c6"
+  },
+  {
+    "data_category_name": "Family health history",
+    "default_category": "Medical and Health",
+    "id": 38,
+    "uuid": "e5baa336-ba33-48e9-9e13-8691cffb06cf"
+  },
+  {
+    "data_category_name": "Health Records",
+    "default_category": "Medical and Health",
+    "id": 39,
+    "uuid": "c1704474-de02-40f0-8880-ece05fdbe9b5"
+  },
+  {
+    "data_category_name": "Disabilities",
+    "default_category": "Medical and Health",
+    "id": 40,
+    "uuid": "e2269060-ab72-42b2-bba2-726ac9fbe18b"
+  },
+  {
+    "data_category_name": "Drugs test results",
+    "default_category": "Medical and Health",
+    "id": 41,
+    "uuid": "d790d130-e459-468e-ab98-153059e065c7"
+  },
+  {
+    "data_category_name": "Blood Type",
+    "default_category": "Medical and Health",
+    "id": 42,
+    "uuid": "88063c2c-7e5d-473d-944a-8cd862b2181d"
+  },
+  {
+    "data_category_name": "DNA code",
+    "default_category": "Medical and Health",
+    "id": 43,
+    "uuid": "13cc185a-c8e0-4f25-81fb-857b49cee141"
+  },
+  {
+    "data_category_name": "Prescriptions",
+    "default_category": "Medical and Health",
+    "id": 44,
+    "uuid": "bc91b4fb-3f72-4cae-b57b-ba538e4ff4e3"
+  },
+  {
+    "data_category_name": "Divorces",
+    "default_category": "Family",
+    "id": 45,
+    "uuid": "577e3c3b-609d-4611-844c-d26598257d85"
+  },
+  {
+    "data_category_name": "Marriages",
+    "default_category": "Family",
+    "id": 46,
+    "uuid": "b473f971-b60a-444a-8488-a0fadf16cd2f"
+  },
+  {
+    "data_category_name": "Friends",
+    "default_category": "Social Network",
+    "id": 47,
+    "uuid": "e1a8aa98-9740-4c09-80e2-a189aa3585b3"
+  },
+  {
+    "data_category_name": "Martial Status",
+    "default_category": "Public Life",
+    "id": 48,
+    "uuid": "0c0e43f4-7c34-4d65-a2a5-3c6a8fc1c872"
+  },
+  {
+    "data_category_name": "Sexual Preferences",
+    "default_category": "Sexual",
+    "id": 49,
+    "uuid": "b3d9bbb8-6116-4aef-93ca-682178b5da98"
+  },
+  {
+    "data_category_name": "Sexual History",
+    "default_category": "Sexual",
+    "id": 50,
+    "uuid": "3c5f11d3-e729-4950-a2e3-f0b5efcc044d"
+  },
+  {
+    "data_category_name": "Disciplinary Actions",
+    "default_category": "Professional Information",
+    "id": 51,
+    "uuid": "7bdba961-47c0-4818-91e1-e2af21bcf582"
+  },
+  {
+    "data_category_name": "Interviews",
+    "default_category": "Professional Information",
+    "id": 52,
+    "uuid": "c49371af-543c-4700-9420-e049ffc4cf02"
+  },
+  {
+    "data_category_name": "Job Titles",
+    "default_category": "Professional Information",
+    "id": 53,
+    "uuid": "a2c85131-c59a-4e02-a2a4-5bed3f99b748"
+  },
+  {
+    "data_category_name": "Work History",
+    "default_category": "Professional Information",
+    "id": 54,
+    "uuid": "3bdc635e-4e4c-4aaa-a58f-c1198d0f45d3"
+  },
+  {
+    "data_category_name": "Employment History",
+    "default_category": "Professional Information",
+    "id": 55,
+    "uuid": "7a784098-430f-41fb-b7cc-687da4a49f4d"
+  },
+  {
+    "data_category_name": "Salary",
+    "default_category": "Professional Information",
+    "id": 56,
+    "uuid": "f4c90568-ef19-4c52-91b4-e2e7232bf5ed"
+  },
+  {
+    "data_category_name": "Certifications",
+    "default_category": "Professional Information",
+    "id": 57,
+    "uuid": "8423e3a5-8390-4a1d-8485-0b33c4d951c5"
+  },
+  {
+    "data_category_name": "Group Membership",
+    "default_category": "Social Network",
+    "id": 58,
+    "uuid": "a4095f69-5a06-404a-aa2c-87a4629cca1a"
+  },
+  {
+    "data_category_name": "Acquaintances",
+    "default_category": "Social Network",
+    "id": 59,
+    "uuid": "37936c46-17ae-43df-ad4c-330aabf9eec0"
+  },
+  {
+    "data_category_name": "Opinions",
+    "default_category": "Preference",
+    "id": 60,
+    "uuid": "922bc37c-9c9a-4d79-b3d1-f2e57aaeebfc"
+  },
+  {
+    "data_category_name": "Favorite Foods",
+    "default_category": "Preference",
+    "id": 61,
+    "uuid": "07e6e126-655e-4627-bdad-381ef4cbbe6d"
+  },
+  {
+    "data_category_name": "Religious Beliefs",
+    "default_category": "Knowledge and Belief",
+    "id": 62,
+    "uuid": "e40a8d0a-e8ae-4def-8fd5-887392974702"
+  },
+  {
+    "data_category_name": "Philosophical beliefs",
+    "default_category": "Knowledge and Belief",
+    "id": 63,
+    "uuid": "7389307b-e885-4236-91d5-eb92d23acf8e"
+  },
+  {
+    "data_category_name": "Call Logs",
+    "default_category": "Identification",
+    "id": 64,
+    "uuid": "89b65c49-6d5e-439f-a7c1-320e080f440c"
+  },
+  {
+    "data_category_name": "Links clicked",
+    "default_category": "Identification",
+    "id": 65,
+    "uuid": "adfd29eb-8abb-41ea-bec6-9c0ffdfd9206"
+  },
+  {
+    "data_category_name": "Date of birth",
+    "default_category": "Demographic",
+    "id": 66,
+    "uuid": "da48dfad-7322-411b-988d-5bde0d7bc659"
+  },
+  {
+    "data_category_name": "Credit",
+    "default_category": "Transactional",
+    "id": 67,
+    "uuid": "bde2d19a-26ad-4cfd-9b5a-a4d1d64fe367"
+  },
+  {
+    "data_category_name": "Loan Records",
+    "default_category": "Transactional",
+    "id": 68,
+    "uuid": "10fcbeaa-fd17-47ab-9a29-c1f94fadcaa3"
+  },
+  {
+    "data_category_name": "Gender identity",
+    "default_category": "Sexual",
+    "id": 69,
+    "uuid": "8ca89e87-c06b-410b-8832-bdcd9576e86d"
+  },
+  {
+    "data_category_name": "Gender",
+    "default_category": "Physical Characteristic",
+    "id": 70,
+    "uuid": "2c842862-1f33-4080-9c1c-50498d4d5c27"
+  },
+  {
+    "data_category_name": "Political Affiliation",
+    "default_category": "Public Life",
+    "id": 71,
+    "uuid": "2226b7d3-8669-4c10-932b-c18208b41142"
+  },
+  {
+    "data_category_name": "Religion",
+    "default_category": "Public Life",
+    "id": 72,
+    "uuid": "005c838b-4e58-4291-8f1e-d548af08f838"
+  },
+  {
+    "data_category_name": "Interactions",
+    "default_category": "Public Life",
+    "id": 73,
+    "uuid": "8358b541-500f-4321-8ee9-89ce61e9459e"
+  },
+  {
+    "data_category_name": "General Reputation",
+    "default_category": "Public Life",
+    "id": 74,
+    "uuid": "81df7297-4823-41ea-b0bb-4d56bbd36104"
+  },
+  {
+    "data_category_name": "Intentions",
+    "default_category": "Preference",
+    "id": 75,
+    "uuid": "09ff91af-6f83-48fa-9c74-7c58941e1b56"
+  },
+  {
+    "data_category_name": "Interests",
+    "default_category": "Preference",
+    "id": 76,
+    "uuid": "5cb29a25-739a-4a5f-8831-3ac8e25be626"
+  },
+  {
+    "data_category_name": "Likes",
+    "default_category": "Preference",
+    "id": 77,
+    "uuid": "ce529b86-22cf-4984-b697-175602e7b64c"
+  },
+  {
+    "data_category_name": "Dislikes",
+    "default_category": "Preference",
+    "id": 78,
+    "uuid": "dfd80ee8-d913-4e36-af2d-66131fec87f6"
+  },
+  {
+    "data_category_name": "Attitude",
+    "default_category": "Identification",
+    "id": 79,
+    "uuid": "caaaf03c-e684-4ec0-8772-04fbd9fc7397"
+  },
+  {
+    "data_category_name": "ID Number",
+    "default_category": "Identification",
+    "id": 80,
+    "uuid": "25c9ab93-9daa-44bd-bfd4-49afd380d183"
+  },
+  {
+    "data_category_name": "Firstname",
+    "default_category": "Identification",
+    "id": 81,
+    "uuid": "380c8cde-ca2e-44ed-82db-2ab1e7c255c7"
+  },
+  {
+    "data_category_name": "Fullname",
+    "default_category": "Identification",
+    "id": 82,
+    "uuid": "1617291b-bc22-4267-ad5e-8054b2505958"
+  },
+  {
+    "data_category_name": "Lastname",
+    "default_category": "Identification",
+    "id": 83,
+    "uuid": "6574a267-e3bf-4ab5-832e-15b8863206df"
+  },
+  {
+    "data_category_name": "Username",
+    "default_category": "Identification",
+    "id": 84,
+    "uuid": "d0ca18db-a0ac-46cc-a3b8-2d73d2e148f3"
+  },
+  {
+    "data_category_name": "Physical and mental health",
+    "default_category": "Medical and Health",
+    "id": 85,
+    "uuid": "8421f13c-0b9a-422b-9080-55b78e7c07cd"
+  },
+  {
+    "data_category_name": "Unique Identifier",
+    "default_category": "Identification",
+    "id": 86,
+    "uuid": "12d44ae0-1df7-4faf-9fb1-b46cc4b4dce9"
+  },
+  {
+    "data_category_name": "Family Structure",
+    "default_category": "Family",
+    "id": 87,
+    "uuid": "62981af6-2559-45a0-820a-a1dd8729bac0"
+  },
+  {
+    "data_category_name": "Siblings",
+    "default_category": "Family",
+    "id": 88,
+    "uuid": "dc64fe81-1ec3-452f-b2df-f3ba3c99b5dc"
+  },
+  {
+    "data_category_name": "Offspring",
+    "default_category": "Family",
+    "id": 89,
+    "uuid": "8a08a652-8f39-4ffe-af22-530bd0313fda"
+  },
+  {
+    "data_category_name": "Image",
+    "default_category": "Identification",
+    "id": 90,
+    "uuid": "daf04ffc-589a-4017-9a88-69f8db97a52c"
+  },
+  {
+    "data_category_name": "Purchases and Spending Habits",
+    "default_category": "Transactional",
+    "id": 91,
+    "uuid": "2f8f5f70-903c-4528-b716-bf406594a8ff"
+  },
+  {
+    "data_category_name": "School attended",
+    "default_category": "Professional Information",
+    "id": 92,
+    "uuid": "334e8c19-8302-4ba0-8490-0cedfca7bd02"
+  },
+  {
+    "data_category_name": "GPS Coordinate",
+    "default_category": "Location",
+    "id": 93,
+    "uuid": "ddf23f9f-c412-4a75-b090-df976f0ec16e"
+  },
+  {
+    "data_category_name": "Demeanor",
+    "default_category": "Identification",
+    "id": 94,
+    "uuid": "6cf224d4-65e6-4dd2-b6f1-9ff4ace92ae9"
+  },
+  {
+    "data_category_name": "Thoughts",
+    "default_category": "Knowledge and Belief",
+    "id": 95,
+    "uuid": "874d5d2d-7cdc-42c6-b6b6-64d15b538660"
+  },
+  {
+    "data_category_name": "Knowledge",
+    "default_category": "Knowledge and Belief",
+    "id": 96,
+    "uuid": "969ac76a-190c-4d66-9788-f4e19279dd73"
+  },
+  {
+    "data_category_name": "Room Number",
+    "default_category": "Location",
+    "id": 97,
+    "uuid": "9cb92b18-f583-4d42-bf9f-ea52998e55f9"
+  },
+  {
+    "data_category_name": "Houses",
+    "default_category": "Personal Ownership",
+    "id": 98,
+    "uuid": "958d2be9-5e60-4d38-a857-2e234bf2deca"
+  },
+  {
+    "data_category_name": "Apartments",
+    "default_category": "Personal Ownership",
+    "id": 99,
+    "uuid": "f51fd59b-6457-449f-ae2c-9b4de44a2c3b"
+  },
+  {
+    "data_category_name": "Personal Possessions",
+    "default_category": "Personal Ownership",
+    "id": 100,
+    "uuid": "6ea99c37-62c1-4639-bca7-e44e0b9ddb30"
+  },
+  {
+    "data_category_name": "Height",
+    "default_category": "Physical Characteristic",
+    "id": 101,
+    "uuid": "9e8dd1d2-2254-4129-a7c7-55acaea5e5ab"
+  },
+  {
+    "data_category_name": "Weight",
+    "default_category": "Physical Characteristic",
+    "id": 102,
+    "uuid": "b89e7040-471a-4cbd-baef-c85758ca1548"
+  },
+  {
+    "data_category_name": "Age",
+    "default_category": "Physical Characteristic",
+    "id": 103,
+    "uuid": "6e579541-a36a-4af7-a0e5-a3b32112ba3a"
+  },
+  {
+    "data_category_name": "Hair Color",
+    "default_category": "Physical Characteristic",
+    "id": 104,
+    "uuid": "3fa463e0-ad8b-4513-a3d6-c62b69670802"
+  },
+  {
+    "data_category_name": "Skin Tone",
+    "default_category": "Physical Characteristic",
+    "id": 105,
+    "uuid": "5102beca-78a4-4ec0-86f3-76b755e761fd"
+  },
+  {
+    "data_category_name": "Tattoos",
+    "default_category": "Physical Characteristic",
+    "id": 106,
+    "uuid": "eaf0f25e-aa7d-4810-b5c9-44e1f62fcd98"
+  },
+  {
+    "data_category_name": "Piercings",
+    "default_category": "Physical Characteristic",
+    "id": 107,
+    "uuid": "40f9f71e-ac49-4a3c-a2d4-e62bee20e4be"
+  },
+  {
+    "data_category_name": "Colors",
+    "default_category": "Preference",
+    "id": 108,
+    "uuid": "c7caf3ba-b75b-4f32-a49c-f5710d639c27"
+  },
+  {
+    "data_category_name": "Music",
+    "default_category": "Preference",
+    "id": 109,
+    "uuid": "e999b9a0-e5d2-4722-89d9-7fa299cb216d"
+  },
+  {
+    "data_category_name": "Employee Files",
+    "default_category": "Professional Information",
+    "id": 110,
+    "uuid": "4511023f-d0cc-4255-803b-00c8941d3cb6"
+  },
+  {
+    "data_category_name": "Evaluations",
+    "default_category": "Professional Information",
+    "id": 111,
+    "uuid": "af7ecf82-ea6e-488b-b1a9-dccbc89436b5"
+  },
+  {
+    "data_category_name": "References",
+    "default_category": "Professional Information",
+    "id": 112,
+    "uuid": "fa81a072-3603-4e05-98e2-a5c954d86793"
+  },
+  {
+    "data_category_name": "Character",
+    "default_category": "Public Life",
+    "id": 113,
+    "uuid": "d0bd93bb-b5f8-4024-8107-db162cefb09a"
+  },
+  {
+    "data_category_name": "Social Status",
+    "default_category": "Public Life",
+    "id": 114,
+    "uuid": "42358827-7433-4711-9fd7-73fe1c2f7639"
+  },
+  {
+    "data_category_name": "Connections",
+    "default_category": "Social Network",
+    "id": 115,
+    "uuid": "200e7ee4-b68f-4709-b01e-c7f62e49c905"
+  },
+  {
+    "data_category_name": "Associations",
+    "default_category": "Social Network",
+    "id": 116,
+    "uuid": "f6558ecb-a1c8-449f-8956-2f99eaefb6de"
+  },
+  {
+    "data_category_name": "Purchases",
+    "default_category": "Transactional",
+    "id": 117,
+    "uuid": "575d073d-c3e3-4188-8d8c-f9822c9cf89e"
+  },
+  {
+    "data_category_name": "Sales",
+    "default_category": "Transactional",
+    "id": 118,
+    "uuid": "388017f2-bfb7-43f7-9109-43d21de6dfa3"
+  },
+  {
+    "data_category_name": "Income",
+    "default_category": "Transactional",
+    "id": 119,
+    "uuid": "40c5ca26-fee2-49ff-a489-69d42de5ff82"
+  },
+  {
+    "data_category_name": "Transactions",
+    "default_category": "Transactional",
+    "id": 120,
+    "uuid": "56c60be5-3389-4022-9af8-1ed389cc3d41"
+  },
+  {
+    "data_category_name": "Taxes",
+    "default_category": "Transactional",
+    "id": 121,
+    "uuid": "70df024a-543a-4922-bb51-061cf19aad80"
+  },
+  {
+    "data_category_name": "Relationships",
+    "default_category": "Family",
+    "id": 122,
+    "uuid": "430a927b-d762-48dd-9e04-0f897c3776a2"
+  }
+]

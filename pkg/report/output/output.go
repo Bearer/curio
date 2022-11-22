@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"strings"
 
 	"github.com/bearer/curio/pkg/commands/process/settings"
 	"github.com/bearer/curio/pkg/flag"
@@ -12,6 +13,7 @@ import (
 	"github.com/bearer/curio/pkg/report/output/policies"
 	"github.com/bearer/curio/pkg/report/output/stats"
 	"github.com/bearer/curio/pkg/types"
+	"github.com/olekukonko/tablewriter"
 	"gopkg.in/yaml.v3"
 
 	"github.com/rs/zerolog"
@@ -47,6 +49,33 @@ func ReportYAML(report types.Report, output *zerolog.Event, config settings.Conf
 	}
 
 	output.Msg(string(jsonBytes))
+
+	return nil
+}
+
+func ReportTable(report types.Report, output *zerolog.Event, config settings.Config) error {
+	tableString := &strings.Builder{}
+	table := tablewriter.NewWriter(tableString)
+
+	outputDetections, err := getReportOutput(report, config)
+	if err != nil {
+		return err
+	}
+
+	for _, detection := range outputDetections {
+
+	}
+
+	table.SetHeader([]string{"Name", "Sign", "Rating"})
+
+	table.Append([]string{"A", "The Good", "500"})
+	table.Append([]string{"B", "The Very very Bad Man", "288"})
+	table.Append([]string{"C", "The Ugly", "120"})
+	table.Append([]string{"D", "The Gopher", "800"})
+
+	table.Render()
+
+	output.Msg(tableString.String())
 
 	return nil
 }

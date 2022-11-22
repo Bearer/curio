@@ -1,0 +1,7384 @@
+[
+  {
+    "name": "Jumio",
+    "type": "external_service",
+    "urls": ["https://jumio.com/api/", "https://netverify.com/api"],
+    "packages": []
+  },
+  {
+    "name": "Fountain",
+    "type": "external_service",
+    "urls": ["https://api.fountain.com"],
+    "packages": []
+  },
+  {
+    "name": "Ocrolus",
+    "type": "external_service",
+    "urls": ["https://api.ocrolus.com"],
+    "packages": []
+  },
+  {
+    "name": "Cirrus Ci",
+    "type": "external_service",
+    "urls": ["https://api.cirrus-ci.com"],
+    "packages": []
+  },
+  {
+    "name": "Appveyor",
+    "type": "external_service",
+    "urls": ["https://ci.appveyor.com/api"],
+    "packages": []
+  },
+  {
+    "name": "Amc Theater",
+    "type": "external_service",
+    "urls": ["https://api.amctheatres.com"],
+    "packages": []
+  },
+  {
+    "name": "Freshworks",
+    "type": "external_service",
+    "urls": [
+      "https://freshcaller.com/api",
+      "https://freshteam.com/api",
+      "https://api.freshchat.com",
+      "https://myfreshworks.com/crm/sales/api",
+      "https://freshservice.com/api/",
+      "https://freshdesk.com/api"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Payfit",
+    "type": "external_service",
+    "urls": [
+      "https://partner-api.payfit.com",
+      "https://manager-api.payfit.com",
+      "https://atlas-api.payfit.com",
+      "https://api.payfit.tech",
+      "https://api.payfit.io"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Contentful",
+    "type": "external_service",
+    "urls": [
+      "https://graphql.contentful.com",
+      "https://images.ctfassets.net",
+      "https://api.contentful.com",
+      "https://cdn.contentful.com",
+      "https://preview.contentful.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Scalia Ci",
+    "type": "external_service",
+    "urls": [],
+    "packages": []
+  },
+  {
+    "name": "Debounce",
+    "type": "external_service",
+    "urls": ["https://api.debounce.io"],
+    "packages": []
+  },
+  {
+    "name": "Iris Openbooks (FreeAgent)",
+    "type": "external_service",
+    "urls": ["https://admin.irisopenbooks.co.uk"],
+    "packages": []
+  },
+  {
+    "name": "HMRC (GOV.UK)",
+    "type": "external_service",
+    "urls": [
+      "https://api.service.hmrc.gov.uk",
+      "https://test-api.service.hmrc.gov.uk",
+      "https://transaction-engine.tax.service.gov.uk",
+      "https://test-transaction-engine.tax.service.gov.uk"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Ozone Open Banking Sandbox",
+    "type": "external_service",
+    "urls": [
+      "https://ob19-auth1.o3bank.co.uk",
+      "https://ob19-rs1.o3bank.co.uk",
+      "https://ob19-auth1-ui.o3bank.co.uk"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Hiscox",
+    "type": "external_service",
+    "urls": [
+      "https://quote.hiscox.co.uk",
+      "https://hiscoxukpartners.azure-api.net",
+      "https://hiscoxclientapi.azurewebsites.net",
+      "https://hiscoxukpartners-test.azure-api.net"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Gouv.fr Data",
+    "type": "external_service",
+    "urls": ["https://data.gouv.fr/api"],
+    "packages": []
+  },
+  {
+    "name": "Appbase",
+    "type": "external_service",
+    "urls": ["https://api.appbase.io"],
+    "packages": []
+  },
+  {
+    "name": "Apollographql",
+    "type": "external_service",
+    "urls": [
+      "https://usage-reporting.api.apollographql.com",
+      "https://studio.apollographql.com",
+      "https://schema-reporting.api.apollographql.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Nodemailer",
+    "type": "external_service",
+    "urls": ["https://api.nodemailer.com"],
+    "packages": []
+  },
+  {
+    "name": "Jsdelivr",
+    "type": "external_service",
+    "urls": ["https://api.jsdelivr.com"],
+    "packages": []
+  },
+  {
+    "name": "WorkOS",
+    "type": "external_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "workos",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Trafficvance",
+    "type": "external_service",
+    "urls": [
+      "https://api.trafficvance.com",
+      "https://apitest.trafficvance.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "LevelDB",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/syndtr/goleveldb",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Hunter",
+    "type": "external_service",
+    "urls": ["https://api.hunter.io"],
+    "packages": []
+  },
+  {
+    "name": "Dropcontact",
+    "type": "external_service",
+    "urls": ["https://api.dropcontact.io"],
+    "packages": []
+  },
+  {
+    "name": "Crmgang",
+    "type": "external_service",
+    "urls": ["https://api.crmgang.com"],
+    "packages": []
+  },
+  {
+    "name": "BuntDB",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/tidwall/buntdb",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Societeinfo",
+    "type": "external_service",
+    "urls": ["https://societeinfo.com/app/rest/api/"],
+    "packages": []
+  },
+  {
+    "name": "ABBYY Cloud OCR SDK",
+    "type": "external_service",
+    "urls": [
+      "https://ocrsdk.com",
+      "https://cloud-westus.ocrsdk.com",
+      "https://cloud-eu.ocrsdk.com",
+      "https://cloud.ocrsdk.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Almerys",
+    "type": "external_service",
+    "urls": [
+      "https://edi.b2bi.almerys.com",
+      "https://rec.edi.b2bi.almerys.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Seeuletter (MySendingBox)",
+    "type": "external_service",
+    "urls": ["https://api.MySendingBox.fr", "https://api.seeuletter.com"],
+    "packages": []
+  },
+  {
+    "name": "Victorops (Splunk)",
+    "type": "external_service",
+    "urls": ["https://api.victorops.com"],
+    "packages": []
+  },
+  {
+    "name": "CircleCI",
+    "type": "external_service",
+    "urls": ["https://circleci.com/api"],
+    "packages": []
+  },
+  {
+    "name": "Assurcard",
+    "type": "external_service",
+    "urls": [
+      "https://insurer.soap.assurcard.be",
+      "https://insurer.assurcard.be",
+      "https://testinsurer.soap.assurcard.be",
+      "https://testinsurer.assurcard.be"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Revolut",
+    "type": "external_service",
+    "urls": ["https://revolut.com/api/"],
+    "packages": []
+  },
+  {
+    "name": "Customer",
+    "type": "external_service",
+    "urls": [
+      "https://beta-api.customer.io/*/api",
+      "https://api.customer.io/v1/",
+      "https://track.customer.io/api"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Envoy",
+    "type": "external_service",
+    "urls": ["https://api.envoy.com"],
+    "packages": []
+  },
+  {
+    "name": "LaunchDarkly",
+    "type": "external_service",
+    "urls": ["https://app.launchdarkly.com/api/"],
+    "packages": []
+  },
+  {
+    "name": "Hellosign",
+    "type": "external_service",
+    "urls": ["https://api.hellosign.com"],
+    "packages": []
+  },
+  {
+    "name": "Dyn (Oracle)",
+    "type": "external_service",
+    "urls": ["https://api.dynect.net", "https://api-v4.dynect.net"],
+    "packages": []
+  },
+  {
+    "name": "Sakura",
+    "type": "external_service",
+    "urls": ["https://secure.sakura.ad.jp/cloud/zone/*/api/"],
+    "packages": []
+  },
+  {
+    "name": "Brightbox",
+    "type": "external_service",
+    "urls": ["https://api.*.brightbox.com"],
+    "packages": []
+  },
+  {
+    "name": "Profitbricks (IONOS)",
+    "type": "external_service",
+    "urls": ["https://api.ionos.com", "https://api.profitbricks.com"],
+    "packages": []
+  },
+  {
+    "name": "Cloudflare",
+    "type": "external_service",
+    "urls": ["https://api.cloudflare.com"],
+    "packages": [
+      {
+        "name": "github.com/cloudflare/cloudflare-go",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Digitalocean",
+    "type": "external_service",
+    "urls": [],
+    "packages": []
+  },
+  {
+    "name": "Glesys",
+    "type": "external_service",
+    "urls": ["https://api.glesys.com"],
+    "packages": []
+  },
+  {
+    "name": "Dreamhost",
+    "type": "external_service",
+    "urls": ["https://api.dreamhost.com"],
+    "packages": []
+  },
+  {
+    "name": "Dnsmadeeasy",
+    "type": "external_service",
+    "urls": [
+      "https://api.sandbox.dnsmadeeasy.com",
+      "https://api.dnsmadeeasy.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Clodo",
+    "type": "external_service",
+    "urls": ["https://api.clodo.ru"],
+    "packages": []
+  },
+  {
+    "name": "Mapbox",
+    "type": "external_service",
+    "urls": ["https://api.mapbox.com"],
+    "packages": []
+  },
+  {
+    "name": "Tidelift",
+    "type": "external_service",
+    "urls": ["https://api.tidelift.com"],
+    "packages": []
+  },
+  {
+    "name": "Ipregistry",
+    "type": "external_service",
+    "urls": ["https://api.ipregistry.co"],
+    "packages": []
+  },
+  {
+    "name": "IBAN",
+    "type": "external_service",
+    "urls": ["https://api.iban.com"],
+    "packages": []
+  },
+  {
+    "name": "Ipstack",
+    "type": "external_service",
+    "urls": ["https://api.ipstack.com"],
+    "packages": []
+  },
+  {
+    "name": "Ipdata",
+    "type": "external_service",
+    "urls": ["https://api.ipdata.co"],
+    "packages": []
+  },
+  {
+    "name": "Docusign",
+    "type": "external_service",
+    "urls": ["https://account.docusign.com", "https://docusign.net/restapi"],
+    "packages": []
+  },
+  {
+    "name": "Tide",
+    "type": "external_service",
+    "urls": ["https://sandbox.tide.co", "https://api.tide.co"],
+    "packages": []
+  },
+  {
+    "name": "Forestadmin",
+    "type": "external_service",
+    "urls": ["https://api.forestadmin.com"],
+    "packages": []
+  },
+  {
+    "name": "Postmark",
+    "type": "external_service",
+    "urls": ["https://api.postmarkapp.com"],
+    "packages": []
+  },
+  {
+    "name": "Mettle",
+    "type": "external_service",
+    "urls": [
+      "https://api.openbanking.stg-mettle.co.uk",
+      "https://auth.openbanking.prd-mettle.co.uk",
+      "https://api.openbanking.prd-mettle.co.uk"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Companies House (GOV.UK)",
+    "type": "external_service",
+    "urls": [
+      "https://xmlgw.companieshouse.gov.uk",
+      "https://api.companieshouse.gov.uk"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Cashplus",
+    "type": "external_service",
+    "urls": [
+      "https://api.ob.cashplus.com",
+      "https://sandbox.matls.identity.ob.cashplus.com",
+      "https://sandbox.matls.api.ob.cashplus.com",
+      "https://sandbox.identity.ob.cashplus.com",
+      "https://api.mycashplus.co.uk",
+      "https://apisandbox.mycashplus.co.uk",
+      "https://cashplus.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Demdex (Adobe)",
+    "type": "external_service",
+    "urls": ["https://api.demdex.net"],
+    "packages": []
+  },
+  {
+    "name": "Barclays",
+    "type": "external_service",
+    "urls": [
+      "https://api.barclays.com",
+      "https://sandbox-api.barclays.com",
+      "https://dataservices.secure.barclays.co.uk"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Have I been pwned?",
+    "type": "external_service",
+    "urls": [
+      "https://api.pwnedpasswords.com",
+      "https://haveibeenpwned.com/api"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Bank of APIs (NatWest, RBS)",
+    "type": "external_service",
+    "urls": [
+      "https://natwestpayit.com",
+      "https://secure1t.rbs.co.uk",
+      "https://feedservice-api.rbs.co.uk",
+      "https://uat-feedservice-api.rbs.co.uk",
+      "https://api.sandbox.rbs.co.uk",
+      "https://api.rbs.co.uk",
+      "https://api.cop.natwest.com",
+      "https://openapi.natwest.com",
+      "https://feedservice-api.natwest.com",
+      "https://uat-feedservice-api.natwest.com",
+      "https://api.sandbox.natwest.com",
+      "https://ob.sandbox.natwest.com",
+      "https://api.natwest.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "MaxMind",
+    "type": "external_service",
+    "urls": [
+      "https://geoip-js.com/js/apis/",
+      "https://geoip.maxmind.com/geoip",
+      "https://minfraud.maxmind.com/minfraud"
+    ],
+    "packages": []
+  },
+  {
+    "name": "GoCardless",
+    "type": "external_service",
+    "urls": [
+      "https://pay-sandbox.gocardless.com/js/",
+      "https://api-sandbox.gocardless.com",
+      "https://api.gocardless.com",
+      "https://connect.gocardless.com",
+      "https://connect-sandbox.gocardless.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Apple",
+    "type": "external_service",
+    "urls": [
+      "https://cdn.apple-mapkit.com",
+      "https://cdn.apple-cloudkit.com",
+      "https://api.searchads.apple.com",
+      "https://js-cdn.music.apple.com",
+      "https://api.storekit.itunes.apple.com",
+      "https://api.appstoreconnect.apple.com",
+      "https://appleid.cdn-apple.com/appleauth/static/jsapi",
+      "https://api.music.apple.com",
+      "https://api.storekit-sandbox.itunes.apple.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Yodlee",
+    "type": "external_service",
+    "urls": ["https://api.yodlee.com"],
+    "packages": []
+  },
+  {
+    "name": "Lever",
+    "type": "external_service",
+    "urls": ["https://jobs.lever.co", "https://api.lever.co"],
+    "packages": []
+  },
+  {
+    "name": "Calendly",
+    "type": "external_service",
+    "urls": [
+      "https://calendly.com/assets/external/",
+      "https://calendly.com/api/v1",
+      "https://api.calendly.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Vercel",
+    "type": "external_service",
+    "urls": ["https://api.vercel.com"],
+    "packages": []
+  },
+  {
+    "name": "Drift",
+    "type": "external_service",
+    "urls": ["https://js.driftt.com", "https://driftapi.com"],
+    "packages": []
+  },
+  {
+    "name": "Basecamp",
+    "type": "external_service",
+    "urls": ["https://basecamp.com/*/api/"],
+    "packages": [
+      {
+        "name": "tinder",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Front",
+    "type": "external_service",
+    "urls": [
+      "https://webhook.frontapp.com",
+      "https://api2.frontapp.com",
+      "https://chat-assets.frontapp.com/"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Scout APM",
+    "type": "external_service",
+    "urls": ["https://scoutapm.com/api"],
+    "packages": []
+  },
+  {
+    "name": "xignite",
+    "type": "external_service",
+    "urls": ["https://navs.xignite.com/v1", "https://navs.xignite.com/v2"],
+    "packages": []
+  },
+  {
+    "name": "Tradier",
+    "type": "external_service",
+    "urls": [
+      "https://sandbox.tradier.com",
+      "https://stream.tradier.com",
+      "https://api.tradier.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Skyscanner",
+    "type": "external_service",
+    "urls": ["https://partners.api.skyscanner.net"],
+    "packages": []
+  },
+  {
+    "name": "Nylas",
+    "type": "external_service",
+    "urls": ["https://api.nylas.com"],
+    "packages": []
+  },
+  {
+    "name": "Galileo",
+    "type": "external_service",
+    "urls": ["https://api.gpsrv.com", "https://sandbox-api.gpsrv.com"],
+    "packages": []
+  },
+  {
+    "name": "BambooHR",
+    "type": "external_service",
+    "urls": ["https://api.bamboohr.com"],
+    "packages": []
+  },
+  {
+    "name": "BigCommerce",
+    "type": "external_service",
+    "urls": [
+      "https://api.bigcommerce.com/stores/*/v2",
+      "https://api.bigcommerce.com/stores/*/v3",
+      "https://mybigcommerce.com/api"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Alpaca",
+    "type": "external_service",
+    "urls": ["https://api.alpaca.markets"],
+    "packages": []
+  },
+  {
+    "name": "Alloy",
+    "type": "external_service",
+    "urls": ["https://alloy.co/v1/"],
+    "packages": []
+  },
+  {
+    "name": "Nightfall",
+    "type": "external_service",
+    "urls": ["https://api.nightfall.ai", "https://radar.nightfall.ai/api"],
+    "packages": []
+  },
+  {
+    "name": "ComplyAdvantage",
+    "type": "external_service",
+    "urls": ["https://api.complyadvantage.com"],
+    "packages": []
+  },
+  {
+    "name": "Treezor",
+    "type": "external_service",
+    "urls": ["https://treezor.com/v1/"],
+    "packages": []
+  },
+  {
+    "name": "Statuspage",
+    "type": "external_service",
+    "urls": ["https://api.statuspage.io"],
+    "packages": []
+  },
+  {
+    "name": "PandaDoc",
+    "type": "external_service",
+    "urls": ["https://api.pandadoc.com"],
+    "packages": []
+  },
+  {
+    "name": "Small Improvements",
+    "type": "external_service",
+    "urls": ["https://small-improvements.com/api"],
+    "packages": []
+  },
+  {
+    "name": "SatisMeter",
+    "type": "external_service",
+    "urls": ["https://app.satismeter.com/api"],
+    "packages": []
+  },
+  {
+    "name": "Heap",
+    "type": "external_service",
+    "urls": [
+      "https://heapanalytics.com/api",
+      "https://cdn.heapanalytics.com/js"
+    ],
+    "packages": []
+  },
+  {
+    "name": "NativeX (Mobvista)",
+    "type": "external_service",
+    "urls": ["https://3s.mobvista.com"],
+    "packages": []
+  },
+  {
+    "name": "Enboarder",
+    "type": "external_service",
+    "urls": ["https://api.*.e1.enboarder.com", "https://enboarder.com/restapi"],
+    "packages": []
+  },
+  {
+    "name": "Zapier",
+    "type": "external_service",
+    "urls": ["https://hooks.zapier.com", "https://api.zapier.com"],
+    "packages": []
+  },
+  {
+    "name": "Pusher",
+    "type": "external_service",
+    "urls": [
+      "https://api-*.pusher.com",
+      "https://api.pusherapp.com",
+      "https://js.pusher.com",
+      "https://sockjs.pusher.com"
+    ],
+    "packages": [
+      {
+        "name": "pusher",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "pusher-js",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Adjust",
+    "type": "external_service",
+    "urls": ["https://api.adjust.com"],
+    "packages": []
+  },
+  {
+    "name": "Wrike",
+    "type": "external_service",
+    "urls": ["https://wrike.com/api"],
+    "packages": []
+  },
+  {
+    "name": "Travefy",
+    "type": "external_service",
+    "urls": ["https://api.travefy.com"],
+    "packages": []
+  },
+  {
+    "name": "Trello",
+    "type": "external_service",
+    "urls": ["https://api.trello.com", "https://p.trellocdn.com"],
+    "packages": []
+  },
+  {
+    "name": "Stackify",
+    "type": "external_service",
+    "urls": ["https://api.stackify.net"],
+    "packages": []
+  },
+  {
+    "name": "Square",
+    "type": "external_service",
+    "urls": [
+      "https://connect.squareupsandbox.com",
+      "https://connect.squareup.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Asana",
+    "type": "external_service",
+    "urls": ["https://app.asana.com/api"],
+    "packages": [
+      {
+        "name": "asana",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Sage",
+    "type": "external_service",
+    "urls": [
+      "https://banking.dev-fabric.sage.com/provider",
+      "https://banking.fabric.sage.com/provider",
+      "https://sage200.sage.es/api/sales",
+      "https://lohnabrechnung.sage.com/api",
+      "https://api.accounting.sage.com",
+      "https://api.intacct.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Rydoo",
+    "type": "external_service",
+    "urls": ["https://api.rydoo.com"],
+    "packages": []
+  },
+  {
+    "name": "Raygun",
+    "type": "external_service",
+    "urls": ["https://api.raygun.com"],
+    "packages": []
+  },
+  {
+    "name": "Pipeliner",
+    "type": "external_service",
+    "urls": ["https://pipelinersales.com/api"],
+    "packages": []
+  },
+  {
+    "name": "Pipedrive",
+    "type": "external_service",
+    "urls": ["https://api.pipedrive.com", "https://pipedrive.com/api"],
+    "packages": []
+  },
+  {
+    "name": "Payoneer",
+    "type": "external_service",
+    "urls": [
+      "https://login.sandbox.payoneer.com",
+      "https://api.sandbox.payoneer.com",
+      "https://login.payoneer.com",
+      "https://api.payoneer.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "paylocity",
+    "type": "external_service",
+    "urls": ["https://api.paylocity.com/api"],
+    "packages": []
+  },
+  {
+    "name": "Nimble",
+    "type": "external_service",
+    "urls": ["https://api.nimble.com"],
+    "packages": []
+  },
+  {
+    "name": "NetHunt CRM",
+    "type": "external_service",
+    "urls": ["https://nethunt.com/api/v1/zapier"],
+    "packages": []
+  },
+  {
+    "name": "Plaid",
+    "type": "external_service",
+    "urls": ["https://production.plaid.com", "https://sandbox.plaid.com"],
+    "packages": []
+  },
+  {
+    "name": "MUX",
+    "type": "external_service",
+    "urls": [
+      "https://image.mux.com",
+      "https://stream.mux.com",
+      "https://api.mux.com/data",
+      "https://api.mux.com/video"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Monday",
+    "type": "external_service",
+    "urls": ["https://api.monday.com"],
+    "packages": []
+  },
+  {
+    "name": "Marketo",
+    "type": "external_service",
+    "urls": ["https://mktoapi.com/soap", "https://mktorest.com/rest"],
+    "packages": []
+  },
+  {
+    "name": "Logz.io",
+    "type": "external_service",
+    "urls": ["https://api.logz.io", "https://api-*.logz.io"],
+    "packages": []
+  },
+  {
+    "name": "Instana",
+    "type": "external_service",
+    "urls": ["https://instana.io/api"],
+    "packages": []
+  },
+  {
+    "name": "Honeybadger",
+    "type": "external_service",
+    "urls": ["https://api.honeybadger.io", "https://app.honeybadger.io/v2/"],
+    "packages": []
+  },
+  {
+    "name": "Gravity Payments",
+    "type": "external_service",
+    "urls": ["https://api.gravitypayments.com"],
+    "packages": []
+  },
+  {
+    "name": "Expensify",
+    "type": "external_service",
+    "urls": ["https://integrations.expensify.com/Integration-Server"],
+    "packages": []
+  },
+  {
+    "name": "Emburse",
+    "type": "external_service",
+    "urls": ["https://api.emburse.com"],
+    "packages": []
+  },
+  {
+    "name": "EasyPost",
+    "type": "external_service",
+    "urls": ["https://api.easypost.com"],
+    "packages": []
+  },
+  {
+    "name": "Copper",
+    "type": "external_service",
+    "urls": ["https://api.prosperworks.com"],
+    "packages": []
+  },
+  {
+    "name": "ClickUp",
+    "type": "external_service",
+    "urls": ["https://api.clickup.com"],
+    "packages": []
+  },
+  {
+    "name": "Chargify",
+    "type": "external_service",
+    "urls": ["https://js.chargify.com"],
+    "packages": []
+  },
+  {
+    "name": "Amplitude",
+    "type": "external_service",
+    "urls": [
+      "https://cdn.amplitude.com/libs",
+      "https://api.eu.amplitude.com",
+      "https://api2.amplitude.com",
+      "https://api.amplitude.com"
+    ],
+    "packages": [
+      {
+        "name": "@amplitude/react-native",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Chargebee",
+    "type": "external_service",
+    "urls": ["https://chargebee.com/api"],
+    "packages": []
+  },
+  {
+    "name": "Hashicorp Vault",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "node-vault-client",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/hashicorp/vault",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "node-vault",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/hashicorp/vault/api/auth/aws",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "vault-auth-aws",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Tanker",
+    "type": "external_service",
+    "urls": ["https://fakeauth.tanker.io", "https://api.tanker.io"],
+    "packages": [
+      {
+        "name": "tanker-core",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "tanker-identity",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@tanker/client-browser",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@tanker/client-node",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@tanker/core",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@tanker/crypto",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Scaleway Cloud APIs",
+    "type": "external_service",
+    "urls": [
+      "https://cp-par1.scaleway.com",
+      "https://cp-ams1.scaleway.com",
+      "https://api.scaleway.com"
+    ],
+    "packages": [
+      {
+        "name": "github.com/scaleway/scaleway-sdk-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/nicolai86/scaleway-sdk",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "scaleway",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Softlayer (IBM Cloud)",
+    "type": "external_service",
+    "urls": ["https://api.softlayer.com"],
+    "packages": []
+  },
+  {
+    "name": "Box",
+    "type": "external_service",
+    "urls": ["https://api.box.com"],
+    "packages": [
+      {
+        "name": "boxsdk",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "box-node-sdk",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "La Poste",
+    "type": "external_service",
+    "urls": ["https://ws.colissimo.fr", "https://api.laposte.fr"],
+    "packages": []
+  },
+  {
+    "name": "LinkedIn",
+    "type": "external_service",
+    "urls": ["https://linkedin.com/oauth", "https://api.linkedin.com"],
+    "packages": []
+  },
+  {
+    "name": "Intuit",
+    "type": "external_service",
+    "urls": ["https://api.intuit.com"],
+    "packages": [
+      {
+        "name": "quickbooks/v3-php-sdk",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "intuit-oauth",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "intuit-oauth",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "intuit-oauth",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Onfido",
+    "type": "external_service",
+    "urls": [
+      "https://api.eu.onfido.com",
+      "https://api.us.onfido.com",
+      "https://api.onfido.com"
+    ],
+    "packages": [
+      {
+        "name": "onfido",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "onfido-sdk-ui",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Intercom",
+    "type": "external_service",
+    "urls": ["https://api.intercom.io", "https://widget.intercom.io/widget"],
+    "packages": [
+      {
+        "name": "intercom",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "intercom/intercom-php",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "intercom-client",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "intercom-rails",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "python-intercom",
+        "group": null,
+        "package_manager": "pypi"
+      }
+    ]
+  },
+  {
+    "name": "Shopify",
+    "type": "external_service",
+    "urls": ["https://myshopify.com/api", "https://myshopify.com/admin/api"],
+    "packages": [
+      {
+        "name": "shoplift_python_api",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "shopify_api",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "Shopify-api-node",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/bold-commerce/go-shopify",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "php-shopify",
+        "group": null,
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Ameli",
+    "type": "external_service",
+    "urls": ["https://ameli.fr/api", "https://services-ps.ameli.fr/lps"],
+    "packages": []
+  },
+  {
+    "name": "Fauna",
+    "type": "external_service",
+    "urls": [
+      "https://graphql.fauna-preview.com",
+      "https://graphql.fauna.com",
+      "https://graphql.eu.fauna.com",
+      "https://graphql.us.fauna.com"
+    ],
+    "packages": [
+      {
+        "name": "faunadb",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Hubspot",
+    "type": "external_service",
+    "urls": [
+      "https://forms.hubspot.com",
+      "https://app.hubspot.com",
+      "https://api.hubapi.com"
+    ],
+    "packages": [
+      {
+        "name": "hubspot/api-client",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "hubspot-api-client",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "@hubspot/api-client",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "hubspot-api-client",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "docplanner/hubspot-bundle",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "hubspot/hubspot-php",
+        "group": "",
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Reddit",
+    "type": "external_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/caarlos0/go-reddit/v3",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Xero",
+    "type": "external_service",
+    "urls": ["https://api.xero.com"],
+    "packages": [
+      {
+        "name": "xeroapi/xero-php-oauth2",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "xero-python",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "xero-node",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "xero-ruby",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Rollbar",
+    "type": "external_service",
+    "urls": ["https://api.rollbar.com"],
+    "packages": [
+      {
+        "name": "rollbar",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Heroku",
+    "type": "external_service",
+    "urls": ["https://api.heroku.com"],
+    "packages": [
+      {
+        "name": "php-heroku-client/php-heroku-client",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "heroku-client",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "platform-api",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "github.com/heroku/heroku-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/bgentry/heroku-go",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Geckoboard",
+    "type": "external_service",
+    "urls": ["https://api.geckoboard.com"],
+    "packages": [
+      {
+        "name": "geckoboard-ruby",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Browserstack",
+    "type": "external_service",
+    "urls": ["https://api.browserstack.com"],
+    "packages": []
+  },
+  {
+    "name": "Bintray (JFrog)",
+    "type": "external_service",
+    "urls": ["https://api.bintray.com"],
+    "packages": []
+  },
+  {
+    "name": "Wordnik",
+    "type": "external_service",
+    "urls": ["https://api.wordnik.com"],
+    "packages": []
+  },
+  {
+    "name": "Socket.IO",
+    "type": "external_service",
+    "urls": ["https://socket.io/lib/*", "https://*.socket.io"],
+    "packages": []
+  },
+  {
+    "name": "Zendesk",
+    "type": "external_service",
+    "urls": [
+      "https://rtm.zopim.com",
+      "https://static.zdassets.com/ekr",
+      "https://api.getbase.com",
+      "https://chat-api.zopim.com",
+      "https://zendesk.com/api",
+      "https://zopim.com/api"
+    ],
+    "packages": [
+      {
+        "name": "zendesk/zendesk_api_client_php",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "zendesk_api",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "node-zendesk",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "Zenpy",
+        "group": null,
+        "package_manager": "pypi"
+      }
+    ]
+  },
+  {
+    "name": "Cookiebot.com",
+    "type": "external_service",
+    "urls": ["https://consent.cookiebot.com/api"],
+    "packages": []
+  },
+  {
+    "name": "ProcessOut",
+    "type": "external_service",
+    "urls": ["https://api.processout.com"],
+    "packages": []
+  },
+  {
+    "name": "Checkout.com",
+    "type": "external_service",
+    "urls": ["https://api.sandbox.checkout.com", "https://api.checkout.com"],
+    "packages": []
+  },
+  {
+    "name": "ShipBob",
+    "type": "external_service",
+    "urls": ["https://api.shipbob.com", "https://sandbox-api.shipbob.com"],
+    "packages": []
+  },
+  {
+    "name": "Atlassian Cloud",
+    "type": "external_service",
+    "urls": ["https://api.atlassian.com", "https://atlassian.net/rest/api/"],
+    "packages": [
+      {
+        "name": "github.com/andygrunwald/go-jira",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "atlassian-jwt",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Algolia",
+    "type": "external_service",
+    "urls": [
+      "https://*.algolia.com",
+      "https://cdn.jsdelivr.net/npm/algoliasearch",
+      "https://algolianet.com",
+      "https://cdn.jsdelivr.net/npm/places.js",
+      "https://cdn.jsdelivr.net/npm/instantsearch.js",
+      "https://*.algolianet.com"
+    ],
+    "packages": [
+      {
+        "name": "github.com/algolia/algoliasearch-client-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "SearchClient",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "algoliasearch",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "algoliasearch",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "algoliasearch",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/algolia/algoliasearch-client-go/v3",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "algoliasearchasync",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "algolia/algoliasearch-client-php",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "react-instantsearch-core",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@algolia/transporter",
+        "group": "",
+        "package_manager": "npm"
+      },
+      {
+        "name": "@algolia/client-search",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Discord",
+    "type": "external_service",
+    "urls": ["https://discord.com/api"],
+    "packages": [
+      {
+        "name": "discordrb",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "discordjs",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "discord.py",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "github.com/bwmarrin/discordgo",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "discord-php",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "discordrb-webhooks",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "ActiveCampaign",
+    "type": "external_service",
+    "urls": ["https://api-us1.com"],
+    "packages": [
+      {
+        "name": "activecampaign/api-php",
+        "group": null,
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Sqreen (Datadog)",
+    "type": "external_service",
+    "urls": [
+      "https://back.sqreen.com",
+      "https://ingestion.sqreen.com",
+      "https://back.sqreen.io"
+    ],
+    "packages": [
+      {
+        "name": "sqreen",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "manomano/sqreen-lib",
+        "group": null,
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Clearbit",
+    "type": "external_service",
+    "urls": [
+      "https://autocomplete.clearbit.com",
+      "https://reveal.clearbit.com",
+      "https://risk.clearbit.com",
+      "https://prospector.clearbit.com",
+      "https://discovery.clearbit.com",
+      "https://company.clearbit.com",
+      "https://logo.clearbit.com",
+      "https://person.clearbit.com"
+    ],
+    "packages": [
+      {
+        "name": "clearbit",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "clearbit",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "clearbit",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "github.com/clearbit/clearbit-go",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Okta",
+    "type": "external_service",
+    "urls": [
+      "https://global.oktacdn.com/okta-auth-js",
+      "https://app.scaleft.com/v1"
+    ],
+    "packages": [
+      {
+        "name": "github.com/chrismalek/oktasdk-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/okta/okta-sdk-golang",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Airtable",
+    "type": "external_service",
+    "urls": ["https://api.airtable.com"],
+    "packages": [
+      {
+        "name": "airtable",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/brianloveswords/airtable",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Sendgrid",
+    "type": "external_service",
+    "urls": ["https://api.sendgrid.com"],
+    "packages": [
+      {
+        "name": "github.com/sendgrid/sendgrid-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "sendgrid/sendgrid-php",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "sendgrid",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "sendgrid-ruby",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@sendgrid/mail",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@sendgrid/client",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@sendgrid/inbound-mail-parser",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@sendgrid/contact-importer",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@sendgrid/helpers",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@sendgrid/eventwebhook",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "sendgrid/sendgrid",
+        "group": "",
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "AWS S3",
+    "type": "data_store",
+    "urls": ["https://s3-*.amazonaws.com", "https://s3.*.amazonaws.com"],
+    "packages": [
+      {
+        "name": "aws-sdk-s3",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "async-aws/s3",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "s3transfer",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "@aws-sdk/client-s3",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/aws/aws-sdk-go-v2/service/s3",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "s3",
+        "group": "software.amazon.awssdk",
+        "package_manager": "maven"
+      },
+      {
+        "name": "s3fs",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "aws4",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Firebase",
+    "type": "external_service",
+    "urls": ["https://fcmdata.googleapis.com", "https://firebaseio.com"],
+    "packages": [
+      {
+        "name": "@react-native-firebase/analytics",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "firebase-core",
+        "group": "com.google.firebase",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Braze",
+    "type": "external_service",
+    "urls": [
+      "https://sdk.*.braze.eu",
+      "https://sdk.*.braze.com",
+      "https://rest.*.braze.eu",
+      "https://rest.*.braze.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "iProov",
+    "type": "external_service",
+    "urls": ["https://eu.rp.secure.iproov.me"],
+    "packages": []
+  },
+  {
+    "name": "Zoho",
+    "type": "external_service",
+    "urls": [
+      "https://*.zoho.eu/api/",
+      "https://accounts.zoho.eu",
+      "https://zohoapis.com",
+      "https://analyticsapi.zoho.com.cn",
+      "https://zoho.eu/restapi",
+      "https://zoho.com/pulse/api/",
+      "https://recruit.zoho.com/recruit/private/xml",
+      "https://analyticsapi.zoho.com.au",
+      "https://analyticsapi.zoho.in",
+      "https://analyticsapi.zoho.eu",
+      "https://analyticsapi.zoho.com",
+      "https://zoho.com/api"
+    ],
+    "packages": []
+  },
+  {
+    "name": "CloudWatch",
+    "type": "external_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "cloudwatch",
+        "group": "software.amazon.awssdk",
+        "package_manager": "maven"
+      },
+      {
+        "name": "aws-sdk-cloudwatch",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@aws-sdk/client-cloudwatch",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/aws/aws-sdk-go-v2/service/cloudwatch",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "aws-sdk-cloudwatchlogs",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@aws-sdk/client-cloudwatch-logs",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Prestashop",
+    "type": "external_service",
+    "urls": [
+      "https://api.addons.prestashop.com",
+      "https://api-addons.prestashop.com",
+      "https://api.prestashop.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Travis CI",
+    "type": "external_service",
+    "urls": ["https://api.travis-ci.org"],
+    "packages": []
+  },
+  {
+    "name": "Auth0",
+    "type": "external_service",
+    "urls": ["https://auth0.com/api"],
+    "packages": [
+      {
+        "name": "auth0",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "github.com/go-auth0/auth0",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "auth0-php",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "auth0-python",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "auth0-lock",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "auth0",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "auth0-js",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "omniauth-auth0",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Izberg Marketplace",
+    "type": "external_service",
+    "urls": ["https://api.izberg.me"],
+    "packages": []
+  },
+  {
+    "name": "PostHog",
+    "type": "external_service",
+    "urls": ["https://app.posthog.com"],
+    "packages": [
+      {
+        "name": "posthog-ruby",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "posthog",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "posthog/posthog-php",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "posthog-node",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/posthog/posthog-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "posthog-react-native",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "posthog-js",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Quanta",
+    "type": "external_service",
+    "urls": ["https://app.quanta.io/api"],
+    "packages": []
+  },
+  {
+    "name": "Prometheus",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "prometheus-client",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "prom-client",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "prometheus-flask-exporter",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "prometheus_client",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "prometheus-client",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "prometheus_flask_exporter",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "prometheus-net",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "PrometheusNet.Owin",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "prometheus_exporter",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "contrib.go.opencensus.io/exporter/prometheus",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "promphp/prometheus_client_php",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "jmx_prometheus_javaagent",
+        "group": "io.prometheus.jmx",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Stripe",
+    "type": "external_service",
+    "urls": ["https://api.stripe.com", "https://js.stripe.com"],
+    "packages": [
+      {
+        "name": "stripe",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "github.com/stripe/stripe-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "stripe",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "stripe",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "stripe",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "react-stripe-elements",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@stripe/stripe-js",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@stripe/react-stripe-js",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Oracle",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "Oracle.ManagedDataAccess",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "oracledb",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/oracle/oci-go-sdk",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "Oracle.ManagedDataAccess.Core",
+        "group": null,
+        "package_manager": "nuget"
+      }
+    ]
+  },
+  {
+    "name": "Segment",
+    "type": "external_service",
+    "urls": ["https://api.segment.io", "https://cdn.segment.com"],
+    "packages": [
+      {
+        "name": "analytics-ruby",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "segmentio/analytics-php",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "analytics-python",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "analytics-node",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "analytics-php",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "github.com/segmentio/analytics-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "analytics",
+        "group": "com.segment.analytics.java",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Uptrends",
+    "type": "external_service",
+    "urls": ["https://api.uptrends.com"],
+    "packages": []
+  },
+  {
+    "name": "Zeplin",
+    "type": "external_service",
+    "urls": ["https://api.zeplin.dev"],
+    "packages": []
+  },
+  {
+    "name": "France Billet",
+    "type": "external_service",
+    "urls": ["https://billetweb.fr/api"],
+    "packages": []
+  },
+  {
+    "name": "Mailjet",
+    "type": "external_service",
+    "urls": ["https://api.mailjet.com"],
+    "packages": [
+      {
+        "name": "mailjet",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "PayPal",
+    "type": "external_service",
+    "urls": [
+      "https://api-3t.sandbox.paypal.com",
+      "https://api-3t.paypal.com",
+      "https://api.sandbox.paypal.com",
+      "https://api.paypal.com"
+    ],
+    "packages": [
+      {
+        "name": "paypal-checkout-sdk",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "paypal-sdk-merchant",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "paypal-checkout-core",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@paypal/checkout-server-sdk",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@paypal/payouts-sdk",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "paypalcheckoutsdk",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "paypalpayoutssdk",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "PayPalCheckoutSdk",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "PayPalPayoutsSdk",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "@paypal/react-paypal-js",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Cloudinary",
+    "type": "external_service",
+    "urls": ["https://res.cloudinary.com", "https://api.cloudinary.com"],
+    "packages": [
+      {
+        "name": "cloudinary",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "cloudinary",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Typeform",
+    "type": "external_service",
+    "urls": [
+      "https://*.typeform.com/*",
+      "https://*.typeform.com",
+      "https://api.typeform.com"
+    ],
+    "packages": [
+      {
+        "name": "watr/typeform",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "typeform",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "@typeform/api-client",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "create_api_gem",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "alexa.com",
+    "type": "external_service",
+    "urls": ["https://data.alexa.com"],
+    "packages": []
+  },
+  {
+    "name": "Google Analytics",
+    "type": "external_service",
+    "urls": [
+      "https://www.google-analytics.com/analytics.js",
+      "https://analyticsreporting.googleapis.com"
+    ],
+    "packages": [
+      {
+        "name": "react-ga",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "workbox-google-analytics",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "node-ga",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Aquasec",
+    "type": "external_service",
+    "urls": ["https://api.aquasec.com"],
+    "packages": []
+  },
+  {
+    "name": "Twilio",
+    "type": "external_service",
+    "urls": [
+      "https://api.twilio.com",
+      "https://pricing.twilio.com",
+      "https://verify.twilio.com",
+      "https://lookups.twilio.com",
+      "https://notify.twilio.com",
+      "https://insights.twilio.com",
+      "https://video.twilio.com"
+    ],
+    "packages": [
+      {
+        "name": "twilio/sdk",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "twilio",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "twilio-node",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "twilio-ruby",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Netlify",
+    "type": "external_service",
+    "urls": ["https://api.netlify.com"],
+    "packages": []
+  },
+  {
+    "name": "Microsoft Teams",
+    "type": "external_service",
+    "urls": ["https://graph.microsoft.com/*/teams"],
+    "packages": [
+      {
+        "name": "@microsoft-teams-js",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "microsoft/microsoft-graph",
+        "group": null,
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "userlike.com",
+    "type": "external_service",
+    "urls": ["https://api.userlike.com"],
+    "packages": []
+  },
+  {
+    "name": "Mirakl",
+    "type": "external_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "mirakl/sdk-php-shop",
+        "group": null,
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Mondial Relay",
+    "type": "external_service",
+    "urls": ["https://api.mondialrelay.com"],
+    "packages": []
+  },
+  {
+    "name": "Athos Worldline",
+    "type": "external_service",
+    "urls": [
+      "https://office-server.test.sips-services.com",
+      "https://office-server.sips-services.com",
+      "https://rcet-payment.sips-atos.com",
+      "https://payment.test.sips-atos.com",
+      "https://office-server.test.sips-atos.com",
+      "https://office-server.sips-atos.com",
+      "https://acqsim.test.sips-atos.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "ipify.org",
+    "type": "external_service",
+    "urls": ["https://api.ipify.org"],
+    "packages": []
+  },
+  {
+    "name": "MangoPay",
+    "type": "external_service",
+    "urls": ["https://api.sandbox.mangopay.com", "https://api.mangopay.com"],
+    "packages": [
+      {
+        "name": "github.com/bgruszka/mangopay2-go-sdk",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/gotsunami/mangopay2-go-sdk",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Google Tag Manager",
+    "type": "external_service",
+    "urls": [
+      "https://googletagmanager.com/gtag/js",
+      "https://googletagmanager.com/gtm.js"
+    ],
+    "packages": [
+      {
+        "name": "play-services-tagmanager",
+        "group": "com.google.android.gms",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Telegram",
+    "type": "external_service",
+    "urls": ["https://api.telegram.org"],
+    "packages": [
+      {
+        "name": "python-telegram-bot",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "github.com/go-telegram-bot-api/telegram-bot-api",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Thunes (Limonethik)",
+    "type": "external_service",
+    "urls": ["https://api.limonetikqualif.com", "https://api.limonetik.com"],
+    "packages": []
+  },
+  {
+    "name": "Name.com",
+    "type": "external_service",
+    "urls": ["https://api.name.com"],
+    "packages": [
+      {
+        "name": "github.com/namedotcom/go",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Unsplash",
+    "type": "external_service",
+    "urls": ["https://api.unsplash.com"],
+    "packages": []
+  },
+  {
+    "name": "Splunk",
+    "type": "external_service",
+    "urls": ["https://*.splunkcloud.com"],
+    "packages": [
+      {
+        "name": "splunk-sdk",
+        "group": null,
+        "package_manager": "pypi"
+      }
+    ]
+  },
+  {
+    "name": "Rocket.Chat",
+    "type": "external_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "rocketchat-API",
+        "group": null,
+        "package_manager": "pypi"
+      }
+    ]
+  },
+  {
+    "name": "Nuxeo",
+    "type": "external_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "NuxeoClient",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "nuxeo-common",
+        "group": "org.nuxeo.common",
+        "package_manager": "maven"
+      },
+      {
+        "name": "nuxeo-java-client",
+        "group": "org.nuxeo.client",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Klarna",
+    "type": "external_service",
+    "urls": [
+      "https://api.playground.klarna.com",
+      "https://banking.klarna.com",
+      "https://api.klarna.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Gitea",
+    "type": "external_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "code.gitea.io/sdk/gitea",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "PagerDuty",
+    "type": "external_service",
+    "urls": ["https://api.pagerduty.com"],
+    "packages": [
+      {
+        "name": "github.com/heimweh/go-pagerduty",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "pagerduty",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Hugging Face",
+    "type": "external_service",
+    "urls": [
+      "https://cdn-datasets.huggingface.co",
+      "https://cdn.huggingface.co",
+      "https://huggingface.co"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Adotmob",
+    "type": "external_service",
+    "urls": ["https://dmp.adotmob.com", "https://tracker.adotmob.com"],
+    "packages": []
+  },
+  {
+    "name": "Bitrise",
+    "type": "external_service",
+    "urls": ["https://api.bitrise.io"],
+    "packages": []
+  },
+  {
+    "name": "SAP Hana",
+    "type": "external_service",
+    "urls": ["https://hana.ondemand.com"],
+    "packages": [
+      {
+        "name": "github.com/SAP/go-hdb",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Datadome",
+    "type": "external_service",
+    "urls": ["https://js.datadome.co", "https://api.datadome.co"],
+    "packages": [
+      {
+        "name": "DataDome.SystemWeb",
+        "group": null,
+        "package_manager": "nuget"
+      }
+    ]
+  },
+  {
+    "name": "Blackfire",
+    "type": "external_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "blackfire/php-sdk",
+        "group": null,
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Oney",
+    "type": "external_service",
+    "urls": ["https://api.oney.io", "https://api-staging.oney.io"],
+    "packages": []
+  },
+  {
+    "name": "Lets enhance",
+    "type": "external_service",
+    "urls": ["https://api.letsenhance.io"],
+    "packages": []
+  },
+  {
+    "name": "OpenTok",
+    "type": "external_service",
+    "urls": ["https://api.opentok.com", "https://static.opentok.com/*/js"],
+    "packages": [
+      {
+        "name": "opentok",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "opentok-react-native",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Essendex",
+    "type": "external_service",
+    "urls": ["https://api.esendex.com"],
+    "packages": [
+      {
+        "name": "esendex/sdk",
+        "group": null,
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Apple Pay",
+    "type": "external_service",
+    "urls": [
+      "https://apple-pay-gateway-cert.apple.com",
+      "https://apple-pay-gateway.apple.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Lengow",
+    "type": "external_service",
+    "urls": [
+      "https://tracking.lengow.com",
+      "https://api.lengow.io",
+      "https://api.lengow.com",
+      "https://api.lengow.net"
+    ],
+    "packages": []
+  },
+  {
+    "name": "OVH Cloud APIs",
+    "type": "external_service",
+    "urls": ["https://api.ovh.com"],
+    "packages": [
+      {
+        "name": "github.com/ovh/go-ovh",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "ovh",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Exoscale Cloud APIs",
+    "type": "external_service",
+    "urls": [
+      "https://api.runstatus.com",
+      "https://sos-*.exo.io",
+      "https://api.exoscale.com",
+      "https://api-ch-gva-2.exoscale.com"
+    ],
+    "packages": [
+      {
+        "name": "github.com/exoscale/egoscale",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Liquid Web Cloud APIs",
+    "type": "external_service",
+    "urls": ["https://api.stormondemand.com"],
+    "packages": [
+      {
+        "name": "github.com/liquidweb/go-lwApi",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/liquidweb/liquidweb-go",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Porkbun",
+    "type": "external_service",
+    "urls": ["https://porkbun.com/api/"],
+    "packages": [
+      {
+        "name": "github.com/nrdcg/porkbun",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Namesilo",
+    "type": "external_service",
+    "urls": ["https://www.namesilo.com/api/"],
+    "packages": [
+      {
+        "name": "github.com/nrdcg/namesilo",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Vonage",
+    "type": "external_service",
+    "urls": ["https://api.nexmo.com"],
+    "packages": [
+      {
+        "name": "nexmo/client-core",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "nexmo/client",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "@opentok/client",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Google Cloud Key Management",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "google-cloud-kms",
+        "group": "com.google.cloud",
+        "package_manager": "maven"
+      },
+      {
+        "name": "cloud.google.com/go/kms",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "BadgerDB",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/dgraph-io/badger",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "OpenWeather",
+    "type": "external_service",
+    "urls": ["https://api.openweathermap.org"],
+    "packages": []
+  },
+  {
+    "name": "AppDynamics",
+    "type": "external_service",
+    "urls": [
+      "https://*.um-appdynamics.com",
+      "https://appd.com/controller/rest"
+    ],
+    "packages": [
+      {
+        "name": "appdynamics",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "SMB",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "pysmb",
+        "group": null,
+        "package_manager": "pypi"
+      }
+    ]
+  },
+  {
+    "name": "MariaDB",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "mariadb",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "mariadb-connector-python",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "mariadb-java-client",
+        "group": "org.mariadb.jdbc",
+        "package_manager": "maven"
+      },
+      {
+        "name": "mariadb-connector-cpp",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "mariadb-connector-nodejs",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "db-mariadb",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Google Cloud Bigtable",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "google-cloud-bigtable",
+        "group": "com.google.cloud",
+        "package_manager": "maven"
+      },
+      {
+        "name": "google-cloud-bigtable",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "bigtable-hbase-1.x-hadoop",
+        "group": "com.google.cloud.bigtable",
+        "package_manager": "maven"
+      },
+      {
+        "name": "cloud.google.com/go/bigtable",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "AWS Redshift",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "dbt-redshift",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "redshift",
+        "group": "software.amazon.awssdk",
+        "package_manager": "maven"
+      },
+      {
+        "name": "aws-sdk-redshift",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@aws-sdk/client-redshift",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/aws/aws-sdk-go-v2/service/redshift",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "AWS Athena",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "athena",
+        "group": "software.amazon.awssdk",
+        "package_manager": "maven"
+      },
+      {
+        "name": "aws-sdk-athena",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@aws-sdk/client-athena",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/aws/aws-sdk-go-v2/service/athena",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "AWS S3 Glacier",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "glacier",
+        "group": "software.amazon.awssdk",
+        "package_manager": "maven"
+      },
+      {
+        "name": "aws-sdk-glacier",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@aws-sdk/client-glacier",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/aws/aws-sdk-go-v2/service/glacier",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Memcached",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "memcache-client",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "memcache",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "python-memcached",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "pymemcache",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "memcached",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "memcache-client",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/bradfitz/gomemcache/memcache",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/rainycape/memcache",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "libmc",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "dalli",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "github.com/bradfitz/gomemcache",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Firebase",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "firebase-core",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@react-native-firebase/messaging",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@react-native-firebase/app",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Google Cloud Secret Manager",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "google-cloud-secretmanager",
+        "group": "com.google.cloud",
+        "package_manager": "maven"
+      },
+      {
+        "name": "cloud.google.com/go/secretmanager",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Disk",
+    "type": "data_store",
+    "urls": [],
+    "packages": []
+  },
+  {
+    "name": "Phrase",
+    "type": "external_service",
+    "urls": ["https://api.phraseapp.com", "https://api.phrase.com"],
+    "packages": [
+      {
+        "name": "nediam/phraseapp-bundle",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "nediam/phraseapp-lib",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "phrase-js",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "AWS Key Management Service (KMS)",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "kms",
+        "group": "software.amazon.awssdk",
+        "package_manager": "maven"
+      },
+      {
+        "name": "aws-sdk-kms",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@aws-sdk/client-kms",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/aws/aws-sdk-go-v2/service/kms",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "aws-java-sdk-kms",
+        "group": "com.amazonaws",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "AWS DynamoDB",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "dynamodb",
+        "group": "software.amazon.awssdk",
+        "package_manager": "maven"
+      },
+      {
+        "name": "@aws-sdk/client-dynamodb",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "aws-sdk-dynamodb",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "github.com/aws/aws-sdk-go-v2/service/dynamodb",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Azure Key Vault",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "Microsoft.Azure.KeyVault.Core",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "azure_mgmt_key_vault",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Databricks",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "databricks-cli",
+        "group": null,
+        "package_manager": "pypi"
+      }
+    ]
+  },
+  {
+    "name": "LogRocket",
+    "type": "external_service",
+    "urls": ["https://cdn.lr-ingest.io"],
+    "packages": [
+      {
+        "name": "logrocket",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Yandex.Cloud APIs",
+    "type": "external_service",
+    "urls": ["https://api.cloud.yandex.net"],
+    "packages": [
+      {
+        "name": "github.com/yandex-cloud/go-sdk",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Active Directory",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "activedirectory",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "ReportPortal",
+    "type": "external_service",
+    "urls": ["https://rp.com/api"],
+    "packages": [
+      {
+        "name": "@reportportal/client-javascript",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Centrify",
+    "type": "external_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/centrify/cloud-golang-sdk",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "PubNub",
+    "type": "external_service",
+    "urls": ["https://ps.pndsn.com"],
+    "packages": [
+      {
+        "name": "pubnub",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Apache HBase",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "hbase-client",
+        "group": "org.apache.hbase",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "HyperSQL",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "hsqldb",
+        "group": "org.hsqldb",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "RethinkDB",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "rethinkdb-driver",
+        "group": "com.rethinkdb",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Aerospike",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/aerospike/aerospike-client-go",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Atinternet",
+    "type": "external_service",
+    "urls": ["https://xiti.com", "https://api.atinternet.io"],
+    "packages": []
+  },
+  {
+    "name": "Apache Spark",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "spark-sql_2.12",
+        "group": "org.apache.spark",
+        "package_manager": "maven"
+      },
+      {
+        "name": "spark-core",
+        "group": "com.sparkjava",
+        "package_manager": "maven"
+      },
+      {
+        "name": "spark-sql_2.11",
+        "group": "org.apache.spark",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Google Cloud Dataflow",
+    "type": "internal_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "google-cloud-dataflow-java-sdk-all",
+        "group": "com.google.cloud.dataflow",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Dalenys",
+    "type": "external_service",
+    "urls": ["https://*.dalenys.com"],
+    "packages": []
+  },
+  {
+    "name": "AWS Kinesis",
+    "type": "internal_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "aws-sdk-kinesis",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "aws-kinesisanalytics-runtime",
+        "group": "com.amazonaws",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Apache Airflow",
+    "type": "internal_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "airflow[celery]",
+        "group": null,
+        "package_manager": "pypi"
+      }
+    ]
+  },
+  {
+    "name": "Apache Beam",
+    "type": "internal_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "beam-sdks-java-extensions-protobuf",
+        "group": "org.apache.beam",
+        "package_manager": "maven"
+      },
+      {
+        "name": "beam-sdks-java-extensions-sql",
+        "group": "org.apache.beam",
+        "package_manager": "maven"
+      },
+      {
+        "name": "beam-sdks-java-io-common",
+        "group": "org.apache.beam",
+        "package_manager": "maven"
+      },
+      {
+        "name": "beam-sdks-java-io-google-cloud-platform",
+        "group": "org.apache.beam",
+        "package_manager": "maven"
+      },
+      {
+        "name": "beam-sdks-java-io-jdbc",
+        "group": "org.apache.beam",
+        "package_manager": "maven"
+      },
+      {
+        "name": "beam-sdks-java-io-kafka",
+        "group": "org.apache.beam",
+        "package_manager": "maven"
+      },
+      {
+        "name": "scio-core_2.12",
+        "group": "com.spotify",
+        "package_manager": "maven"
+      },
+      {
+        "name": "apache-beam",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "scio-core_2.11",
+        "group": "com.spotify",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Azure Service Bus",
+    "type": "internal_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/Azure/azure-service-bus-go",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "SAP",
+    "type": "external_service",
+    "urls": ["http://sap.com/xi/*"],
+    "packages": []
+  },
+  {
+    "name": "Payline",
+    "type": "external_service",
+    "urls": ["https://services.payline.com", "https://payment.payline.com"],
+    "packages": []
+  },
+  {
+    "name": "AdRoll",
+    "type": "external_service",
+    "urls": ["https://*.adroll.com"],
+    "packages": []
+  },
+  {
+    "name": "DMP",
+    "type": "external_service",
+    "urls": ["https://lps2.dmp.gouv.fr/si-dmp-server/*"],
+    "packages": []
+  },
+  {
+    "name": "AWS SQS",
+    "type": "internal_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "sqs-consumer",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "aws-sdk-sqs",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "sqs",
+        "group": "software.amazon.awssdk",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Adictiz",
+    "type": "external_service",
+    "urls": ["https://api.adictiz.com"],
+    "packages": []
+  },
+  {
+    "name": "Solocal Bridge",
+    "type": "external_service",
+    "urls": ["https://api.leadformance.com"],
+    "packages": []
+  },
+  {
+    "name": "Runscope",
+    "type": "external_service",
+    "urls": ["https://api.runscope.com"],
+    "packages": []
+  },
+  {
+    "name": "Apache Kafka",
+    "type": "internal_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "kafka-avro-serializer",
+        "group": "io.confluent",
+        "package_manager": "maven"
+      },
+      {
+        "name": "kafka-streams-avro-serde",
+        "group": "io.confluent",
+        "package_manager": "maven"
+      },
+      {
+        "name": "kafka_2.13",
+        "group": "org.apache.kafka",
+        "package_manager": "maven"
+      },
+      {
+        "name": "spring-kafka",
+        "group": "org.springframework.kafka",
+        "package_manager": "maven"
+      },
+      {
+        "name": "github.com/segmentio/kafka-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/Shopify/sarama",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "2.4.0",
+        "group": "org.apache.kafka",
+        "package_manager": "maven"
+      },
+      {
+        "name": "2.4.0",
+        "group": "org.apache.kafka",
+        "package_manager": "maven"
+      },
+      {
+        "name": "kafka_2.12",
+        "group": "org.apache.kafka",
+        "package_manager": "maven"
+      },
+      {
+        "name": "kafka-clients",
+        "group": "org.apache.kafka",
+        "package_manager": "maven"
+      },
+      {
+        "name": "kafka-streams",
+        "group": "org.apache.kafka",
+        "package_manager": "maven"
+      },
+      {
+        "name": "mgid/kafka-bundle",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "gopkg.in/confluentinc/confluent-kafka-go.v1",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "kafkajs",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "kafka-node",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/confluentinc/confluent-kafka-go-dev",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/confluentinc/confluent-kafka-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "2.7.1",
+        "group": "org.apache.kafka",
+        "package_manager": "maven"
+      },
+      {
+        "name": "2.7.1",
+        "group": "org.apache.kafka",
+        "package_manager": "maven"
+      },
+      {
+        "name": "aws-sdk-kafka",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "Confluent.Kafka",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "Kafka.Basic",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "KafkaNet",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "confluent_kafka",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "camel-kafka-2.20.1",
+        "group": "org.talend.libraries",
+        "package_manager": "maven"
+      },
+      {
+        "name": "kafka-clients-0.11.0.2",
+        "group": "org.talend.libraries",
+        "package_manager": "maven"
+      },
+      {
+        "name": "2.7.0",
+        "group": "org.apache.kafka",
+        "package_manager": "maven"
+      },
+      {
+        "name": "2.7.0",
+        "group": "org.apache.kafka",
+        "package_manager": "maven"
+      },
+      {
+        "name": "kafka-node-avro",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "kafka-tools",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "aiokafka",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "kafka-schema-serializer",
+        "group": "io.confluent",
+        "package_manager": "maven"
+      },
+      {
+        "name": "confluent-kafka",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "kafka-net-net40-net45-netstandard13",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "Kafka.Basic",
+        "group": null,
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "MongoDB",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "moped",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "mongo_ext",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "mongo",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "mongodb-memory-server",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "go.mongodb.org/mongo-driver",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "mongoose",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "mongo-java-driver",
+        "group": "org.mongodb",
+        "package_manager": "maven"
+      },
+      {
+        "name": "mongodb-uri",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "ext-mongodb",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "yiisoft/yii2-mongodb",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "Mongo2Go",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "mongocsharpdriver",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "MongoDB.Bson",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "MongoDB.Driver",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "connect-mongo",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "go.mongodb.org/atlas/mongodbatlas",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "mongodb/mongodb",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "doctrine/mongodb",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "mongodb",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "mongoid",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "mongodb-driver-sync",
+        "group": "org.mongodb",
+        "package_manager": "maven"
+      },
+      {
+        "name": "go.mongodb.org/mongo-driver/mongo",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "pymongo",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "MongoDB.Driver.Core",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "github.com/mongodb/go-client-mongodb-atlas",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "alcaeus/mongo-php-adapter",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "doctrine/mongodb-odm",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "doctrine/mongodb-odm-bundle",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "go.mongodb.org/atlas",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "Mongo2Go",
+        "group": null,
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Jfrog",
+    "type": "external_service",
+    "urls": ["https://*.jfrog.io"],
+    "packages": []
+  },
+  {
+    "name": "Microsoft SQL Server",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "tedious",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "mssql",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "System.Data.SqlClient",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "pymssql",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "github.com/denisenkom/go-mssqldb",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "mssql-jdbc",
+        "group": "com.microsoft.sqlserver",
+        "package_manager": "maven"
+      },
+      {
+        "name": "python-tds",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "mssql-django",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "django-pyodbc",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "django-pyodbc-azure",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "django-mssql-backend",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "jdbc-mssql",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "azure_mgmt_sql",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "jdbc-mssqlserver",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "Microsoft.Data.SqlClient",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "gorm.io/driver/sqlserver",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "InfluxDB",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/influxdata/influxdb1-client",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/influxdata/influxdb",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "influx",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "influxdb-java",
+        "group": "org.influxdb",
+        "package_manager": "maven"
+      },
+      {
+        "name": "influxdb/influxdb-php",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "influxdb-client",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "github.com/influxdata/influxdb-client-go/v2",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Google Cloud Storage",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "gcs-connector",
+        "group": "com.google.cloud.bigdataoss",
+        "package_manager": "maven"
+      },
+      {
+        "name": "google-apis-storage_v1",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "GoogleAppEngineCloudStorageClient",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "google-cloud-storage",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@google-cloud/storage",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "google/cloud-storage",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "google-cloud-storage",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "google-cloud-storage",
+        "group": "com.google.cloud",
+        "package_manager": "maven"
+      },
+      {
+        "name": "cloud.google.com/go/storage",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "Google.Cloud.Storage.V1",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "google-cloud-cpp",
+        "group": null,
+        "package_manager": "nuget"
+      }
+    ]
+  },
+  {
+    "name": "Mabaya",
+    "type": "external_service",
+    "urls": ["https://manage-api.mabaya.com"],
+    "packages": []
+  },
+  {
+    "name": "Google Ads",
+    "type": "external_service",
+    "urls": [
+      "http://pagead2.googlesyndication.com",
+      "https://googleadservices.com/pagead/conversion.js",
+      "https://googleads.googleapis.com"
+    ],
+    "packages": [
+      {
+        "name": "google-ads",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "googleads",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "play-services-ads-identifier",
+        "group": "com.google.android.gms",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Wistia",
+    "type": "external_service",
+    "urls": [
+      "https://api.wistia.com",
+      "https://upload.wistia.com",
+      "https://fast.wistia.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Gfycat",
+    "type": "external_service",
+    "urls": ["https://api.gfycat.com"],
+    "packages": []
+  },
+  {
+    "name": "Ambassador",
+    "type": "external_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/datawire/ambassador",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Selligent",
+    "type": "external_service",
+    "urls": ["https://selligent.com/*/organizations"],
+    "packages": []
+  },
+  {
+    "name": "Bambuser",
+    "type": "external_service",
+    "urls": ["https://api.bambuser.com"],
+    "packages": []
+  },
+  {
+    "name": "MySQL",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "activerecord-mysql2-adapter",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "mysql2",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "quarkus-jdbc-mysql",
+        "group": "io.quarkus",
+        "package_manager": "maven"
+      },
+      {
+        "name": "github.com/ziutek/mymysql",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "mysql-connector",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "gorm.io/driver/mysql",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "mysqlclient",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "MySql.Data",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "MySql.Data.Entities",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "mysql",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "mysql2",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "mysql",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "go-sql-driver/mysql",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "mysql",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "PyMySQL",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "mysql-connector-java",
+        "group": "mysql",
+        "package_manager": "maven"
+      },
+      {
+        "name": "github.com/go-sql-driver/mysql",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "pymysql",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "pyMySQL",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "mysql-connector-python",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "ext-mysqli",
+        "group": null,
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Tencent Cloud APIs",
+    "type": "external_service",
+    "urls": ["https://tencentcloudapi.com", "https://*.tencentcloudapi.com"],
+    "packages": [
+      {
+        "name": "github.com/tencentcloud/tencentcloud-sdk-go",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Youtube",
+    "type": "external_service",
+    "urls": ["https://www.googleapis.com/youtube/"],
+    "packages": [
+      {
+        "name": "react-youtube",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "youtube-player",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "PostgreSQL",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "pg",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "pg",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/jackc/pgconn",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/lib/pq",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "quarkus-jdbc-postgresql",
+        "group": "io.quarkus",
+        "package_manager": "maven"
+      },
+      {
+        "name": "dbt-postgres",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "postgres-socket-factory",
+        "group": "com.google.cloud.sql",
+        "package_manager": "maven"
+      },
+      {
+        "name": "gorm.io/driver/postgres",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "connect-pg-simple",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "ext-pgsql",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "NpgSql",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "PyGreSQL",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "postgres",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "ts-postgres",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "postgresql",
+        "group": "org.postgresql",
+        "package_manager": "maven"
+      },
+      {
+        "name": "r2dbc-postgresql",
+        "group": "org.postgresql",
+        "package_manager": "maven"
+      },
+      {
+        "name": "Npgsql",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "psycopg2",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "github.com/go-pg/pg",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "gopkg.in/src-d/go-kallax.v1",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "pgdb",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "pg",
+        "group": null,
+        "package_manager": "pypi"
+      }
+    ]
+  },
+  {
+    "name": "Adyen",
+    "type": "external_service",
+    "urls": [
+      "https://live-us.adyen.com",
+      "https://live-au.adyen.com",
+      "https://live.adyen.com",
+      "https://test.adyen.com",
+      "https://live.adyenpayments.com",
+      "https://pal-test.adyen.com",
+      "https://checkout-test.adyen.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Iceberg Technology",
+    "type": "external_service",
+    "urls": [
+      "https://tracking.iceberg.com",
+      "https://api.sandbox.iceberg.technology",
+      "https://api.iceberg.technology",
+      "https://api.iceberg.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Microsoft Azure APIs",
+    "type": "external_service",
+    "urls": ["https://*.chinacloudapi.cn", "https://*.management.azure.com"],
+    "packages": [
+      {
+        "name": "azure_graph_rbac",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "azure_mgmt_resources",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "ms_rest",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "ms_rest_azure",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "azure-common",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "github.com/Azure/azure-sdk-for-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/Azure/azure-pipeline-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "msal",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "azure-core",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "Azure.Core",
+        "group": null,
+        "package_manager": "nuget"
+      }
+    ]
+  },
+  {
+    "name": "Couchbase",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "CouchbaseNetClient",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "CouchbaseNLogAdapter",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "gopkg.in/couchbase/gocbcore.v7",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "gopkg.in/couchbase/gocb.v1",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "couchbase",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "github.com/dustin/go-couch",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/go-kivik/couchdb",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Optimizely",
+    "type": "external_service",
+    "urls": ["https://cdn.optimizely.com"],
+    "packages": []
+  },
+  {
+    "name": "ABTasty",
+    "type": "external_service",
+    "urls": ["https://try.abtasty.com"],
+    "packages": []
+  },
+  {
+    "name": "Usersnap",
+    "type": "external_service",
+    "urls": ["https://platform.usersnap.com", "https://widget.usersnap.com"],
+    "packages": []
+  },
+  {
+    "name": "SendBird",
+    "type": "external_service",
+    "urls": ["https://*.sendbird.com"],
+    "packages": [
+      {
+        "name": "sendbird",
+        "group": "",
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Vero",
+    "type": "external_service",
+    "urls": ["https://api.getvero.com"],
+    "packages": [
+      {
+        "name": "docplanner/vero-php",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "getvero/vero-php",
+        "group": "",
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Uploadecare",
+    "type": "external_service",
+    "urls": ["https://upload.uploadcare.com"],
+    "packages": [
+      {
+        "name": "uploadcare/uploadcare-php",
+        "group": "",
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Unidentified Data Store",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/aliyun/aliyun-tablestore-go-sdk",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "//git@git.vpgrp.io/core/dbaas/dbaas-api-sdk-python.git@0.0.3",
+        "group": "git+ssh",
+        "package_manager": "pypi"
+      }
+    ]
+  },
+  {
+    "name": "PayU",
+    "type": "external_service",
+    "urls": ["https://secure.payu.com"],
+    "packages": [
+      {
+        "name": "openpayu/openpayu",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "payu/alu-client",
+        "group": "",
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Google Cloud Pub/Sub",
+    "type": "internal_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "cloud.google.com/go/pubsub",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "google-cloud-pubsub",
+        "group": "com.google.cloud",
+        "package_manager": "maven"
+      },
+      {
+        "name": "@google-cloud/pubsub",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "google-cloud-pubsub",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "google-apis-pubsub_v1",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "IBM Db2",
+    "type": "data_store",
+    "urls": [],
+    "packages": []
+  },
+  {
+    "name": "Rackspace Cloud",
+    "type": "external_service",
+    "urls": ["https://api.rackspacecloud.com"],
+    "packages": []
+  },
+  {
+    "name": "Adobe Campaign (Neolane)",
+    "type": "external_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "Neolane",
+        "group": null,
+        "package_manager": "nuget"
+      }
+    ]
+  },
+  {
+    "name": "Bitly",
+    "type": "external_service",
+    "urls": ["https://api.bitly.com", "https://api-ssl.bitly.com"],
+    "packages": []
+  },
+  {
+    "name": "Azure Cosmos DB",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "Microsoft.Azure.DocumentDB.Core",
+        "group": "",
+        "package_manager": "nuget"
+      }
+    ]
+  },
+  {
+    "name": "Azure Cognitive Search",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "Microsoft.Azure.Search",
+        "group": "",
+        "package_manager": "nuget"
+      }
+    ]
+  },
+  {
+    "name": "Greenhouse",
+    "type": "external_service",
+    "urls": ["https://boards-api.greenhouse.io"],
+    "packages": []
+  },
+  {
+    "name": "Iagility",
+    "type": "external_service",
+    "urls": ["https://iagility.smsizer.com/api/*"],
+    "packages": []
+  },
+  {
+    "name": "eSante Gouv",
+    "type": "external_service",
+    "urls": [
+      "https://auth.esw.esante.gouv.fr",
+      "http://wallet.esw.esante.gouv.fr"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Edgecast",
+    "type": "external_service",
+    "urls": ["https://api.edgecast.com"],
+    "packages": []
+  },
+  {
+    "name": "Dossier pharmaceutique",
+    "type": "external_service",
+    "urls": ["http://ws-fac.dossier-pharmaceutique.fr"],
+    "packages": []
+  },
+  {
+    "name": "Dropbox",
+    "type": "external_service",
+    "urls": ["https://api.dropboxapi.com", "https://api.dropbox.com"],
+    "packages": [
+      {
+        "name": "dropbox",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "dropbox",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "dropbox-php-sdk",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "dropbox-api",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "dropbox_api",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "activestoragedropbox",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "github.com/dropbox/dropbox-sdk-go-unofficial",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Mailchimp",
+    "type": "external_service",
+    "urls": ["https://api.mailchimp.com", "https://mandrillapp.com/api"],
+    "packages": [
+      {
+        "name": "mailchimp/marketing",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "mailchimp/transactional",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "mailchimp-marketing-python",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "mailchimp-transactional-python",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "@mailchimp/mailchimp_marketing",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@mailchimp/mailchimp_transactional",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "MailchimpMarketing",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "MailchimpTransactional",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "nickcv/yii2-mandrill",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "mandrill/mandrill",
+        "group": null,
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Microsoft",
+    "type": "external_service",
+    "urls": [
+      "https://login.microsoftonline.com",
+      "https://graph.microsoft.com"
+    ],
+    "packages": []
+  },
+  {
+    "name": "Google reCAPTCHA ",
+    "type": "external_service",
+    "urls": ["https://*.google.com/recaptcha/*"],
+    "packages": [
+      {
+        "name": "recaptcha-v3",
+        "group": "",
+        "package_manager": "npm"
+      },
+      {
+        "name": "recaptcha",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Salesforce",
+    "type": "external_service",
+    "urls": [
+      "https://test.salesforce.com",
+      "https://login.salesforce.com",
+      "https://salesforce.com/services/data"
+    ],
+    "packages": [
+      {
+        "name": "simple-salesforce",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "jsforce",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/nimajalali/go-force",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "restforce",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Redis",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "redis",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "redis",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "predis/predis",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "connect-redis",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/gomodule/redigo",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "StackExchange.Redis.StrongName",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "ServiceStack.Redis",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "StackExchange.Redis",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "gopkg.in/redis.v5",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "hiredis",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "elasticache",
+        "group": "software.amazon.awssdk",
+        "package_manager": "maven"
+      },
+      {
+        "name": "aws-sdk-elasticache",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@aws-sdk/client-elasticache",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/aws/aws-sdk-go-v2/service/elasticache",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "redis",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "ioredis",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "aredis",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "django-redis-cache",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "github.com/mediocregopher/radix",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "jredis",
+        "group": "org.jredis",
+        "package_manager": "maven"
+      },
+      {
+        "name": "github.com/go-redis/redis",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "redisson",
+        "group": "org.redisson",
+        "package_manager": "maven"
+      },
+      {
+        "name": "github.com/gomodule/redigo/redis",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "jedis",
+        "group": "redis.clients",
+        "package_manager": "maven"
+      },
+      {
+        "name": "redis-rb",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "github.com/hoisie/redis",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "predis",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "aioredis",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "async-redis",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "spring-data-redis",
+        "group": "org.springframework.data",
+        "package_manager": "maven"
+      },
+      {
+        "name": "github.com/alicebob/miniredis/v2",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/alicebob/miniredis",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "gopkg.in/redis.v4",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "ext-redis",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "cache/redis-adapter",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "Microsoft.Extensions.Caching.StackExchangeRedis",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "github.com/go-redis/cache/v8",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "redis-store",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "django-redis",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "github.com/bsm/redislock",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/go-redis/cache",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Google Workspace APIs",
+    "type": "external_service",
+    "urls": [
+      "https://ldap.google.com",
+      "https://accounts.google.com",
+      "https://oauth2.googleapis.com",
+      "https://slides.googleapis.com",
+      "https://chat.googleapis.com",
+      "https://googleapis.com/calendar",
+      "https://gmail.googleapis.com",
+      "https://docs.googleapis.com"
+    ],
+    "packages": [
+      {
+        "name": "omniauth-google-oauth2",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Gandi",
+    "type": "external_service",
+    "urls": ["https://rpc.gandi.net", "https://api.gandi.net"],
+    "packages": []
+  },
+  {
+    "name": "Dnsimple",
+    "type": "external_service",
+    "urls": ["https://api.dnsimple.com"],
+    "packages": [
+      {
+        "name": "github.com/dnsimple/dnsimple-go",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "DigitalOcean APIs",
+    "type": "external_service",
+    "urls": ["https://api.digitalocean.com"],
+    "packages": [
+      {
+        "name": "github.com/digitalocean/godo",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Sendinblue",
+    "type": "external_service",
+    "urls": ["https://api.sendinblue.com"],
+    "packages": []
+  },
+  {
+    "name": "Mixpanel",
+    "type": "external_service",
+    "urls": [
+      "https://cdn.mxpnl.com/libs/",
+      "https://mixpanel.com/api",
+      "https://api-eu.mixpanel.com",
+      "https://api.mixpanel.com"
+    ],
+    "packages": [
+      {
+        "name": "react-mixpanel",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/dukex/mixpanel",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "WordPress",
+    "type": "external_service",
+    "urls": ["https://public-api.wordpress.com"],
+    "packages": []
+  },
+  {
+    "name": "Twitter",
+    "type": "external_service",
+    "urls": [
+      "http://platform.twitter.com/widgets.js",
+      "https://stream.twitter.com",
+      "https://ads-api.twitter.com",
+      "https://api.twitter.com"
+    ],
+    "packages": [
+      {
+        "name": "search-tweets-python",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "twitter-autohook",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "search-tweets-ruby",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "twitter",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "github.com/dghubble/go-twitter",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Google Service APIs",
+    "type": "external_service",
+    "urls": ["https://apis.google.com"],
+    "packages": [
+      {
+        "name": "google/apiclient",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "google-api-python-client",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "googleapis",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "google-api-client",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "googleapis/google-api-go-client",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "google-apis-drive_v3",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "google-apis-sheets_v4",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "google-apis-core",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "google_drive",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "googleauth",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "pygsheets",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "api-common",
+        "group": "com.google.api",
+        "package_manager": "maven"
+      },
+      {
+        "name": "google-api-services-sheets",
+        "group": "com.google.apis",
+        "package_manager": "maven"
+      },
+      {
+        "name": "google-api-client",
+        "group": "com.google.api-client",
+        "package_manager": "maven"
+      },
+      {
+        "name": "google/apiclient-services",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "google/auth",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "google-api-core",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "google-apitools",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "github.com/gogo/googleapis",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "google.golang.org/api",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "googleapis-common",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "google-auth-library",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "google/recaptcha",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "league/oauth2-google",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "Google.Apis.Calendar.v3",
+        "group": "",
+        "package_manager": "nuget"
+      },
+      {
+        "name": "znanylekarz/google-bundle",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "Google.Apis.Storage.v1",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "Google.Api.Gax",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "Google.Apis.Drive.v3",
+        "group": null,
+        "package_manager": "nuget"
+      }
+    ]
+  },
+  {
+    "name": "Google Spreadsheets",
+    "type": "external_service",
+    "urls": [
+      "https://googleapis.com/auth/spreadsheets/",
+      "https://docs.google.com/spreadsheets/",
+      "https://spreadsheets.google.com/"
+    ],
+    "packages": [
+      {
+        "name": "df2gspread",
+        "group": null,
+        "package_manager": "pypi"
+      }
+    ]
+  },
+  {
+    "name": "Hotjar",
+    "type": "external_service",
+    "urls": ["https://static.hotjar.com"],
+    "packages": [
+      {
+        "name": "react-hotjar",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Instagram",
+    "type": "external_service",
+    "urls": ["https://api.instagram.com"],
+    "packages": []
+  },
+  {
+    "name": "Google Cloud Spanner",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "cloud.google.com/go/spanner",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "google-cloud-spanner",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "google-cloud-spanner",
+        "group": "com.google.cloud",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Google Cloud APIs",
+    "type": "external_service",
+    "urls": ["https://*.googleapis.com"],
+    "packages": [
+      {
+        "name": "Google.Apis",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "Google.Apis.Auth",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "Google.Apis.Core",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "Google.Apis.Oauth2.v2",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "google-apis-androidpublisher_v3",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "google-cloud-core",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "google-cloud-env",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "google-apis-iamcredentials_v1",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "google-apis-playcustomapp_v1",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "google-cloud-errors",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "google-cloud",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "google.golang.org/cloud",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "google.golang.org/appengine",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "@google-cloud/dns",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "gcloud",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "gcpveepee",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "google-cloud-translate",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "google-compute-engine",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "opencensus-ext-stackdriver",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "google-cloud-monitoring",
+        "group": "com.google.cloud",
+        "package_manager": "maven"
+      },
+      {
+        "name": "google-api-services-dataproc",
+        "group": "com.google.apis",
+        "package_manager": "maven"
+      },
+      {
+        "name": "google-api-services-sqladmin",
+        "group": "com.google.apis",
+        "package_manager": "maven"
+      },
+      {
+        "name": "google-auth-library-oauth2-http",
+        "group": "com.google.auth",
+        "package_manager": "maven"
+      },
+      {
+        "name": "google-cloud-logging-logback",
+        "group": "com.google.cloud",
+        "package_manager": "maven"
+      },
+      {
+        "name": "google-cloud-dataproc",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "google-cloud-tasks",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "google-cloud-monitoring",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "google-cloud-logging",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "datalab",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "dialogflow",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "apiai",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "google_cloud",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "cloud.google.com/go/compute",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "cloud.google.com/go/iam",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "cloud.google.com/go/monitoring",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Datadog",
+    "type": "external_service",
+    "urls": [
+      "https://app.datadoghq.eu/api",
+      "https://api.datadoghq.eu",
+      "https://api.datadoghq.com",
+      "https://logs.datadoghq.com"
+    ],
+    "packages": [
+      {
+        "name": "dogstatsd-ruby",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "ddtrace",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "datadog/php-datadogstatsd",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "gopkg.in/DataDog/dd-trace-go.v1",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/DataDog/datadog-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "dogapi",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "datadog",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "github.com/DataDog/datadog-lambda-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/zorkian/go-datadog-api",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/DataDog/datadog-go/v5",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "@datadog/datadog-api-client",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "datadog-api-client",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "@datadog/datadog-ci",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/DataDog/datadog-api-client-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/DataDog/datadog-api-client-go/v2",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Bugsnag",
+    "type": "external_service",
+    "urls": [
+      "https://sessions.bugsnag.com",
+      "https://build.bugsnag.com",
+      "https://api.bugsnag.com",
+      "https://notify.bugsnag.com"
+    ],
+    "packages": [
+      {
+        "name": "bugsnag",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "github.com/Shopify/logrus-bugsnag",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/bugsnag/bugsnag-go",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Amazon AWS APIs",
+    "type": "external_service",
+    "urls": ["https://amazonaws.com.cn", "https://amazonaws.com"],
+    "packages": [
+      {
+        "name": "github.com/aws/aws-sdk-go-v2",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "aws-java-sdk",
+        "group": "com.amazonaws",
+        "package_manager": "maven"
+      },
+      {
+        "name": "aws-java-sdk-core",
+        "group": "com.amazonaws",
+        "package_manager": "maven"
+      },
+      {
+        "name": "aiobotocore",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "awswrangler",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "AWSSDK",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "github.com/aws/aws-sdk-go-v2/service/secretsmanager",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Alibaba Cloud APIs",
+    "type": "external_service",
+    "urls": ["https://*.aliyuncs.com"],
+    "packages": [
+      {
+        "name": "github.com/aliyun/alibaba-cloud-sdk-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/aliyun/aliyun-oss-go-sdk",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/baiyubin/aliyun-sts-go-sdk",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/denverdino/aliyungo",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Gravatar",
+    "type": "external_service",
+    "urls": ["https://gravatar.com", "https://secure.gravatar.com/xmlrpc"],
+    "packages": [
+      {
+        "name": "gravatar",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "ClickHouse",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/ClickHouse/clickhouse-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "clickhouse-jdbc",
+        "group": "ru.yandex.clickhouse",
+        "package_manager": "maven"
+      },
+      {
+        "name": "clickhouse-pool",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "clickhouse-driver",
+        "group": null,
+        "package_manager": "pypi"
+      }
+    ]
+  },
+  {
+    "name": "Cassandara",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/gocql/gocql",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/kshvakov/clickhouse",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "cassandra-driver-core",
+        "group": "com.datastax.cassandra",
+        "package_manager": "maven"
+      },
+      {
+        "name": "cassandra-driver",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "CockroachDB",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/cockroachdb/cockroach-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "sqlalchemy-cockroachdb",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "github.com/cockroachdb/cockroach-go/v2",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Azure Storage",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "azure-storage-common",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "azure-storage-blob",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "azure-storage-common",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "WindowsAzure.Storage",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "azure-storage",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "azure-storage",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "azure-storage",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/Azure/azure-storage-blob-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "microsoft/azure-storage-blob",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "microsoft/azure-storage-table",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "microsoft/azure-storage-queue",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "microsoft/azure-storage-file",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "microsoft/azure-storage-common",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "azure-storage-blob",
+        "group": "com.microsoft.azure",
+        "package_manager": "maven"
+      },
+      {
+        "name": "azure-storage",
+        "group": "com.microsoft.azure",
+        "package_manager": "maven"
+      },
+      {
+        "name": "azure-storage-android",
+        "group": "com.microsoft.azure",
+        "package_manager": "maven"
+      },
+      {
+        "name": "azure-storage-cpp",
+        "group": null,
+        "package_manager": "nuget"
+      }
+    ]
+  },
+  {
+    "name": "Facebook",
+    "type": "external_service",
+    "urls": [
+      "https://api.facebook.com",
+      "https://api-read.facebook.com",
+      "https://graph.facebook.com",
+      "https://connect.facebook.net"
+    ],
+    "packages": [
+      {
+        "name": "koala",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "facebook-sdk",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "Django-facebook",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "facebook-node-sdk",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "php-graph-sdk",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "Facebook",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "facebook/graph-sdk",
+        "group": "",
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "FTP/SFTP",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "pysftp",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "ftp",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "yii2mod/yii2-ftp",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "github.com/jlaffaye/ftp",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "Miracle.FileZilla.Api",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "FlagFtp",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "nicolab/php-ftp-client",
+        "group": null,
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "GitHub",
+    "type": "external_service",
+    "urls": ["https://api.github.com"],
+    "packages": [
+      {
+        "name": "octokit",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@octokit/rest",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github-api",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "octonode",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "PyGithub",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "github.com/google/go-github",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "knplabs/github-api",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "github_api",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "gh_inspector",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "githubstats",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "github-oauth",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Sentry",
+    "type": "external_service",
+    "urls": ["https://sentry.io/api"],
+    "packages": [
+      {
+        "name": "sentry-ruby",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "sentry-ruby-core",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "sentry-raven",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@sentry/browser",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "raven-js",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@sentry/cli",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@sentry/node",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/getsentry/sentry-go",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "sentry-logback",
+        "group": "io.sentry",
+        "package_manager": "maven"
+      },
+      {
+        "name": "sentry-sdk",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "sentry-sdk[flask]",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "raven",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "sentry/sdk",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "sentry/sentry",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "sentry/sentry-symfony",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "winston-sentry",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "sentry-spring-boot-starter",
+        "group": "io.sentry",
+        "package_manager": "maven"
+      },
+      {
+        "name": "sentry",
+        "group": "io.sentry",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Firebird",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/nakagami/firebirdsql",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "SQLite",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "sqlite3",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/mattn/go-sqlite3",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "sqlite",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "aiosqlite",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "jdbc-sqlite3",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "sqlite3",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "do_sqlite3",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "System.Data.SQLite",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "sqlite3-ruby",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "gorm.io/driver/sqlite",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "RabbitMQ",
+    "type": "internal_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "ext-amqp",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "pack.ag/amqp",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "php-amqplib/php-amqplib",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "pika",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "swarrot/swarrot",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "symfony/amqp-messenger",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "github.com/streadway/amqp",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "amqplib",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "php-amqplib/rabbitmq-bundle",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "amqp",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@digital-factory/rabbitmq-client",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "RabbitMQ.Client",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "bunny",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "videlalvaro/php-amqplib",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "manomano/rabbitmq-bundle",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "github.com/michaelklishin/rabbit-hole",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "simple-bus/rabbitmq-bundle-bridge",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "amqp-ts",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Etcd",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/coreos/etcd",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "go.etcd.io/etcd",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/coreos/go-etcd",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "python-etcd",
+        "group": null,
+        "package_manager": "pypi"
+      }
+    ]
+  },
+  {
+    "name": "Snowflake",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "dbt-snowflake",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "snowflake-connector-python",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "github.com/snowflakedb/gosnowflake",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "snowflake-sdk",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Google Cloud Firestore",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "cloud.google.com/go/firestore",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Neo4j",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "neo4j-core",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "neo4j",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "neo4j-java-driver",
+        "group": "org.neo4j.driver",
+        "package_manager": "maven"
+      },
+      {
+        "name": "github.com/neo4j/neo4j-go-driver",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "neo4j-driver",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "neo4j-php-client",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "bolt",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "neo4j-ruby-driver",
+        "group": null,
+        "package_manager": "rubygems"
+      }
+    ]
+  },
+  {
+    "name": "Lightstep",
+    "type": "external_service",
+    "urls": ["https://api.lightstep.com"],
+    "packages": [
+      {
+        "name": "github.com/lightstep/lightstep-tracer-go",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Fluentd",
+    "type": "internal_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "pino-fluentd",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "BoltDB",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/coreos/bbolt",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "go.etcd.io/bbolt",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/boltdb/bolt",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/etcd-io/bbolt",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/hashicorp/raft-boltdb",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Elastic",
+    "type": "external_service",
+    "urls": ["https://*.found.io", "https://cloud.es.io"],
+    "packages": [
+      {
+        "name": "elastic-apm-http-client",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "go.elastic.co/apm",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "apm-agent-attach",
+        "group": "co.elastic.apm",
+        "package_manager": "maven"
+      },
+      {
+        "name": "go.elastic.co/apm/module/apmgorilla",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "go.elastic.co/apm/module/apmsql",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "elastic-apm",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@elastic/apm-rum-vue",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "elastic-apm-nest",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@elastic/apm-rum-angular",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@elastic/ecs-winston-format",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "elastic-apm",
+        "group": null,
+        "package_manager": "pypi"
+      }
+    ]
+  },
+  {
+    "name": "New Relic",
+    "type": "external_service",
+    "urls": [
+      "https://js-agent.newrelic.com",
+      "https://api.eu.newrelic.com",
+      "https://api.newrelic.com",
+      "https://synthetics.newrelic.com/synthetics/api",
+      "https://log-api.eu.newrelic.com",
+      "https://log-api.newrelic.com",
+      "https://insights-collector.eu01.nr-data.net",
+      "https://insights-collector.newrelic.com",
+      "https://metric-api.newrelic.com"
+    ],
+    "packages": [
+      {
+        "name": "newrelic_rpm",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "github.com/yvasiyarov/gorelic",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "ekino/newrelic-bundle",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "newrelic",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "newrelic-api",
+        "group": "com.newrelic.agent.java",
+        "package_manager": "maven"
+      }
+    ]
+  },
+  {
+    "name": "Openstack Object Storage",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "github.com/ncw/swift",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Adobe Scene7",
+    "type": "external_service",
+    "urls": ["https://*.scene7.com"],
+    "packages": []
+  },
+  {
+    "name": "Airbrake",
+    "type": "external_service",
+    "urls": ["https://airbrake.io/api", "https://api.airbrake.io"],
+    "packages": [
+      {
+        "name": "airbrake",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "airbrake-ruby",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "gopkg.in/gemnasium/logrus-airbrake-hook.v2",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "gopkg.in/airbrake/gobrake.v2",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "airbrake-js",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Elasticsearch",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "elasticsearch/elasticsearch",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "github.com/elastic/go-elasticsearch",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "chewy",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "ruflin/elastica",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "Elasticsearch.Net",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "log4net.ElasticSearch",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "elasticsearch_dsl",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "elasticsearch-dsl",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "@digital-factory/elk-client",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "elasticsearch",
+        "group": "org.elasticsearch",
+        "package_manager": "maven"
+      },
+      {
+        "name": "elasticsearch",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "elasticsearch",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "github.com/olivere/elastic",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "elasticsearch",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "searchkick",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "spring-data-elasticsearch",
+        "group": "org.springframework.data",
+        "package_manager": "maven"
+      },
+      {
+        "name": "elasticsearch",
+        "group": "software.amazon.awssdk",
+        "package_manager": "maven"
+      },
+      {
+        "name": "aws-sdk-elasticsearchservice",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@aws-sdk/client-elasticsearch-service",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/aws/aws-sdk-go-v2/service/elasticsearchservice",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "basemkhirat/elasticsearch",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "nervetattoo/elasticsearch",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "pyelasticsearch",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "bboss-elasticsearch-rest-jdbc",
+        "group": "com.bbossgroups.plugins",
+        "package_manager": "maven"
+      },
+      {
+        "name": "elasticsearchclient",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "elasticsearch-transport",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "elasticsearch-api",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "elasticsearch",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "friendsofsymfony/elastica-bundle",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "gopkg.in/olivere/elastic.v3",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "gopkg.in/olivere/elastic.v5",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Gitlab",
+    "type": "external_service",
+    "urls": ["https://gitlab.com/api"],
+    "packages": [
+      {
+        "name": "gitlab",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "gitlab",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/xanzy/go-gitlab",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "gitlab4j-api",
+        "group": "org.gitlab4j",
+        "package_manager": "maven"
+      },
+      {
+        "name": "python-gitlab",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "gitlab",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "m4tthumphrey/php-gitlab-api",
+        "group": null,
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Google Cloud Datastore",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "cloud.google.com/go/datastore",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "google-cloud-datastore",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "googledatastore",
+        "group": null,
+        "package_manager": "pypi"
+      }
+    ]
+  },
+  {
+    "name": "Bitbucket",
+    "type": "external_service",
+    "urls": ["https://api.bitbucket.org"],
+    "packages": [
+      {
+        "name": "github.com/ktrysmt/go-bitbucket",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "github.com/gfleury/go-bitbucket-v1",
+        "group": null,
+        "package_manager": "go"
+      }
+    ]
+  },
+  {
+    "name": "Google Cloud BigQuery",
+    "type": "data_store",
+    "urls": [],
+    "packages": [
+      {
+        "name": "google-cloud-bigquery-reservation",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "cloud.google.com/go/bigquery",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "dbt-bigquery",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "scio-bigquery_2.12",
+        "group": "com.spotify",
+        "package_manager": "maven"
+      },
+      {
+        "name": "google-cloud-bigquery-storage",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "scio-bigquery_2.11",
+        "group": "com.spotify",
+        "package_manager": "maven"
+      },
+      {
+        "name": "Google.Apis.Bigquery.v2",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "bigquery",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "google-cloud-bigquery",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "google-apis-bigquery_v2",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "bigquery-client",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "bigquery-ruby",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "google-cloud-bigquery-data_transfer",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "@google-cloud/bigquery",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@google-cloud/bigquery-reservation",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@google-cloud/bigquery-connection",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@google-cloud/bigquery-data-transfer",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@google-cloud/bigquery-storage",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "bigquery-python",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "google-cloud-bigquery",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "pybigquery",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "google-cloud-bigquery",
+        "group": "com.google.cloud",
+        "package_manager": "maven"
+      },
+      {
+        "name": "google/cloud-bigquery",
+        "group": null,
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Message Bus",
+    "type": "internal_service",
+    "urls": [],
+    "packages": [
+      {
+        "name": "activemq-all",
+        "group": "org.apache.activemq",
+        "package_manager": "maven"
+      },
+      {
+        "name": "amqp",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "enqueue/amqp-lib",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "Apache.NMS.ActiveMQ",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "activemq-broker",
+        "group": "org.apache.activemq",
+        "package_manager": "maven"
+      },
+      {
+        "name": "github.com/godbus/dbus",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "activemq-client",
+        "group": "org.apache.activemq",
+        "package_manager": "maven"
+      },
+      {
+        "name": "activemq-pool",
+        "group": "org.apache.activemq",
+        "package_manager": "maven"
+      },
+      {
+        "name": "davidpersson/beanstalk",
+        "group": "",
+        "package_manager": "packagist"
+      },
+      {
+        "name": "docplanner/data-bus-bundle",
+        "group": "",
+        "package_manager": "packagist"
+      }
+    ]
+  },
+  {
+    "name": "Google Maps",
+    "type": "external_service",
+    "urls": ["https://maps.googleapis.com/maps/api/"],
+    "packages": [
+      {
+        "name": "google-map-react",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "react-google-maps",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "Google.Api.Maps.Service",
+        "group": null,
+        "package_manager": "nuget"
+      },
+      {
+        "name": "vue2-google-maps",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "googlemaps.github.io/maps",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "@react-google-maps/api",
+        "group": null,
+        "package_manager": "npm"
+      }
+    ]
+  },
+  {
+    "name": "Slack",
+    "type": "external_service",
+    "urls": ["https://hooks.slack.com", "https://api.slack.com"],
+    "packages": [
+      {
+        "name": "slackclient",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "slack",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/slack-go/slack",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "slack-notifier",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "slack-ruby-client",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "slack_hook",
+        "group": null,
+        "package_manager": "rubygems"
+      },
+      {
+        "name": "node-slackr",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "node-slack-upload",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@slack/client",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@slack/web-api",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "slackbots",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "@slack/webhook",
+        "group": null,
+        "package_manager": "npm"
+      },
+      {
+        "name": "github.com/nlopes/slack",
+        "group": null,
+        "package_manager": "go"
+      },
+      {
+        "name": "slack-webhook",
+        "group": "net.gpedro.integrations.slack",
+        "package_manager": "maven"
+      },
+      {
+        "name": "symfony/slack-notifier",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "maknz/slack",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "slackeventsapi",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "slacker",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "slack",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "slack-webhook",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "laravel/slack-notification-channel",
+        "group": null,
+        "package_manager": "packagist"
+      },
+      {
+        "name": "slack-sdk",
+        "group": null,
+        "package_manager": "pypi"
+      },
+      {
+        "name": "slack-api-client",
+        "group": "com.slack.api",
+        "package_manager": "maven"
+      }
+    ]
+  }
+]

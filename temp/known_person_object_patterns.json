@@ -1,0 +1,478 @@
+[
+  {
+    "id": 1,
+    "act_as_identifier": false,
+    "category": "Account",
+    "exclude_regexp": "\\bbank.*\\b",
+    "include_regexp": "\\b.*account.*\\b"
+  },
+  {
+    "id": 2,
+    "act_as_identifier": true,
+    "category": "Advisor",
+    "include_regexp": "\\b.*advisor.*\\b"
+  },
+  {
+    "id": 3,
+    "act_as_identifier": true,
+    "category": "Author",
+    "include_regexp": "\\b(.|_)?author(.|_)?\\b"
+  },
+  {
+    "id": 4,
+    "act_as_identifier": true,
+    "category": "Applicant",
+    "include_regexp": "\\b.*applicant.*\\b"
+  },
+  {
+    "id": 5,
+    "act_as_identifier": true,
+    "category": "Artist",
+    "include_regexp": "\\b.*artist.*\\b"
+  },
+  {
+    "id": 6,
+    "act_as_identifier": true,
+    "category": "Attendee",
+    "include_regexp": "\\b.*attendee.*\\b"
+  },
+  {
+    "id": 7,
+    "act_as_identifier": true,
+    "category": "Attendee",
+    "include_regexp": "\\b.*attendee.*\\b"
+  },
+  {
+    "id": 8,
+    "act_as_identifier": false,
+    "category": "Authentication",
+    "exclude_regexp": "\\b(.|_)?author(.|_)?\\b",
+    "include_regexp": "\\b.*authentication.*|.*oauth.*|.*auth.*\\b"
+  },
+  {
+    "id": 9,
+    "act_as_identifier": true,
+    "category": "Bank account",
+    "include_regexp": "\\bbank.*account.*\\b"
+  },
+  {
+    "id": 10,
+    "act_as_identifier": false,
+    "category": "Beneficiar",
+    "include_regexp": "\\b.*beneficiar.*\\b"
+  },
+  {
+    "id": 11,
+    "act_as_identifier": true,
+    "category": "Buyer",
+    "include_regexp": "\\b.*buyer.*\\b"
+  },
+  {
+    "id": 12,
+    "act_as_identifier": true,
+    "category": "Caller",
+    "include_regexp": "\\b.*caller.*\\b"
+  },
+  {
+    "id": 13,
+    "act_as_identifier": true,
+    "category": "Candidate",
+    "include_regexp": "\\b.*candidate.*\\b"
+  },
+  {
+    "id": 14,
+    "act_as_identifier": true,
+    "category": "Cardholder",
+    "include_regexp": "\\b.*cardholder.*\\b"
+  },
+  {
+    "id": 15,
+    "act_as_identifier": true,
+    "category": "Client",
+    "include_regexp": "\\b.*client.*\\b",
+    "exclude_regexp": "\\bconfig\\b"
+  },
+  {
+    "id": 16,
+    "act_as_identifier": true,
+    "category": "Contributor",
+    "include_regexp": "\\b.*contributor.*\\b"
+  },
+  {
+    "id": 17,
+    "act_as_identifier": true,
+    "category": "Collaborator",
+    "include_regexp": "\\b.*collaborator.*\\b"
+  },
+  {
+    "id": 18,
+    "act_as_identifier": true,
+    "category": "Competitor",
+    "include_regexp": "\\b.*competitor.*\\b"
+  },
+  {
+    "id": 19,
+    "act_as_identifier": true,
+    "category": "Consumer",
+    "include_regexp": "\\b.*consumer.*\\b",
+    "exclude_regexp": "\\b.*api.*\\b"
+  },
+  {
+    "id": 20,
+    "act_as_identifier": true,
+    "category": "Contact",
+    "include_regexp": "\\b.*contact.*\\b"
+  },
+  {
+    "id": 21,
+    "act_as_identifier": true,
+    "category": "Coach",
+    "include_regexp": "\\b.*coach.*\\b"
+  },
+  {
+    "id": 22,
+    "act_as_identifier": true,
+    "category": "Contractor",
+    "include_regexp": "\\b.*contractor.*\\b"
+  },
+  {
+    "id": 23,
+    "act_as_identifier": true,
+    "category": "Customer",
+    "include_regexp": "\\b.*customer.*\\b"
+  },
+  {
+    "id": 24,
+    "act_as_identifier": true,
+    "category": "Developer",
+    "include_regexp": "\\b.*developer.*\\b"
+  },
+  {
+    "id": 25,
+    "act_as_identifier": true,
+    "category": "Doctor",
+    "include_regexp": "\\b.*doctor.*\\b"
+  },
+  {
+    "id": 26,
+    "act_as_identifier": true,
+    "category": "Driver",
+    "include_regexp": "\\b.*driver.*\\b",
+    "exclude_regexp": "\\b.*sync.*\\b"
+  },
+  {
+    "id": 27,
+    "act_as_identifier": true,
+    "category": "Employee",
+    "include_regexp": "\\b.*employee.*\\b"
+  },
+  {
+    "id": 28,
+    "act_as_identifier": true,
+    "category": "Employer",
+    "include_regexp": "\\b.*employer.*\\b"
+  },
+  {
+    "id": 29,
+    "act_as_identifier": true,
+    "category": "Follower",
+    "include_regexp": "\\b.*follower.*\\b"
+  },
+  {
+    "id": 30,
+    "act_as_identifier": true,
+    "category": "Guardian",
+    "include_regexp": "\\b.*guardian.*\\b"
+  },
+  {
+    "id": 31,
+    "act_as_identifier": false,
+    "category": "Identity",
+    "include_regexp": "\\b.*identity.*\\b"
+  },
+  {
+    "id": 32,
+    "act_as_identifier": true,
+    "category": "Insuree",
+    "include_regexp": "\\b.*insuree.*\\b"
+  },
+  {
+    "id": 33,
+    "act_as_identifier": true,
+    "category": "Issuer",
+    "include_regexp": "\\b.*issuer.*\\b"
+  },
+  {
+    "id": 34,
+    "act_as_identifier": false,
+    "category": "Invitee",
+    "include_regexp": "\\b.*invite.*\\b"
+  },
+  {
+    "id": 35,
+    "act_as_identifier": true,
+    "category": "Landlord",
+    "include_regexp": "\\b.*landlord.*\\b"
+  },
+  {
+    "id": 36,
+    "act_as_identifier": true,
+    "category": "Lead",
+    "include_regexp": "\\b.*lead.*\\b",
+    "exclude_regexp": "\\b.*leading.*\\b"
+  },
+  {
+    "id": 37,
+    "act_as_identifier": true,
+    "category": "Learner",
+    "include_regexp": "\\b.*learner.*\\b"
+  },
+  {
+    "id": 38,
+    "act_as_identifier": false,
+    "category": "Login",
+    "include_regexp": "\\b.*login.*|.*signin.*|.*credentials.*|.*signup.*\\b",
+    "exclude_regexp": "\\b(request|plugin)\\b"
+  },
+  {
+    "id": 39,
+    "act_as_identifier": true,
+    "category": "Member",
+    "include_regexp": "\\b.*member.*\\b"
+  },
+  {
+    "id": 40,
+    "act_as_identifier": true,
+    "category": "Mentor",
+    "include_regexp": "\\b.*mentor.*\\b"
+  },
+  {
+    "id": 41,
+    "act_as_identifier": true,
+    "category": "Moderator",
+    "include_regexp": "\\b.*moderator.*\\b"
+  },
+  {
+    "id": 42,
+    "act_as_identifier": true,
+    "category": "Organizer",
+    "include_regexp": "\\b.*organizer.*\\b"
+  },
+  {
+    "id": 43,
+    "act_as_identifier": true,
+    "category": "Owner",
+    "include_regexp": "\\b.*owner.*\\b"
+  },
+  {
+    "id": 44,
+    "act_as_identifier": true,
+    "category": "Panelist",
+    "include_regexp": "\\b.*panelist.*\\b"
+  },
+  {
+    "id": 45,
+    "act_as_identifier": true,
+    "category": "Participant",
+    "include_regexp": "\\b.*participant.*\\b"
+  },
+  {
+    "id": 47,
+    "act_as_identifier": true,
+    "category": "Partner",
+    "include_regexp": "\\b.*partner.*\\b"
+  },
+  {
+    "id": 48,
+    "act_as_identifier": true,
+    "category": "Passenger",
+    "include_regexp": "\\b.*passenger.*\\b"
+  },
+  {
+    "id": 49,
+    "act_as_identifier": true,
+    "category": "Patient",
+    "include_regexp": "\\b.*patient.*\\b"
+  },
+  {
+    "id": 50,
+    "act_as_identifier": true,
+    "category": "Payee",
+    "include_regexp": "\\b.*payee.*\\b"
+  },
+  {
+    "id": 51,
+    "act_as_identifier": true,
+    "category": "Payer",
+    "include_regexp": "\\b.*payer.*\\b"
+  },
+  {
+    "id": 52,
+    "act_as_identifier": true,
+    "category": "Payor",
+    "include_regexp": "\\b.*payor.*\\b"
+  },
+  {
+    "id": 53,
+    "act_as_identifier": true,
+    "category": "People",
+    "include_regexp": "\\b.*people.*\\b"
+  },
+  {
+    "id": 54,
+    "act_as_identifier": true,
+    "category": "Person",
+    "include_regexp": "\\b.*person.*\\b"
+  },
+  {
+    "id": 55,
+    "act_as_identifier": true,
+    "category": "Player",
+    "include_regexp": "\\b.*player.*\\b"
+  },
+  {
+    "id": 56,
+    "act_as_identifier": true,
+    "category": "Profile",
+    "include_regexp": "\\b.*profile.*\\b"
+  },
+  {
+    "id": 57,
+    "act_as_identifier": true,
+    "category": "Referer",
+    "include_regexp": "\\b.*refeer.*\\b"
+  },
+  {
+    "id": 58,
+    "act_as_identifier": true,
+    "category": "Receiver",
+    "include_regexp": "\\b.*receiver.*\\b"
+  },
+  {
+    "id": 59,
+    "act_as_identifier": true,
+    "category": "Recipient",
+    "include_regexp": "\\b.*recipient.*\\b"
+  },
+  {
+    "id": 60,
+    "act_as_identifier": true,
+    "category": "Recruit",
+    "include_regexp": "\\b.*recruit.*\\b"
+  },
+  {
+    "id": 61,
+    "act_as_identifier": true,
+    "category": "Referee",
+    "include_regexp": "\\b.*referee.*\\b"
+  },
+  {
+    "id": 62,
+    "act_as_identifier": true,
+    "category": "Registrant",
+    "include_regexp": "\\b.*registrant.*\\b"
+  },
+  {
+    "id": 63,
+    "act_as_identifier": true,
+    "category": "Sender",
+    "include_regexp": "\\b.*sender.*\\b"
+  },
+  {
+    "id": 64,
+    "act_as_identifier": true,
+    "category": "Seller",
+    "include_regexp": "\\b.*seller.*\\b"
+  },
+  {
+    "id": 65,
+    "act_as_identifier": true,
+    "category": "Signer",
+    "include_regexp": "\\b.*signer.*\\b"
+  },
+  {
+    "id": 66,
+    "act_as_identifier": true,
+    "category": "Student",
+    "include_regexp": "\\b.*student.*\\b"
+  },
+  {
+    "id": 67,
+    "act_as_identifier": true,
+    "category": "Shareholder",
+    "include_regexp": "\\b.*shareholder.*\\b"
+  },
+  {
+    "id": 68,
+    "act_as_identifier": true,
+    "category": "Shopper",
+    "include_regexp": "\\b.*shopper.*\\b"
+  },
+  {
+    "id": 69,
+    "act_as_identifier": true,
+    "category": "Subscriber",
+    "include_regexp": "\\b.*subscriber.*\\b"
+  },
+  {
+    "id": 70,
+    "act_as_identifier": true,
+    "category": "Supplier",
+    "include_regexp": "\\b.*supplier.*\\b"
+  },
+  {
+    "id": 71,
+    "act_as_identifier": true,
+    "category": "Teacher",
+    "include_regexp": "\\b.*teacher.*\\b"
+  },
+  {
+    "id": 72,
+    "act_as_identifier": true,
+    "category": "Trainer",
+    "include_regexp": "\\b.*trainer.*\\b"
+  },
+  {
+    "id": 73,
+    "act_as_identifier": true,
+    "category": "Veteran",
+    "include_regexp": "\\b.*veteran.*\\b"
+  },
+  {
+    "id": 74,
+    "act_as_identifier": true,
+    "category": "Volunteer",
+    "include_regexp": "\\b.*volunteer.*\\b"
+  },
+  {
+    "id": 75,
+    "act_as_identifier": true,
+    "category": "Winner",
+    "include_regexp": "\\b.*winner.*\\b"
+  },
+  {
+    "id": 76,
+    "act_as_identifier": true,
+    "category": "User",
+    "include_regexp": "\\b.*user.*\\b"
+  },
+  {
+    "id": 77,
+    "act_as_identifier": false,
+    "category": "Credentials",
+    "include_regexp": "\\b.*credentials?.*\\b",
+    "exclude_regexp": "\\b(request|plugin)\\b"
+  },
+  {
+    "id": 78,
+    "act_as_identifier": true,
+    "category": "Reader",
+    "include_regexp": "\\b.*reader.*\\b"
+  },
+  {
+    "id": 79,
+    "act_as_identifier": true,
+    "category": "Commenter",
+    "include_regexp": "\\b.*commenter.*\\b"
+  }
+]

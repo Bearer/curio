@@ -146,7 +146,7 @@ func parseSpec(document *depsbase.DiscoveredDependency, line string, lineNumber 
 	}
 
 	spaces := matches[1]
-	name := matches[2]
+	name := matches[2] // pg
 	version := matches[3]
 
 	switch len(spaces) {

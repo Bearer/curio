@@ -148,10 +148,15 @@ func (r *runner) Report(config settings.Config, report types.Report) error {
 
 	switch config.Report.Format {
 	case flag.FormatJSON:
-		err := reportoutput.ReportJSON(report, logger, config)
+		// TODO: support table flag
+		err := reportoutput.ReportTable(report, logger, config)
 		if err != nil {
 			return fmt.Errorf("error generating report %w", err)
 		}
+		// err := reportoutput.ReportJSON(report, logger, config)
+		// if err != nil {
+		// 	return fmt.Errorf("error generating report %w", err)
+		// }
 	case flag.FormatYAML:
 		err := reportoutput.ReportYAML(report, logger, config)
 		if err != nil {
