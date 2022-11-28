@@ -1,3 +1,17 @@
+http_detection:
+  type: "risk"
+  languages:
+    - ruby
+  patterns:
+    - |
+      URI.encode_www_form(<$DATA_TYPE>)
+    - |
+      Net::HTTP.post_form(<$DATA_TYPE>)
+    # - |
+    #   $HTTP_CLIENT.$METHOD(<$DATA_TYPE>)
+  param_parenting: false
+  metavars: {}
+  stored: false
 ruby_file_detection:
   type: "risk"
   languages:

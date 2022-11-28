@@ -34,7 +34,7 @@ func addProperties(tree *parser.Tree, helperDatatypes map[parser.NodeID]*schemad
 			helperDatatypes[childNode.ID()] = &schemadatatype.DataType{
 				Node:       childNode,
 				Name:       id,
-				Type:       schema.SimpleTypeUknown,
+				Type:       schema.SimpleTypeUnknown,
 				TextType:   "",
 				Properties: make(map[string]schemadatatype.DataTypable),
 				UUID:       "",
@@ -47,7 +47,7 @@ func addProperties(tree *parser.Tree, helperDatatypes map[parser.NodeID]*schemad
 		helperDatatypes[elementNode.ID()] = &schemadatatype.DataType{
 			Node:       idNode,
 			Name:       idNode.Content(),
-			Type:       schema.SimpleTypeUknown,
+			Type:       schema.SimpleTypeUnknown,
 			TextType:   "",
 			Properties: make(map[string]schemadatatype.DataTypable),
 			UUID:       "",
@@ -63,7 +63,7 @@ func addProperties(tree *parser.Tree, helperDatatypes map[parser.NodeID]*schemad
 			helperDatatypes[childNode.ID()] = &schemadatatype.DataType{
 				Node:       childNode,
 				Name:       id,
-				Type:       schema.SimpleTypeUknown,
+				Type:       schema.SimpleTypeUnknown,
 				TextType:   "",
 				Properties: make(map[string]schemadatatype.DataTypable),
 				UUID:       "",
@@ -78,7 +78,7 @@ func addProperties(tree *parser.Tree, helperDatatypes map[parser.NodeID]*schemad
 		helperDatatypes[elementNode.ID()] = &schemadatatype.DataType{
 			Node:       idNode,
 			Name:       id,
-			Type:       schema.SimpleTypeUknown,
+			Type:       schema.SimpleTypeUnknown,
 			TextType:   "",
 			Properties: make(map[string]schemadatatype.DataTypable),
 			UUID:       "",

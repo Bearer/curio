@@ -170,7 +170,6 @@ func (detector *Detector) extractData(captures []parser.Captures, rule config.Co
 			var err error
 
 			if param.ArgumentsExtract || param.ClassNameExtract {
-				// @ToDo: This is where we need to define the parent that will get sent as parent
 				paramTypes, err = detector.extractArguments(lang, capture[param.BuildFullName()], idGenerator, fileinfo, filePath)
 				if err != nil {
 					return err
@@ -222,7 +221,7 @@ func (detector *Detector) extractData(captures []parser.Captures, rule config.Co
 							matchType := &schemadatatype.DataType{
 								Node:       matchNode,
 								Name:       string(match),
-								Type:       schema.SimpleTypeUknown,
+								Type:       schema.SimpleTypeUnknown,
 								Properties: make(map[string]schemadatatype.DataTypable),
 							}
 							matchNodeID := matchNode.ID()

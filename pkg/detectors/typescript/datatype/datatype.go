@@ -90,7 +90,7 @@ func annotateDataTypes(finder *datatype.Finder, node *parser.Node, value *schema
 			}
 		}
 
-		value.Type = schema.SimpleTypeUknown
+		value.Type = schema.SimpleTypeUnknown
 		return true
 	case "class_declaration":
 		name := node.ChildByFieldName("name")
@@ -209,7 +209,7 @@ func annotateDataTypeProperties(finder *datatype.PropertyFinder, node *parser.No
 				simpleType := standardizeDataType(typeChildNode, typeContent)
 				dataType.Type = simpleType
 
-				if simpleType != schema.SimpleTypeObject && simpleType != schema.SimpleTypeUknown && simpleType != schema.SimpleTypeFunction {
+				if simpleType != schema.SimpleTypeObject && simpleType != schema.SimpleTypeUnknown && simpleType != schema.SimpleTypeFunction {
 					dataType.TextType = typeChildNode.Content()
 				}
 			}
@@ -299,7 +299,7 @@ func standardizeDataType(node *parser.Node, content string) string {
 		return schema.SimpleTypeObject
 	}
 
-	return schema.SimpleTypeUknown
+	return schema.SimpleTypeUnknown
 }
 
 func standardizeTextType(node *parser.Node) string {

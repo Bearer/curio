@@ -19,7 +19,7 @@ func (detector *Detector) ExtractArguments(node *parser.Node, idGenerator nodeid
 
 	joinedDatatypes := make(map[parser.NodeID]*schemadatatype.DataType)
 
-	// handle classs name
+	// handle class name
 	if node.Type() == "constant" {
 		datatype := &schemadatatype.DataType{
 			Node:       node,
@@ -35,7 +35,6 @@ func (detector *Detector) ExtractArguments(node *parser.Node, idGenerator nodeid
 		singleArgument := node.Child(i)
 
 		if singleArgument.Type() == "identifier" || singleArgument.Type() == "simple_symbol" || singleArgument.Type() == "bare_symbol" {
-
 			content := singleArgument.Content()
 
 			if singleArgument.Type() == "simple_symbol" {
@@ -45,7 +44,7 @@ func (detector *Detector) ExtractArguments(node *parser.Node, idGenerator nodeid
 			datatype := &schemadatatype.DataType{
 				Node:       singleArgument,
 				Name:       content,
-				Type:       schema.SimpleTypeUknown,
+				Type:       schema.SimpleTypeUnknown,
 				Properties: make(map[string]schemadatatype.DataTypable),
 			}
 			joinedDatatypes[datatype.Node.ID()] = datatype

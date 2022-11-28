@@ -9,12 +9,13 @@ import (
 
 // Foo = Struct.new(foo: "foo", bar: "bar")
 // Foo.new(foo: "foo", bar: "bar")
-var structuresQuery = parser.QueryMustCompile(ruby.GetLanguage(),
-	`(call
+var structuresQuery = parser.QueryMustCompile(ruby.GetLanguage(), `
+(call
 		receiver: (constant) @receiver_id
 		method: (identifier) @method_id
 		arguments: (argument_list) @param_arguments
-	  ) @param_call`)
+) @param_call
+`)
 
 func discoverStructures(tree *parser.Tree, datatypes map[parser.NodeID]*schemadatatype.DataType) {
 	// add class properties
@@ -54,7 +55,7 @@ func discoverStructures(tree *parser.Tree, datatypes map[parser.NodeID]*schemada
 		parent := &schemadatatype.DataType{
 			Node:       receiver,
 			Name:       parentName,
-			Type:       schema.SimpleTypeUknown,
+			Type:       schema.SimpleTypeUnknown,
 			Properties: make(map[string]schemadatatype.DataTypable),
 			TextType:   "",
 		}
@@ -79,7 +80,7 @@ func discoverStructures(tree *parser.Tree, datatypes map[parser.NodeID]*schemada
 			parent.Properties[propertyName] = &schemadatatype.DataType{
 				Node:       key,
 				Name:       propertyName,
-				Type:       schema.SimpleTypeUknown,
+				Type:       schema.SimpleTypeUnknown,
 				TextType:   "",
 				Properties: make(map[string]schemadatatype.DataTypable),
 			}

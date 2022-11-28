@@ -12,7 +12,7 @@ import (
 var classAssignmentQuery = parser.QueryMustCompile(ruby.GetLanguage(),
 	`(assignment
 		left: (constant) @param_id
-		right: 
+		right:
 			(call
 				receiver: (constant) @helper_Class
 				method: (identifier) @helper_new
@@ -70,7 +70,7 @@ func discoverClassAssignmentProperties(tree *parser.Tree, datatypes map[parser.N
 		datatypes[classNode.ID()].Properties[propertyName] = &schemadatatype.DataType{
 			Node:       propertyNode,
 			Name:       propertyName,
-			Type:       schema.SimpleTypeUknown,
+			Type:       schema.SimpleTypeUnknown,
 			Properties: make(map[string]schemadatatype.DataTypable),
 			TextType:   "",
 		}
@@ -92,7 +92,7 @@ func discoverClassAssignmentFunctions(tree *parser.Tree, datatypes map[parser.No
 		datatypes[classNode.ID()].Properties[functionName] = &schemadatatype.DataType{
 			Node:     functionNameNode,
 			Name:     functionName,
-			Type:     schema.SimpleTypeUknown,
+			Type:     schema.SimpleTypeUnknown,
 			TextType: "",
 		}
 	}

@@ -40,7 +40,7 @@ func addObjects(tree *parser.Tree, datatypes map[parser.NodeID]*schemadatatype.D
 			datatypes[objectNode.ID()] = &schemadatatype.DataType{
 				Node:       objectNode,
 				Name:       "",
-				Type:       schema.SimpleTypeUknown,
+				Type:       schema.SimpleTypeUnknown,
 				TextType:   "",
 				Properties: make(map[string]schemadatatype.DataTypable),
 			}
@@ -50,7 +50,7 @@ func addObjects(tree *parser.Tree, datatypes map[parser.NodeID]*schemadatatype.D
 		datatypes[objectNode.ID()].Properties[propertyName] = &schemadatatype.DataType{
 			Node:       propertyNode,
 			Name:       propertyNode.Content(),
-			Type:       schema.SimpleTypeUknown,
+			Type:       schema.SimpleTypeUnknown,
 			TextType:   "",
 			Properties: make(map[string]schemadatatype.DataTypable),
 		}

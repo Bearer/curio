@@ -106,7 +106,7 @@ func discoverClassProperties(tree *parser.Tree, datatypes map[parser.NodeID]*sch
 		datatypes[classNode.ID()].Properties[propertyName] = &schemadatatype.DataType{
 			Node:       propertyNode,
 			Name:       propertyName,
-			Type:       schema.SimpleTypeUknown,
+			Type:       schema.SimpleTypeUnknown,
 			Properties: make(map[string]schemadatatype.DataTypable),
 			TextType:   "",
 		}
@@ -128,7 +128,7 @@ func discoverClassFunctions(tree *parser.Tree, datatypes map[parser.NodeID]*sche
 		datatypes[classNode.ID()].Properties[functionName] = &schemadatatype.DataType{
 			Node:     functionNameNode,
 			Name:     functionName,
-			Type:     schema.SimpleTypeUknown,
+			Type:     schema.SimpleTypeUnknown,
 			TextType: "",
 		}
 	}

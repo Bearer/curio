@@ -145,5 +145,5 @@ func standardizeDataType(node *parser.Node, content string) string {
 		return schema.SimpleTypeObject
 	}
 
-	return schema.SimpleTypeUknown
+	return schema.SimpleTypeUnknown
 }

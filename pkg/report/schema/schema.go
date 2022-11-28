@@ -13,7 +13,7 @@ const (
 	SimpleTypeString   = "string"
 	SimpleTypeBool     = "boolean"
 	SimpleTypeBinary   = "binary"
-	SimpleTypeUknown   = "unknown"
+	SimpleTypeUnknown  = "unknown"
 )
 
 type Schema struct {
