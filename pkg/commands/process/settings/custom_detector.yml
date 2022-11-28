@@ -1,4 +1,4 @@
-http_detection:
+ruby_http_detection:
   type: "risk"
   languages:
     - ruby
