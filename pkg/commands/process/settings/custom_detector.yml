@@ -7,10 +7,21 @@ ruby_http_detection:
       URI.encode_www_form(<$DATA_TYPE>)
     - |
       Net::HTTP.post_form(<$DATA_TYPE>)
-    # - |
-    #   $HTTP_CLIENT.$METHOD(<$DATA_TYPE>)
-  param_parenting: false
-  metavars: {}
+    - |
+      URI(<$DATA_TYPE>)
+    - pattern: |
+        $CLIENT.$METHOD(<$DATA_TYPE>)
+      filters:
+        - variable: CLIENT
+          values:
+            - Curl
+            - HTTParty
+            - RestClient
+            - Typhoeus
+        - variable: METHOD
+          values:
+            - post
+            - get
   stored: false
 ruby_file_detection:
   type: "risk"

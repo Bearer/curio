@@ -3,6 +3,7 @@ package custom
 import (
 	_ "embed"
 	"errors"
+	"fmt"
 	"regexp"
 	"sort"
 	"strings"
@@ -20,6 +21,7 @@ import (
 	schemadatatype "github.com/bearer/curio/pkg/report/schema/datatype"
 	"github.com/bearer/curio/pkg/util/file"
 	pluralize "github.com/gertd/go-pluralize"
+	"golang.org/x/exp/slices"
 
 	"github.com/bearer/curio/pkg/parser/nodeid"
 	"github.com/bearer/curio/pkg/parser/sitter/sql"
@@ -66,8 +68,8 @@ func (detector *Detector) CompileRules(rulesConfig map[string]settings.Rule) err
 			continue
 		}
 		for _, lang := range rule.Languages {
-			for _, pattern := range rule.Patterns {
-				compiledRule, err := detector.compileRule(pattern, lang, detector.paramIdGenerator)
+			for _, rulePattern := range rule.Patterns {
+				compiledRule, err := detector.compileRule(rulePattern, lang, detector.paramIdGenerator)
 				if err != nil {
 					return err
 				}
@@ -107,14 +109,38 @@ func (detector *Detector) ProcessFile(file *file.FileInfo, dir *file.Path, repor
 	return false, nil
 }
 
-func (detector *Detector) compileRule(pattern string, lang string, idGenerator nodeid.Generator) (config.CompiledRule, error) {
+func (detector *Detector) compileRule(
+	rulePattern settings.RulePattern,
+	lang string,
+	idGenerator nodeid.Generator,
+) (config.CompiledRule, error) {
+	var rule config.CompiledRule
+	var err error
+
 	switch lang {
 	case "ruby":
-		return detector.Ruby.CompilePattern(pattern, detector.paramIdGenerator)
+		rule, err = detector.Ruby.CompilePattern(rulePattern, detector.paramIdGenerator)
 	case "sql":
-		return detector.Sql.CompilePattern(pattern, detector.paramIdGenerator)
+		rule, err = detector.Sql.CompilePattern(rulePattern, detector.paramIdGenerator)
+	default:
+		return config.CompiledRule{}, errors.New("unsupported language")
 	}
-	return config.CompiledRule{}, errors.New("unsupported language")
+
+	if err != nil {
+		return config.CompiledRule{}, err
+	}
+
+	return rule, validateRule(rule)
+}
+
+func validateRule(rule config.CompiledRule) error {
+	for _, filter := range rule.Filters {
+		if param := rule.GetParamByPatternName(filter.Variable); param == nil {
+			return fmt.Errorf("undefined variable '%s' in filter for custom rule '%s'", filter.Variable, rule.RuleName)
+		}
+	}
+
+	return nil
 }
 
 func languageMatchesFile(file *file.FileInfo, ruleLanguage string) bool {
@@ -178,6 +204,10 @@ func (detector *Detector) extractData(captures []parser.Captures, rule config.Co
 	for _, capture := range captures {
 		forExport := make(map[parser.NodeID]*schemadatatype.DataType)
 		var parent schemadatatype.DataTypable
+
+		if filtersMatch := matchFilters(capture, rule); !filtersMatch {
+			continue
+		}
 
 		for _, param := range rule.Params {
 			var paramTypes map[parser.NodeID]*schemadatatype.DataType
@@ -264,6 +294,20 @@ func (detector *Detector) extractData(captures []parser.Captures, rule config.Co
 	}
 
 	return nil
+}
+
+func matchFilters(captures parser.Captures, rule config.CompiledRule) bool {
+	for _, filter := range rule.Filters {
+		param := rule.GetParamByPatternName(filter.Variable)
+		matchNode := captures[param.BuildFullName()]
+		content := matchNode.Content()
+
+		if !slices.Contains(filter.Values, content) {
+			return false
+		}
+	}
+
+	return true
 }
 
 func (detector *Detector) applyDatatypeTransformations(rule config.CompiledRule, datatypes map[parser.NodeID]*schemadatatype.DataType) {

@@ -1,6 +1,7 @@
 package custom
 
 import (
+	"github.com/bearer/curio/pkg/commands/process/settings"
 	"github.com/bearer/curio/pkg/detectors/custom/config"
 	"github.com/bearer/curio/pkg/parser"
 	parserdatatype "github.com/bearer/curio/pkg/parser/datatype"
@@ -10,7 +11,7 @@ import (
 
 type Detector interface {
 	ExtractArguments(node *parser.Node, idGenerator nodeid.Generator, variableReconciliation *parserdatatype.ReconciliationRequest) (map[parser.NodeID]*datatype.DataType, error)
-	CompilePattern(Rule string, idGenerator nodeid.Generator) (config.CompiledRule, error)
+	CompilePattern(rulePattern settings.RulePattern, idGenerator nodeid.Generator) (config.CompiledRule, error)
 	IsParam(node *parser.Node) (bool, bool, *config.Param)
 }
 

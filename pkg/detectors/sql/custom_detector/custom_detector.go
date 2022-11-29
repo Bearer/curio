@@ -52,7 +52,7 @@ func (detector *Detector) IsParam(node *parser.Node) (isTerminating bool, should
 	if node.Type() == "content" && strings.Index(node.Content(), ` Var_Script`) == 0 {
 		param = &config.Param{
 			StringExtract: true,
-			PatternName:   "$SCRIPT",
+			PatternName:   "SCRIPT",
 		}
 		isTerminating = true
 		return

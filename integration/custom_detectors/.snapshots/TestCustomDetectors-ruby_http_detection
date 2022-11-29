@@ -1,0 +1,111 @@
+data_types:
+    - name: Firstname
+      detectors:
+        - name: ruby
+          locations:
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 3
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 4
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 7
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 13
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 18
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 21
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 22
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 25
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 30
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 40
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 45
+        - name: ruby_http_detection
+          locations:
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 3
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 4
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 13
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 18
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 25
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 30
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 40
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 45
+    - name: Lastname
+      detectors:
+        - name: ruby
+          locations:
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 4
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 7
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 13
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 21
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 22
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 25
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 30
+        - name: ruby_http_detection
+          locations:
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 4
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 13
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 25
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 30
+risks:
+    - detector_id: ruby_http_detection
+      data_types:
+        - name: Firstname
+          stored: false
+          locations:
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 3
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 4
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 13
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 18
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 25
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 30
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 40
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 45
+        - name: Lastname
+          stored: false
+          locations:
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 4
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 13
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 25
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 30
+components: []
+
+
+--
+

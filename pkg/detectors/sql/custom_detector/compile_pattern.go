@@ -3,6 +3,7 @@ package customdetector
 import (
 	"regexp"
 
+	"github.com/bearer/curio/pkg/commands/process/settings"
 	"github.com/bearer/curio/pkg/detectors/custom/config"
 	"github.com/bearer/curio/pkg/parser"
 	"github.com/bearer/curio/pkg/parser/custom"
@@ -16,8 +17,14 @@ var functionNameRegex = regexp.MustCompile(`\$FUNCTION_NAME`)
 var scriptRegex = regexp.MustCompile(`\$SCRIPT`)
 var anythingRegex = regexp.MustCompile(`\$ANTYHING`)
 
-func (detector *Detector) CompilePattern(rule string, idGenerator nodeid.Generator) (config.CompiledRule, error) {
-	reworkedRule := tableNameRegex.ReplaceAllLiteral([]byte(rule), []byte("Var_Table_Name"+idGenerator.GenerateId()))
+func (detector *Detector) CompilePattern(
+	rulePattern settings.RulePattern,
+	idGenerator nodeid.Generator,
+) (config.CompiledRule, error) {
+	reworkedRule := tableNameRegex.ReplaceAllLiteral(
+		[]byte(rulePattern.Pattern),
+		[]byte("Var_Table_Name"+idGenerator.GenerateId()),
+	)
 	reworkedRule = columnsRegex.ReplaceAllLiteral(reworkedRule, []byte("Var_Column_Id"+idGenerator.GenerateId()+" Var_Type_id"+idGenerator.GenerateId()))
 	reworkedRule = functionNameRegex.ReplaceAllLiteral(reworkedRule, []byte("Var_Function_Name"+idGenerator.GenerateId()+"()"))
 	reworkedRule = scriptRegex.ReplaceAllLiteral(reworkedRule, []byte(`$$ Var_Script`+idGenerator.GenerateId()+` $$`))
@@ -32,6 +39,7 @@ func (detector *Detector) CompilePattern(rule string, idGenerator nodeid.Generat
 	compiledRule := &config.CompiledRule{
 		Languages: []string{"sql"},
 		Params:    make([]config.Param, 0),
+		Filters:   rulePattern.Filters,
 	}
 
 	custom.GenerateTreeSitterQuery(tree.RootNode().Child(0), idGenerator, compiledRule, detector, false)

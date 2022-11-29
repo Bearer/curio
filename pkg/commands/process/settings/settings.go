@@ -55,11 +55,21 @@ func (modules Modules) ToRegoModules() (output []rego.Module) {
 	return
 }
 
+type PatternFilter struct {
+	Variable string
+	Values   []string
+}
+
+type RulePattern struct {
+	Pattern string
+	Filters []PatternFilter
+}
+
 type Rule struct {
 	Disabled       bool
 	Type           string
 	Languages      []string
-	Patterns       []string
+	Patterns       []RulePattern
 	ParamParenting bool `yaml:"param_parenting"`
 	Processors     []Processor
 
@@ -161,6 +171,19 @@ func FromOptions(opts flag.Options) (Config, error) {
 	}
 
 	return config, nil
+}
+
+func (rulePattern *RulePattern) UnmarshalYAML(unmarshal func(interface{}) error) error {
+	// Try to parse as a string
+	var pattern string
+	if err := unmarshal(&pattern); err == nil {
+		rulePattern.Pattern = pattern
+		return nil
+	}
+
+	// Wasn't a string so it must be the structured format
+	type rawRulePattern RulePattern
+	return unmarshal((*rawRulePattern)(rulePattern))
 }
 
 func DefaultCustomDetector() map[string]Rule {

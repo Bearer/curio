@@ -3,7 +3,7 @@ create_sql_function_detector:
     - CREATE OR REPLACE FUNCTION $FUNCTION_NAME RETURNS trigger AS $SCRIPT
   metavars:
     regex_match:
-      input: $SCRIPT
+      input: SCRIPT
       regex: NEW.(\w+)
       output: 1
   param_parenting: true
