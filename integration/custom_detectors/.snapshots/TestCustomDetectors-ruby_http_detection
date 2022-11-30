@@ -12,9 +12,9 @@ data_types:
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 13
             - filename: testdata/ruby/ruby_http_detection.rb
-              line_number: 18
+              line_number: 19
             - filename: testdata/ruby/ruby_http_detection.rb
-              line_number: 21
+              line_number: 20
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 22
             - filename: testdata/ruby/ruby_http_detection.rb
@@ -25,6 +25,14 @@ data_types:
               line_number: 40
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 45
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 62
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 71
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 78
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 95
         - name: ruby_http_detection
           locations:
             - filename: testdata/ruby/ruby_http_detection.rb
@@ -32,9 +40,13 @@ data_types:
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 4
             - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 7
+            - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 13
             - filename: testdata/ruby/ruby_http_detection.rb
-              line_number: 18
+              line_number: 20
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 22
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 25
             - filename: testdata/ruby/ruby_http_detection.rb
@@ -43,6 +55,14 @@ data_types:
               line_number: 40
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 45
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 62
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 71
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 78
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 95
     - name: Lastname
       detectors:
         - name: ruby
@@ -54,7 +74,7 @@ data_types:
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 13
             - filename: testdata/ruby/ruby_http_detection.rb
-              line_number: 21
+              line_number: 19
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 22
             - filename: testdata/ruby/ruby_http_detection.rb
@@ -66,7 +86,11 @@ data_types:
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 4
             - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 7
+            - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 13
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 22
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 25
             - filename: testdata/ruby/ruby_http_detection.rb
@@ -82,9 +106,13 @@ risks:
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 4
             - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 7
+            - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 13
             - filename: testdata/ruby/ruby_http_detection.rb
-              line_number: 18
+              line_number: 20
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 22
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 25
             - filename: testdata/ruby/ruby_http_detection.rb
@@ -93,17 +121,35 @@ risks:
               line_number: 40
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 45
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 62
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 71
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 78
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 95
+          parent:
+            line_number: 4
+            content: 'URI.encode_www_form({ user: { first_name: "John", last_name: "Doe" } })'
         - name: Lastname
           stored: false
           locations:
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 4
             - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 7
+            - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 13
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 22
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 25
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 30
+          parent:
+            line_number: 4
+            content: 'URI.encode_www_form({ user: { first_name: "John", last_name: "Doe" } })'
 components: []
 
 

@@ -116,7 +116,7 @@ func RunTests(t *testing.T, tests []TestCase) {
 
 		// this needs to be here since otherwise viper is getting written twice concurrently from 2 gorutines
 		// we need to find a way to let main program know viper has finished loading config
-		time.Sleep(1 * time.Second)
+		time.Sleep(3 * time.Second)
 	}
 
 	for _, test := range tests {

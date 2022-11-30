@@ -15,7 +15,11 @@ ruby_http_detection:
         - variable: CLIENT
           values:
             - Curl
+            - Excon
+            - Faraday
+            - HTTP
             - HTTParty
+            - HTTPX
             - RestClient
             - Typhoeus
         - variable: METHOD
