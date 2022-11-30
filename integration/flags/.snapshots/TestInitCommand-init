@@ -14,10 +14,11 @@ scan:
             languages:
                 - ruby
             patterns:
-                - |
-                  class $CLASS_NAME < ApplicationRecord
-                    encrypts <$ARGUMENT>
-                  end
+                - pattern: |
+                    class $CLASS_NAME < ApplicationRecord
+                      encrypts <$ARGUMENT>
+                    end
+                  filters: []
             param_parenting: true
             processors: []
             root_singularize: true
@@ -30,8 +31,9 @@ scan:
             languages:
                 - ruby
             patterns:
-                - |
-                  Rails.logger.info(<$ARGUMENT>)
+                - pattern: |
+                    Rails.logger.info(<$ARGUMENT>)
+                  filters: []
             param_parenting: false
             processors: []
             root_singularize: false
@@ -44,8 +46,9 @@ scan:
             languages:
                 - ruby
             patterns:
-                - |
-                  session[...] = $ANYTHING
+                - pattern: |
+                    session[...] = $ANYTHING
+                  filters: []
             param_parenting: false
             processors: []
             root_singularize: false
@@ -58,8 +61,9 @@ scan:
             languages:
                 - ruby
             patterns:
-                - |
-                  logger.info(<$ARGUMENT>)
+                - pattern: |
+                    logger.info(<$ARGUMENT>)
+                  filters: []
             param_parenting: false
             processors: []
             root_singularize: false
@@ -72,10 +76,11 @@ scan:
             languages:
                 - sql
             patterns:
-                - |
-                  CREATE TABLE public.$TABLE_NAME (
-                    <$COLUMN>
-                  )
+                - pattern: |
+                    CREATE TABLE public.$TABLE_NAME (
+                      <$COLUMN>
+                    )
+                  filters: []
             param_parenting: true
             processors:
                 - query: |
@@ -128,18 +133,22 @@ scan:
             languages:
                 - ruby
             patterns:
-                - |
-                  CSV.open { <$DATA_TYPE> }
-                - |
-                  CSV.open do
-                    <$DATA_TYPE>
-                  end
-                - |
-                  File.open do
-                    <$DATA_TYPE>
-                  end
-                - |
-                  File.open { <$DATA_TYPE> }
+                - pattern: |
+                    CSV.open { <$DATA_TYPE> }
+                  filters: []
+                - pattern: |
+                    CSV.open do
+                      <$DATA_TYPE>
+                    end
+                  filters: []
+                - pattern: |
+                    File.open do
+                      <$DATA_TYPE>
+                    end
+                  filters: []
+                - pattern: |
+                    File.open { <$DATA_TYPE> }
+                  filters: []
             param_parenting: true
             processors: []
             root_singularize: false
@@ -152,10 +161,32 @@ scan:
             languages:
                 - ruby
             patterns:
-                - |
-                  URI.encode_www_form(<$DATA_TYPE>)
-                - |
-                  Net::HTTP.post_form(<$DATA_TYPE>)
+                - pattern: |
+                    URI.encode_www_form(<$DATA_TYPE>)
+                  filters: []
+                - pattern: |
+                    Net::HTTP.post_form(<$DATA_TYPE>)
+                  filters: []
+                - pattern: |
+                    URI(<$DATA_TYPE>)
+                  filters: []
+                - pattern: |
+                    $CLIENT.$METHOD(<$DATA_TYPE>)
+                  filters:
+                    - variable: CLIENT
+                      values:
+                        - Curl
+                        - Excon
+                        - Faraday
+                        - HTTP
+                        - HTTParty
+                        - HTTPX
+                        - RestClient
+                        - Typhoeus
+                    - variable: METHOD
+                      values:
+                        - post
+                        - get
             param_parenting: false
             processors: []
             root_singularize: false

@@ -116,90 +116,59 @@ func addProperties(node *parser.Node, helperDatatypes map[parser.NodeID]*schemad
 
 			if leftNode.Type() == "identifier" || leftNode.Type() == "instance_variable" {
 				id := strings.TrimLeft(leftNode.Content(), "@")
-				helperDatatypes[parentNode.ID()] = &schemadatatype.DataType{
-					Node:       parentNode,
+				helperDatatypes[hashNode.ID()] = &schemadatatype.DataType{
+					Node:       hashNode,
 					Name:       id,
 					Type:       schema.SimpleTypeUnknown,
 					TextType:   "",
 					Properties: make(map[string]schemadatatype.DataTypable),
 					UUID:       "",
 				}
-
-				// add child properties
-				for i := 0; i < hashNode.ChildCount(); i++ {
-					pair := hashNode.Child(i)
-
-					if pair.Type() != "pair" {
-						continue
-					}
-
-					key := pair.ChildByFieldName("key")
-					if key.Type() != "hash_key_symbol" {
-						continue
-					}
-
-					propertyName := key.Content()
-
-					helperDatatypes[parentNode.ID()].Properties[propertyName] = &schemadatatype.DataType{
-						Node:       key,
-						Name:       propertyName,
-						Type:       schema.SimpleTypeUnknown,
-						TextType:   "",
-						Properties: make(map[string]schemadatatype.DataTypable),
-					}
-				}
 			}
-		} else if parentNode.Type() == "argument_list" || parentNode.Type() == "program" {
-			// add child properties
-			for i := 0; i < hashNode.ChildCount(); i++ {
-				pair := hashNode.Child(i)
+		} else if parentNode.Type() == "pair" {
+			keyNode := parentNode.ChildByFieldName("key")
 
-				if pair.Type() != "pair" {
-					continue
-				}
-
-				key := pair.ChildByFieldName("key")
-				if key.Type() != "hash_key_symbol" {
-					continue
-				}
-
-				value := pair.ChildByFieldName("value")
-				if value.Type() != "hash" {
-					continue
-				}
-
-				helperDatatypes[key.ID()] = &schemadatatype.DataType{
-					Node:       key,
-					Name:       key.Content(),
-					Type:       schema.SimpleTypeUnknown,
+			if keyNode.Type() == "hash_key_symbol" { // TODO: string keys?
+				helperDatatypes[hashNode.ID()] = &schemadatatype.DataType{
+					Node:       hashNode,
+					Name:       keyNode.Content(),
+					Type:       schema.SimpleTypeObject,
 					TextType:   "",
 					Properties: make(map[string]schemadatatype.DataTypable),
 					UUID:       "",
 				}
+			}
+		} else {
+			helperDatatypes[hashNode.ID()] = &schemadatatype.DataType{
+				Node:       hashNode,
+				Name:       "",
+				Type:       schema.SimpleTypeUnknown,
+				TextType:   "",
+				Properties: make(map[string]schemadatatype.DataTypable),
+				UUID:       "",
+			}
+		}
 
-				for j := 0; j < value.ChildCount(); j++ {
-					childPair := value.Child(j)
+		for i := 0; i < hashNode.ChildCount(); i++ {
+			pair := hashNode.Child(i)
 
-					if childPair.Type() != "pair" {
-						continue
-					}
+			if pair.Type() != "pair" {
+				continue
+			}
 
-					childKey := childPair.ChildByFieldName("key")
-					if key.Type() != "hash_key_symbol" {
-						continue
-					}
+			key := pair.ChildByFieldName("key")
+			if key.Type() != "hash_key_symbol" { // TODO: string keys?
+				continue
+			}
 
-					propertyName := childKey.Content()
+			propertyName := key.Content()
 
-					helperDatatypes[key.ID()].Properties[propertyName] = &schemadatatype.DataType{
-						Node:       childKey,
-						Name:       propertyName,
-						Type:       schema.SimpleTypeUnknown,
-						TextType:   "",
-						Properties: make(map[string]schemadatatype.DataTypable),
-					}
-				}
-
+			helperDatatypes[hashNode.ID()].Properties[propertyName] = &schemadatatype.DataType{
+				Node:       key,
+				Name:       propertyName,
+				Type:       schema.SimpleTypeUnknown,
+				TextType:   "",
+				Properties: make(map[string]schemadatatype.DataTypable),
 			}
 		}
 	}
