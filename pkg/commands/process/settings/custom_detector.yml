@@ -1,101 +1,101 @@
-ruby_http_detection:
-  type: "risk"
-  languages:
-    - ruby
-  patterns:
-    - |
-      URI.encode_www_form(<$DATA_TYPE>)
-    - |
-      Net::HTTP.post_form(<$DATA_TYPE>)
-    - |
-      URI(<$DATA_TYPE>)
-    - pattern: |
-        $CLIENT.$METHOD(<$DATA_TYPE>)
-      filters:
-        - variable: CLIENT
-          values:
-            - Curl
-            - Excon
-            - Faraday
-            - HTTP
-            - HTTParty
-            - HTTPX
-            - RestClient
-            - Typhoeus
-        - variable: METHOD
-          values:
-            - post
-            - get
-  stored: false
-ruby_file_detection:
-  type: "risk"
-  languages:
-    - ruby
-  patterns:
-    - |
-      CSV.open { <$DATA_TYPE> }
-    - |
-      CSV.open do
-        <$DATA_TYPE>
-      end
-    - |
-      File.open do
-        <$DATA_TYPE>
-      end
-    - |
-      File.open { <$DATA_TYPE> }
-  param_parenting: true
-  metavars: {}
-  stored: false
-detect_rails_logger:
-  type: "risk"
-  patterns:
-    - |
-      Rails.logger.info(<$ARGUMENT>)
-  languages:
-    - ruby
-detect_ruby_logger:
-  type: "risk"
-  patterns:
-    - |
-      logger.info(<$ARGUMENT>)
-  languages:
-    - ruby
+# ruby_http_detection:
+#   type: "risk"
+#   languages:
+#     - ruby
+#   patterns:
+#     - |
+#       URI.encode_www_form(<$DATA_TYPE>)
+#     - |
+#       Net::HTTP.post_form(<$DATA_TYPE>)
+#     - |
+#       URI(<$DATA_TYPE>)
+#     - pattern: |
+#         $CLIENT.$METHOD(<$DATA_TYPE>)
+#       filters:
+#         - variable: CLIENT
+#           values:
+#             - Curl
+#             - Excon
+#             - Faraday
+#             - HTTP
+#             - HTTParty
+#             - HTTPX
+#             - RestClient
+#             - Typhoeus
+#         - variable: METHOD
+#           values:
+#             - post
+#             - get
+#   stored: false
+# ruby_file_detection:
+#   type: "risk"
+#   languages:
+#     - ruby
+#   patterns:
+#     - |
+#       CSV.open { <$DATA_TYPE> }
+#     - |
+#       CSV.open do
+#         <$DATA_TYPE>
+#       end
+#     - |
+#       File.open do
+#         <$DATA_TYPE>
+#       end
+#     - |
+#       File.open { <$DATA_TYPE> }
+#   param_parenting: true
+#   metavars: {}
+#   stored: false
+# detect_rails_logger:
+#   type: "risk"
+#   patterns:
+#     - |
+#       Rails.logger.info(<$ARGUMENT>)
+#   languages:
+#     - ruby
+# detect_ruby_logger:
+#   type: "risk"
+#   patterns:
+#     - |
+#       logger.info(<$ARGUMENT>)
+#   languages:
+#     - ruby
 detect_rails_session:
   type: "risk"
   patterns:
     - |
-      session[...] = $ANYTHING
+      session[$_] = $ANYTHING
   languages:
     - ruby
-detect_encrypted_ruby_class_properties:
-  type: "verifier"
-  patterns:
-    - |
-      class $CLASS_NAME < ApplicationRecord
-        encrypts <$ARGUMENT>
-      end
-  param_parenting: true
-  root_singularize: true
-  root_lowercase: true
-  languages:
-    - ruby
-detect_sql_create_public_table:
-  type: "data_type"
-  patterns:
-    - |
-      CREATE TABLE public.$TABLE_NAME (
-        <$COLUMN>
-      )
-  param_parenting: true
-  root_singularize: true
-  root_lowercase: true
-  languages:
-    - sql
-  processors:
-    - query: |
-        verified_by = data.bearer.encrypted_verified.verified_by
-        encrypted = data.bearer.encrypted_verified.encrypted
-      modules:
-        - path: processors/encrypted_verified.rego
-          name: bearer.encrypted_verified
+# detect_encrypted_ruby_class_properties:
+#   type: "verifier"
+#   patterns:
+#     - |
+#       class $CLASS_NAME < ApplicationRecord
+#         encrypts <$ARGUMENT>
+#       end
+#   param_parenting: true
+#   root_singularize: true
+#   root_lowercase: true
+#   languages:
+#     - ruby
+# detect_sql_create_public_table:
+#   type: "data_type"
+#   patterns:
+#     - |
+#       CREATE TABLE public.$TABLE_NAME (
+#         <$COLUMN>
+#       )
+#   param_parenting: true
+#   root_singularize: true
+#   root_lowercase: true
+#   languages:
+#     - sql
+#   processors:
+#     - query: |
+#         verified_by = data.bearer.encrypted_verified.verified_by
+#         encrypted = data.bearer.encrypted_verified.encrypted
+#       modules:
+#         - path: processors/encrypted_verified.rego
+#           name: bearer.encrypted_verified

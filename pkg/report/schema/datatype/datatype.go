@@ -19,6 +19,7 @@ type ReportDataType interface {
 type DataType struct {
 	Node       *parser.Node
 	Name       string
+	Assignment *string
 	Type       string
 	TextType   string
 	Properties map[string]DataTypable

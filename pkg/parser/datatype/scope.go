@@ -85,8 +85,16 @@ func ScopeDatatypes(datatypes map[parser.NodeID]*datatype.DataType, idGenerator 
 			}
 		}
 
-		// append same scope same name datatypes
-		scopes[scopeNode.ID()].DataTypes[target.Name] = append(scopes[scopeNode.ID()].DataTypes[target.Name], target)
+		var assignment string
+		if target.Assignment == nil {
+			assignment = target.Name
+		} else {
+			assignment = *target.Assignment
+		}
+
+		if assignment != "" {
+			scopes[scopeNode.ID()].DataTypes[assignment] = append(scopes[scopeNode.ID()].DataTypes[assignment], target)
+		}
 	}
 
 	var sortedScopes []*Scope

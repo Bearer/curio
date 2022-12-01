@@ -48,6 +48,8 @@ data_types:
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 80
             - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 87
+            - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 93
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 95
@@ -70,11 +72,15 @@ data_types:
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 30
             - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 35
+            - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 38
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 40
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 45
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 50
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 57
             - filename: testdata/ruby/ruby_http_detection.rb
@@ -89,6 +95,8 @@ data_types:
               line_number: 73
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 78
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 80
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 93
             - filename: testdata/ruby/ruby_http_detection.rb
@@ -126,6 +134,8 @@ data_types:
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 80
             - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 87
+            - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 93
         - name: ruby_http_detection
           locations:
@@ -142,13 +152,19 @@ data_types:
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 30
             - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 35
+            - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 38
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 51
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 57
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 66
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 73
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 80
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 93
 risks:
@@ -174,11 +190,15 @@ risks:
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 30
             - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 35
+            - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 38
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 40
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 45
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 50
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 57
             - filename: testdata/ruby/ruby_http_detection.rb
@@ -194,12 +214,14 @@ risks:
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 78
             - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 80
+            - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 93
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 95
           parent:
-            line_number: 3
-            content: URI("http://my.api.com/users/search?first_name=#{user.first_name}")
+            line_number: 20
+            content: Curl.get("http://my.api.com/users/search?first_name=#{user_2.first_name}")
         - name: Lastname
           stored: false
           locations:
@@ -216,7 +238,11 @@ risks:
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 30
             - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 35
+            - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 38
+            - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 51
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 57
             - filename: testdata/ruby/ruby_http_detection.rb
@@ -224,10 +250,12 @@ risks:
             - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 73
             - filename: testdata/ruby/ruby_http_detection.rb
+              line_number: 80
+            - filename: testdata/ruby/ruby_http_detection.rb
               line_number: 93
           parent:
-            line_number: 3
-            content: URI("http://my.api.com/users/search?first_name=#{user.first_name}")
+            line_number: 23
+            content: Curl.post("http://my.api.com/users/create", user_3)
 components: []
 
 

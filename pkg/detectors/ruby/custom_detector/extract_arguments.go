@@ -8,6 +8,7 @@ import (
 	parserdatatype "github.com/bearer/curio/pkg/parser/datatype"
 	"github.com/bearer/curio/pkg/parser/nodeid"
 	"github.com/bearer/curio/pkg/report/schema"
+	"github.com/rs/zerolog/log"
 
 	schemadatatype "github.com/bearer/curio/pkg/report/schema/datatype"
 )
@@ -18,8 +19,16 @@ func (detector *Detector) ExtractArguments(node *parser.Node, idGenerator nodeid
 		return nil, err
 	}
 
+	for _, dt := range extractedDatatypes {
+		log.Error().Msgf("extract args dt: %#v", dt)
+	}
+
 	if variableReconciliation != nil {
 		parserdatatype.VariableReconciliation(extractedDatatypes, variableReconciliation)
+	}
+
+	for _, dt := range extractedDatatypes {
+		log.Error().Msgf("extract args reconciled dt: %#v", dt)
 	}
 
 	return extractedDatatypes, nil

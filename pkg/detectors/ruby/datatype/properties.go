@@ -8,8 +8,11 @@ import (
 	"github.com/bearer/curio/pkg/parser/nodeid"
 	"github.com/bearer/curio/pkg/report/schema"
 	schemadatatype "github.com/bearer/curio/pkg/report/schema/datatype"
+	"github.com/bearer/curio/pkg/util/pointers"
+	"github.com/rs/zerolog/log"
 	sitter "github.com/smacker/go-tree-sitter"
 	"github.com/smacker/go-tree-sitter/ruby"
+	"golang.org/x/exp/slices"
 )
 
 // person[:city][:number]()
@@ -48,6 +51,7 @@ func addProperties(node *parser.Node, helperDatatypes map[parser.NodeID]*schemad
 				helperDatatypes[objectNode.ID()] = &schemadatatype.DataType{
 					Node:       objectNode,
 					Name:       id,
+					Assignment: assignmentFor(objectNode),
 					Type:       schema.SimpleTypeUnknown,
 					TextType:   "",
 					Properties: make(map[string]schemadatatype.DataTypable),
@@ -63,6 +67,7 @@ func addProperties(node *parser.Node, helperDatatypes map[parser.NodeID]*schemad
 			helperDatatypes[elementNode.ID()] = &schemadatatype.DataType{
 				Node:       idNode,
 				Name:       id,
+				Assignment: assignmentFor(elementNode),
 				Type:       schema.SimpleTypeUnknown,
 				TextType:   "",
 				Properties: make(map[string]schemadatatype.DataTypable),
@@ -83,6 +88,7 @@ func addProperties(node *parser.Node, helperDatatypes map[parser.NodeID]*schemad
 			helperDatatypes[receiverNode.ID()] = &schemadatatype.DataType{
 				Node:       receiverNode,
 				Name:       id,
+				Assignment: assignmentFor(receiverNode),
 				Type:       schema.SimpleTypeUnknown,
 				TextType:   "",
 				Properties: make(map[string]schemadatatype.DataTypable),
@@ -90,14 +96,15 @@ func addProperties(node *parser.Node, helperDatatypes map[parser.NodeID]*schemad
 			}
 		}
 
-		elementNode := capture["param_parent"]
+		// elementNode := capture["param_parent"]
 		idNode := capture["param_id"]
 
 		id := idNode.Content()
 
-		helperDatatypes[elementNode.ID()] = &schemadatatype.DataType{
+		helperDatatypes[idNode.ID()] = &schemadatatype.DataType{
 			Node:       idNode,
 			Name:       id,
+			Assignment: assignmentFor(idNode),
 			Type:       schema.SimpleTypeUnknown,
 			TextType:   "",
 			Properties: make(map[string]schemadatatype.DataTypable),
@@ -119,6 +126,7 @@ func addProperties(node *parser.Node, helperDatatypes map[parser.NodeID]*schemad
 				helperDatatypes[hashNode.ID()] = &schemadatatype.DataType{
 					Node:       hashNode,
 					Name:       id,
+					Assignment: assignmentFor(hashNode),
 					Type:       schema.SimpleTypeUnknown,
 					TextType:   "",
 					Properties: make(map[string]schemadatatype.DataTypable),
@@ -132,16 +140,20 @@ func addProperties(node *parser.Node, helperDatatypes map[parser.NodeID]*schemad
 				helperDatatypes[hashNode.ID()] = &schemadatatype.DataType{
 					Node:       hashNode,
 					Name:       keyNode.Content(),
+					Assignment: assignmentFor(hashNode),
 					Type:       schema.SimpleTypeObject,
 					TextType:   "",
 					Properties: make(map[string]schemadatatype.DataTypable),
 					UUID:       "",
 				}
 			}
-		} else {
+		}
+
+		if helperDatatypes[hashNode.ID()] == nil {
 			helperDatatypes[hashNode.ID()] = &schemadatatype.DataType{
 				Node:       hashNode,
 				Name:       "",
+				Assignment: assignmentFor(hashNode),
 				Type:       schema.SimpleTypeUnknown,
 				TextType:   "",
 				Properties: make(map[string]schemadatatype.DataTypable),
@@ -166,11 +178,36 @@ func addProperties(node *parser.Node, helperDatatypes map[parser.NodeID]*schemad
 			helperDatatypes[hashNode.ID()].Properties[propertyName] = &schemadatatype.DataType{
 				Node:       key,
 				Name:       propertyName,
+				Assignment: assignmentFor(hashNode),
 				Type:       schema.SimpleTypeUnknown,
 				TextType:   "",
 				Properties: make(map[string]schemadatatype.DataTypable),
 			}
 		}
+	}
+}
+
+func assignmentFor(node *parser.Node) *string {
+	for {
+		if node == nil || slices.Contains(ScopeTerminators, node.Type()) {
+			return pointers.String("")
+		}
+
+		if node.Type() == "assignment" {
+			leftNode := node.ChildByFieldName("left")
+
+			switch leftNode.Type() {
+			case "identifier":
+				return pointers.String(leftNode.Content())
+			case "element_reference":
+				objectNode := leftNode.ChildByFieldName("object")
+				if objectNode.Type() == "identifier" {
+					return pointers.String(objectNode.Content())
+				}
+			}
+		}
+
+		node = node.Parent()
 	}
 }
 
@@ -181,10 +218,12 @@ func linkProperties(rootNode *parser.Node, datatypes, helperDatatypes map[parser
 		// add root node
 
 		if parent.Type() == "call" {
+			log.Error().Msgf("CALL: %s (%s)", parent.Content(), node.Content())
 			receiver := parent.ChildByFieldName("receiver")
 
 			// add root calls
 			if receiver != nil && receiver.ID() == node.ID() {
+				log.Error().Msgf("at receiver")
 				datatypes[node.ID()] = helperType
 				continue
 			}
@@ -202,8 +241,10 @@ func linkProperties(rootNode *parser.Node, datatypes, helperDatatypes map[parser
 			if isAllowedCall || receiver.Type() == "element_reference" || receiver.Type() == "identifier" || receiver.Type() == "instance_variable" {
 				// there are wierd cases like [-2].to_sym where there is no id
 				_, hasID := helperDatatypes[receiver.ID()]
+				log.Error().Msgf("allowed adding, %b", hasID)
 				if hasID {
 					helperDatatypes[receiver.ID()].Properties[helperType.Name] = helperType
+					log.Error().Msgf("new receiver, %#v", helperDatatypes[receiver.ID()])
 					continue
 				}
 			}
@@ -261,6 +302,7 @@ func scopeAndMergeProperties(propertiesDatatypes, classDataTypes map[parser.Node
 			// add a parent class data type
 			classDataTypes[datatype.Node.ID()] = &schemadatatype.DataType{
 				Name:       nameNode.Content(),
+				Assignment: pointers.String(""),
 				Node:       datatype.Node,
 				Type:       schema.SimpleTypeUnknown,
 				TextType:   "",
@@ -289,6 +331,7 @@ func scopeAndMergeProperties(propertiesDatatypes, classDataTypes map[parser.Node
 			// add a parent class data type
 			classDataTypes[datatype.Node.ID()] = &schemadatatype.DataType{
 				Name:       className,
+				Assignment: pointers.String(""),
 				Node:       datatype.Node,
 				Type:       schema.SimpleTypeUnknown,
 				TextType:   "",

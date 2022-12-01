@@ -21,6 +21,7 @@ import (
 	schemadatatype "github.com/bearer/curio/pkg/report/schema/datatype"
 	"github.com/bearer/curio/pkg/util/file"
 	pluralize "github.com/gertd/go-pluralize"
+	"github.com/rs/zerolog/log"
 	"golang.org/x/exp/slices"
 
 	"github.com/bearer/curio/pkg/parser/nodeid"
@@ -246,6 +247,7 @@ func (detector *Detector) extractData(captures []parser.Captures, rule config.Co
 
 				// set all for export
 				for datatypeID, datatype := range paramTypes {
+					log.Error().Msgf("datatype: %#v", datatype)
 					forExport[datatypeID] = datatype
 				}
 			}

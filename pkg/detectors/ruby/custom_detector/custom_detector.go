@@ -57,6 +57,7 @@ func (detector *Detector) IsParam(node *parser.Node) (isTerminating bool, should
 	if node.Child(0) != nil && strings.Index(node.Child(0).Content(), "Var_DataTypes") == 0 {
 		param = &config.Param{
 			ArgumentsExtract: true,
+			// MatchAnything:    true,
 		}
 
 		isTerminating = true

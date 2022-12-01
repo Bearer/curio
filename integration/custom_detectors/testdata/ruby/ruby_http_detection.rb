@@ -83,9 +83,9 @@ encoded_params = URI.encode_www_form(params_2)
 
 response = Faraday.post("http://my.api.com/users/create", encoded_params)
 
-# Faraday.post("http://my.api.com/users/create") do |request|
-#   request.body = { user: { first_name: "John", last_name: "Doe" } }.to_json
-# end
+Faraday.post("http://my.api.com/users/create") do |request|
+  request.body = { user: { first_name: "John", last_name: "Doe" } }.to_json
+end
 
 
 ## HTTPX

@@ -64,18 +64,8 @@ risks:
             - filename: testdata/ruby/ruby_file_detection.rb
               line_number: 16
           parent:
-            line_number: 1
-            content: |-
-                CSV.open("path/to/user.csv", "wb") do |csv|
-                  csv << ["email", "first_name", "last_name"]
-                	users.each do |user|
-                		csv << [
-                			user.email,
-                			user.first_name,
-                			user.last_name
-                		]
-                	end
-                end
+            line_number: 12
+            content: 'File.open("users.log", "w") { |f| f.write "#{Time.now} - User #{user.email} logged in\n" }'
         - name: Firstname
           stored: false
           locations:
@@ -84,16 +74,11 @@ risks:
             - filename: testdata/ruby/ruby_file_detection.rb
               line_number: 16
           parent:
-            line_number: 1
+            line_number: 14
             content: |-
-                CSV.open("path/to/user.csv", "wb") do |csv|
-                  csv << ["email", "first_name", "last_name"]
+                File.open(user.emails, "users.csv", "w") do |f|
                 	users.each do |user|
-                		csv << [
-                			user.email,
-                			user.first_name,
-                			user.last_name
-                		]
+                		f.write "#{user.email},#{user.first_name},#{user.last_name}"
                 	end
                 end
         - name: Lastname
@@ -104,16 +89,11 @@ risks:
             - filename: testdata/ruby/ruby_file_detection.rb
               line_number: 16
           parent:
-            line_number: 1
+            line_number: 14
             content: |-
-                CSV.open("path/to/user.csv", "wb") do |csv|
-                  csv << ["email", "first_name", "last_name"]
+                File.open(user.emails, "users.csv", "w") do |f|
                 	users.each do |user|
-                		csv << [
-                			user.email,
-                			user.first_name,
-                			user.last_name
-                		]
+                		f.write "#{user.email},#{user.first_name},#{user.last_name}"
                 	end
                 end
 components: []

@@ -8,6 +8,7 @@ import (
 	"github.com/bearer/curio/pkg/parser/nodeid"
 	"github.com/bearer/curio/pkg/report/schema"
 	schemadatatype "github.com/bearer/curio/pkg/report/schema/datatype"
+	"github.com/bearer/curio/pkg/util/pointers"
 	"github.com/smacker/go-tree-sitter/ruby"
 )
 
@@ -42,6 +43,7 @@ func Discover(node *parser.Node, idGenerator nodeid.Generator) map[parser.NodeID
 		classDataTypes[classNode.ID()] = &schemadatatype.DataType{
 			Node:       classNode,
 			Name:       id,
+			Assignment: pointers.String(""),
 			Type:       schema.SimpleTypeObject,
 			TextType:   "class",
 			Properties: make(map[string]schemadatatype.DataTypable),
