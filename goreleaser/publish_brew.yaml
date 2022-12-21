@@ -49,5 +49,8 @@ brews:
     homepage: "https://curio.sh"
 
     license: "Elastic License 2.0"
+    
+    custom_block: |
+      head "https://github.com/Bearer/curio.git"
 
     description: "A data-first security scanner that finds risks and vulnerabilities in your code so you can protect sensitive data (PHI, PD, PII)."
