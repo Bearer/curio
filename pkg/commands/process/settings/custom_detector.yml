@@ -4,16 +4,16 @@ ruby_password_length:
     - ruby
   patterns:
     - pattern: |
-        class $ANYTHING < ApplicationRecord
-          validates :password, length: { minimum: $LENGTH }
+        class $<_> < ApplicationRecord
+          validates :password, length: { minimum: $<LENGTH> }
         end
       filters:
         - variable: LENGTH
           minimum: 8
           match_violation: true
     - pattern: |
-        class $ANYTHING < ApplicationRecord
-          devise password_length: $MIN_LENGTH..$MAX_LENGTH
+        class $<_> < ApplicationRecord
+          devise password_length: $<MIN_LENGTH>..$<MAX_LENGTH>
         end
       filters:
         - variable: MAX_LENGTH
@@ -24,7 +24,7 @@ ruby_password_length:
           match_violation: true
     - pattern: |
         Devise.setup do |config|
-          config.password_length = $MIN_LENGTH..$MAX_LENGTH
+          config.password_length = $<MIN_LENGTH>..$<MAX_LENGTH>
         end
       filters:
         - variable: MIN_LENGTH
@@ -32,7 +32,7 @@ ruby_password_length:
           match_violation: true
     - pattern: |
         Devise.setup do |config|
-          config.password_length = $LENGTH
+          config.password_length = $<LENGTH>
         end
       filters:
         - variable: LENGTH
@@ -44,13 +44,21 @@ ruby_http_get_detection:
   languages:
     - ruby
   patterns:
-    - |
-      URI.encode_www_form(<$DATA_TYPE>)
-    - |
-      URI(<$DATA_TYPE>)
     - pattern: |
-        $CLIENT.get(<$DATA_TYPE>)
+        URI.encode_www_form($<DATA_TYPE>)
+    - filters:
+        - variable: DATA_TYPE
+          detection: datatype
+    - pattern: |
+        URI($<DATA_TYPE>)
+    - filters:
+        - variable: DATA_TYPE
+          detection: datatype
+    - pattern: |
+        $<CLIENT:constant>.get($<DATA_TYPE>)
       filters:
+        - variable: DATA_TYPE
+          detection: datatype
         - variable: CLIENT
           values:
             - Curl
@@ -68,12 +76,14 @@ ruby_http_post_detection:
     - ruby
   patterns:
     - |
-      URI.encode_www_form(<$DATA_TYPE>)
+      URI.encode_www_form($<DATA_TYPE>)
     - |
-      Net::HTTP.post_form(<$DATA_TYPE>)
+      Net::HTTP.post_form($<DATA_TYPE>)
     - pattern: |
-        $CLIENT.post(<$DATA_TYPE>)
+        $<CLIENT:constant>.post($<DATA_TYPE>)
       filters:
+        - variable: DATA_TYPE
+          detection: datatype
         - variable: CLIENT
           values:
             - Curl
@@ -90,11 +100,16 @@ ruby_http_get_insecure:
   languages:
     - ruby
   patterns:
-    - |
-      URI(<$INSECURE_URL>)
     - pattern: |
-        $CLIENT.get(<$INSECURE_URL>)
+        URI($<INSECURE_URL>)
       filters:
+        - variable: INSECURE_URL
+          detection: insecure_url
+    - pattern: |
+        $<CLIENT:constant>.get($<INSECURE_URL>)
+      filters:
+        - variable: INSECURE_URL
+          detection: insecure_url
         - variable: CLIENT
           values:
             - Curl
@@ -105,17 +120,18 @@ ruby_http_get_insecure:
             - HTTPX
             - RestClient
             - Typhoeus
-  detect_presence: true
 ruby_http_post_insecure:
   type: "risk"
   languages:
     - ruby
   patterns:
     - |
-      Net::HTTP.post_form(<$INSECURE_URL>)
+      Net::HTTP.post_form($<INSECURE_URL>)
     - pattern: |
-        $CLIENT.post(<$INSECURE_URL>)
+        $<CLIENT:constant>.post($<INSECURE_URL>)
       filters:
+        - variable: INSECURE_URL
+          detection: insecure_url
         - variable: CLIENT
           values:
             - Curl
@@ -126,60 +142,82 @@ ruby_http_post_insecure:
             - HTTPX
             - RestClient
             - Typhoeus
-  detect_presence: true
 ruby_file_detection:
   type: "risk"
   languages:
     - ruby
   patterns:
-    - |
-      CSV.generate { <$DATA_TYPE> }
-    - |
-      CSV.generate do
-        <$DATA_TYPE>
-      end
     - pattern: |
-        $LIBRARY.open do
-          <$DATA_TYPE>
+        CSV.generate { $<DATA_TYPE> }
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
+    - pattern: |
+        CSV.generate do
+          $<DATA_TYPE>
+        end
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
+    - pattern: |
+        $<LIBRARY:constant>.open do
+          $<DATA_TYPE>
         end
       filters:
         - variable: LIBRARY
           values:
             - CSV
             - File
+        - variable: DATA_TYPE
+          detection: datatype
   param_parenting: true
   metavars: {}
   stored: false
 detect_ruby_logger:
   type: "risk"
   patterns:
-    - |
-      logger.info(<$ARGUMENT>)
-    - |
-      Rails.logger.info(<$ARGUMENT>)
+    - pattern: |
+        logger.info($<DATA_TYPE>)
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
+    - pattern: |
+        Rails.logger.info($<DATA_TYPE>)
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
   languages:
     - ruby
 detect_rails_session:
   type: "risk"
   patterns:
-    - |
-      session[...] = $ANYTHING
+    - pattern: |
+        session[] = $<DATA_TYPE>
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
   languages:
     - ruby
 detect_rails_jwt:
   type: "risk"
   patterns:
-    - |
-      JWT.encode(<$ARGUMENT>)
+    - pattern: |
+        JWT.encode($<DATA_TYPE>)
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
   languages:
     - ruby
 detect_rails_cookies:
   type: "risk"
   patterns:
-    - |
-      cookies[...] = $ANYTHING
     - pattern: |
-        cookies.$METHOD_CHAIN[...] = $ANYTHING
+        cookies[] = $<DATA_TYPE>
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
+    - pattern: | # FIXME: either implement alternation, or have our own types that map to mulitple tree-sitter types
+        cookies.$<METHOD_CHAIN:identifier|call>[] = $<DATA_TYPE>
       filters:
         - variable: METHOD_CHAIN
           values:
@@ -198,26 +236,33 @@ detect_rails_cookies:
             - signed.permanent
             - signed.permanent.encrypted
             - signed.encrypted.permanent
+        - variable: DATA_TYPE
+          detection: datatype
   languages:
     - ruby
 ssl_certificate_verification_disabled:
   type: "risk"
   patterns:
     - |
-      Net::HTTP.start($_, $_, $_, :verify_mode => OpenSSL::SSL::VERIFY_NONE) do
+      Net::HTTP.start($<_>, $<_>, $<_>, :verify_mode => OpenSSL::SSL::VERIFY_NONE) do
       end
     - |
-      $_.verify_mode = OpenSSL::SSL::VERIFY_NONE
+      Net::HTTP.start($<_>, $<_>, $<_>, verify_mode: OpenSSL::SSL::VERIFY_NONE) do
+      end
+    - |
+      $<_>.verify_mode = OpenSSL::SSL::VERIFY_NONE
   languages:
     - ruby
-  detect_presence: true
 detect_encrypted_ruby_class_properties:
   type: "verifier"
   patterns:
-    - |
-      class $CLASS_NAME < ApplicationRecord
-        encrypts <$ARGUMENT>
-      end
+    - pattern: |
+        class $<CLASS_NAME:constant> < ApplicationRecord
+          encrypts $<DATA_TYPE>
+        end
+      filters: # FIXME: what to do with class name var?
+        - variable: DATA_TYPE
+          detection: datatype
   param_parenting: true
   root_singularize: true
   root_lowercase: true
@@ -257,7 +302,6 @@ detect_rails_insecure_smtp:
       end
   languages:
     - ruby
-  detect_presence: true
   omit_parent: true
 detect_rails_insecure_communication:
   type: "risk"
@@ -268,7 +312,6 @@ detect_rails_insecure_communication:
       end
   languages:
     - ruby
-  detect_presence: true
   omit_parent: true
 detect_rails_insecure_ftp:
   type: "risk"
@@ -279,54 +322,76 @@ detect_rails_insecure_ftp:
       Net::FTP.open()
   languages:
     - ruby
-  detect_presence: true
 detect_rails_insecure_ftp_data:
   type: "risk"
   patterns:
-    - |
-      Net::FTP.open do
-        $ANYTHING
-      end
+    - pattern: |
+        Net::FTP.open do
+          $<DATA_TYPE>
+        end
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
   languages:
     - ruby
 detect_ruby_third_party_data_send:
   type: "risk"
   patterns:
-    - |
-      Sentry::Breadcrumb.new(<$ARGUMENT>)
-    - |
-      Sentry.init do |config|
-        config.before_breadcrumb = lambda do |breadcrumb, hint|
-          breadcrumb.message = $ANYTHING
-          breadcrumb
+    - pattern: |
+        Sentry::Breadcrumb.new($<DATA_TYPE>)
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
+    - pattern: |
+        Sentry.init do |$<CONFIG:identifier>|
+          $<CONFIG>.before_breadcrumb = lambda do |$<BREADCRUMB:identifier>, hint|
+            $<BREADCRUMB>.message = $<DATA_TYPE>
+          end
         end
-      end
-    - |
-      Sentry.set_user(<$ARGUMENT>)
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
+    - pattern: |
+        Sentry.set_user($<DATA_TYPE>)
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
   languages:
     - ruby
 detect_ruby_weak_encryption:
   type: "risk"
   patterns:
-    - |
-      Digest::SHA1.hexidigest(<$DATA_TYPE>)
-    - |
-      Digest::MD5.hexdigest(<$DATA_TYPE>)
     - pattern: |
-        OpenSSL::PKey::$LIBRARY.new($_, <$DATA_TYPE>)
+        Digest::SHA1.hexidigest($<DATA_TYPE>)
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
+    - pattern: |
+        Digest::MD5.hexdigest($<DATA_TYPE>)
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
+    - pattern: |
+        OpenSSL::PKey::$<LIBRARY:constant>.new($<_>, $<DATA_TYPE>)
       filters:
         - variable: LIBRARY
-        - values:
+          values:
             - DSA
             - RSA
+        - variable: DATA_TYPE
+          detection: datatype
     - pattern: |
-        RC4.new(...).encrypt(<$DATA_TYPE>)
-      filters: []
+        RC4.new().encrypt($<DATA_TYPE>)
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
     - pattern: |
-        OpenSSL::PKey::RSA.new($_, <$DATA_TYPE>)
-      filters: []
+        OpenSSL::PKey::RSA.new($<_>, $<DATA_TYPE>)
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
     - pattern: |
-        OpenSSL::PKey::RSA.new(...).$METHOD(<$DATA_TYPE>)
+        OpenSSL::PKey::RSA.new().$<METHOD:identifier>($<DATA_TYPE>)
       filters:
         - variable: METHOD
           values:
@@ -334,11 +399,15 @@ detect_ruby_weak_encryption:
             - private_encrypt
             - public_decrypt
             - public_encrypt
+        - variable: DATA_TYPE
+          detection: datatype
     - pattern: |
-        OpenSSL::PKey::DSA.new($_, <$DATA_TYPE>)
-      filters: []
+        OpenSSL::PKey::DSA.new($<_>, $<DATA_TYPE>)
+      filters:
+        - variable: DATA_TYPE
+          detection: datatype
     - pattern: |
-        OpenSSL::PKey::$LIBRARY.new(...).$METHOD($_, <$DATA_TYPE>)
+        OpenSSL::PKey::$<LIBRARY:constant>.new().$<METHOD:identifier>($<_>, $<DATA_TYPE>)
       filters:
         - variable: $LIBRARY
           values:
@@ -349,11 +418,13 @@ detect_ruby_weak_encryption:
             - export
             - to_pem
             - to_s
+        - variable: DATA_TYPE
+          detection: datatype
     - pattern: |
-        Crypt::Blowfish.new(...).encrypt_pair
+        Crypt::Blowfish.new().encrypt_pair
       filters: []
     - pattern: |
-        Crypt::Blowfish.new(...).$METHOD(<$DATA_TYPE>)
+        Crypt::Blowfish.new().$<METHOD:identifier>($<DATA_TYPE>)
       filters:
         - variable: METHOD
           values:
@@ -363,71 +434,73 @@ detect_ruby_weak_encryption:
             - decrypt_pair
             - decrypt_string
             - decrypt_block
+        - variable: DATA_TYPE
+          detection: datatype
   languages:
     - "ruby"
 initialize_ruby_rc4_encryption:
   type: "risk"
   patterns:
     - |
-      $_ = RC4.new()
+      $<_> = RC4.new()
   languages:
     - "ruby"
-  detect_presence: true
 initialize_ruby_openssl_pkey_dsa_encryption:
   type: "risk"
   patterns:
     - |
-      $_ = OpenSSL::PKey::DSA.new()
+      $<_> = OpenSSL::PKey::DSA.new()
   languages:
     - "ruby"
-  detect_presence: true
 initialize_ruby_openssl_pkey_rsa_encryption:
   type: "risk"
   patterns:
     - |
-      $_ = OpenSSL::PKey::RSA.new()
+      $<_> = OpenSSL::PKey::RSA.new()
   languages:
     - "ruby"
-  detect_presence: true
 initialize_ruby_blowfish_encryption:
   type: "risk"
   patterns:
     - |
-      $_ = Crypt::Blowfish.new(...)
+      $<_> = Crypt::Blowfish.new()
   languages:
     - "ruby"
-  detect_presence: true
 encrypt_method_call:
   type: "risk"
   patterns:
     - pattern: |
-        $_.$METHOD(<$DATA_TYPE>)
+        $<_>.$<METHOD:identifier>($<DATA_TYPE>)
       filters:
         - variable: METHOD
           values:
             - encrypt
             - encrypt!
             - decrypt
+        - variable: DATA_TYPE
+          detection: datatype
   languages:
     - "ruby"
 ruby_openssl_pkey_method_call:
   type: "risk"
   patterns:
     - pattern: |
-        $_.$METHOD(<$DATA_TYPE>)
+        $<_>.$<METHOD:identifier>($<DATA_TYPE>)
       filters:
         - variable: METHOD
           values:
             - export
             - to_pem
             - to_s
+        - variable: DATA_TYPE
+          detection: datatype
   languages:
     - "ruby"
 ruby_openssl_pkey_rsa_method_call:
   type: "risk"
   patterns:
     - pattern: |
-        $_.$METHOD(<$DATA_TYPE>)
+        $<_>.$<METHOD:identifier>($<DATA_TYPE>)
       filters:
         - variable: METHOD
           values:
@@ -435,13 +508,15 @@ ruby_openssl_pkey_rsa_method_call:
             - private_encrypt
             - public_decrypt
             - public_encrypt
+        - variable: DATA_TYPE
+          detection: datatype
   languages:
     - "ruby"
 ruby_blowfish_method_call:
   type: "risk"
   patterns:
     - pattern: |
-        $_.$METHOD(<$DATA_TYPE>)
+        $<_>.$<METHOD:identifier>($<DATA_TYPE>)
       filters:
         - variable: METHOD
           values:
@@ -451,5 +526,7 @@ ruby_blowfish_method_call:
             - decrypt_pair
             - decrypt_string
             - decrypt_block
+        - variable: DATA_TYPE
+          detection: datatype
   languages:
     - "ruby"
