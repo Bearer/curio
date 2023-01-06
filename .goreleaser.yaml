@@ -55,3 +55,38 @@ dockers:
       - "--label=org.opencontainers.image.url=https://curio.sh"
       - "--label=org.opencontainers.image.documentation=https://curio.sh"
       - "--platform=linux/amd64"
+
+nfpms:
+  -
+    formats:
+      - deb
+      - rpm
+    vendor: Bearer
+    homepage: "https://curio.sh"
+    maintainer: "Bearer <curio@bearer.sh>"
+    description: "A data-first security scanner that finds risks and vulnerabilities in your code so you can protect sensitive data (PHI, PD, PII)."
+    license: "Elastic License 2.0"
+    file_name_template: "{{.ProjectName}}_{{.Version}}_{{.Os}}-{{.Arch}}"
+    replacements:
+      amd64: 64bit
+      386: 32bit
+      arm: ARM
+      arm64: ARM64
+      linux: Linux
+    dependencies:
+      - git
+
+signs:
+- cmd: cosign
+  env:
+    - COSIGN_EXPERIMENTAL=1
+  signature: "${artifact}.sig"
+  certificate: "${artifact}.pem"
+  args:
+    - "sign-blob"
+    - "--oidc-issuer=https://token.actions.githubusercontent.com"
+    - "--output-certificate=${certificate}"
+    - "--output-signature=${signature}"
+    - "${artifact}"
+  artifacts: all
+  output: true

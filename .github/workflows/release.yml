@@ -26,6 +26,7 @@ jobs:
     outputs:
       ref: refs/tags/${{ steps.tag_version.outputs.new_tag || github.ref_name }}
 
+  # @todo FIXME: Remove this
   build-linux:
     needs: [tag]
     name: build-linux
