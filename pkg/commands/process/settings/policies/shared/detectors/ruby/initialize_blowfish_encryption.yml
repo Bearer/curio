@@ -1,0 +1,7 @@
+type: "risk"
+patterns:
+  - |
+    $_ = Crypt::Blowfish.new(...)
+languages:
+  - "ruby"
+detect_presence: true

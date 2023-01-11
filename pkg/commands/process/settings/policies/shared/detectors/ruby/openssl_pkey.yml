@@ -1,0 +1,12 @@
+type: "risk"
+patterns:
+  - pattern: |
+      $_.$METHOD(<$DATA_TYPE>)
+    filters:
+      - variable: METHOD
+        values:
+          - export
+          - to_pem
+          - to_s
+languages:
+  - "ruby"

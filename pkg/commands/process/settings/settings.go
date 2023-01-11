@@ -315,6 +315,26 @@ func DefaultPolicies() map[string]*Policy {
 
 	// each policy
 	for _, entry := range dirEntries {
+		if entry.Name() == "shared" {
+			// TODO: handle shared policies
+			sharedPolicies, err := policiesFs.ReadDir(policiesDir + "/shared")
+
+			if err != nil {
+
+			}
+
+			for _, entry := range sharedPolicies {
+				policyFilename := policiesDir + "/shared/" + entry.Name()
+				policyFile, err := policiesFs.ReadFile(policyFilename)
+				if err != nil {
+
+				}
+
+			}
+
+			continue
+		}
+
 		policyId := entry.Name()
 		if !strings.HasPrefix(policyId, "CR-") {
 			// not an actual policy dir

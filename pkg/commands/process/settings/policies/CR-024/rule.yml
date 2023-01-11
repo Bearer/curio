@@ -1,0 +1,11 @@
+name: "Avoid weak encryption library."
+id: "CR-024"
+query: |
+  policy_failure = data.bearer.weak_encryption_library.policy_failure
+modules:
+  - path: policies/shared/common.rego
+    name: bearer.common
+  - path: policies/shared/encryption.rego
+    name: bearer.encryption
+  - path: policies/CR-024/policy.rego
+    name: bearer.weak_encryption_library

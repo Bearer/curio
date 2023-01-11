@@ -1,9 +1,8 @@
-description: "Sensitive data should not be stored in session cookies. This policy looks for any sensitive data stored within the session cookies."
 name: "Do not store sensitive data in session cookies."
 query: |
   policy_failure = data.bearer.leakage.policy_failure
 modules:
-  - path: policies/common.rego
+  - path: policies/shared/common.rego
     name: bearer.common
-  - path: policies/leakage.rego
+  - path: policies/CR-003/leakage.rego
     name: bearer.leakage

@@ -31,7 +31,7 @@ policy_failure contains item if {
 # openssl pkey dsa encryption
 policy_failure contains item if {
     some detector in input.dataflow.risks
-    detector.detector_id in ["ruby_openssl_pkey_dsa_method_call", "ruby_openssl_pkey_method_call"]
+    detector.detector_id in ["ruby_openssl_pkey_method_call"]
 
     data_type = detector.data_types[_]
     data_type.uuid != data.bearer.encryption_common.password_uuid

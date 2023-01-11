@@ -1,0 +1,15 @@
+type: "risk"
+patterns:
+  - pattern: |
+      $_.$METHOD(<$DATA_TYPE>)
+    filters:
+      - variable: METHOD
+        values:
+          - encrypt_pair
+          - encrypt_string
+          - encrypt_block
+          - decrypt_pair
+          - decrypt_string
+          - decrypt_block
+languages:
+  - "ruby"
