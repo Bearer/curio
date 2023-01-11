@@ -55,3 +55,11 @@ dockers:
       - "--label=org.opencontainers.image.url=https://curio.sh"
       - "--label=org.opencontainers.image.documentation=https://curio.sh"
       - "--platform=linux/amd64"
+
+announce:
+  discord:
+    enabled: true
+    message_template: |
+      Curio {{ .Tag }} is out now! Check it out: https://github.com/Bearer/curio/releases/tag/{{ .Tag }}
+
+      {{ .ReleaseNotes }}
