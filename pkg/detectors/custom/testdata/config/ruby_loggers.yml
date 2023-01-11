@@ -1,4 +1,4 @@
-detect_ruby_logger:
+detect_logger:
   patterns:
     - |
       logger.info(<$ARGUMENT>)

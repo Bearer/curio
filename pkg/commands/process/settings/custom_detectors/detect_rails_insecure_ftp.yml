@@ -1,9 +1,0 @@
-type: "risk"
-patterns:
-  - |
-    Net::FTP.new()
-  - |
-    Net::FTP.open()
-languages:
-  - ruby
-detect_presence: true

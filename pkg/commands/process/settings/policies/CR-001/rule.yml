@@ -1,0 +1,9 @@
+description: "Leaking sensitive data to loggers is a common cause of data leaks and can lead to data breaches. This policy looks for instances of sensitive data sent to loggers."
+name: "Do not send sensitive data to loggers."
+query: |
+  policy_failure = data.bearer.leakage.policy_failure
+modules:
+  - path: policies/shared/common.rego
+    name: bearer.common
+  - path: policies/CR-001/leakage.rego
+    name: bearer.leakage

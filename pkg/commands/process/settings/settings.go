@@ -32,9 +32,9 @@ var LevelLow = "low"
 type Modules []*PolicyModule
 
 type Policy struct {
-	Query       string      `mapstructure:"query" json:"query" yaml:"query"`
-	Id          string      `mapstructure:"id" json:"id" yaml:"id"`
-	DisplayId   string      `mapstructure:"display_id" json:"display_id" yaml:"display_id"`
+	Query string `mapstructure:"query" json:"query" yaml:"query"`
+	Id    string `mapstructure:"id" json:"id" yaml:"id"`
+	// DisplayId   string      `mapstructure:"display_id" json:"display_id" yaml:"display_id"`
 	Name        string      `mapstructure:"name" json:"name" yaml:"name"`
 	Description string      `mapstructure:"description" json:"description" yaml:"description"`
 	Level       PolicyLevel `mapstructure:"level" json:"level" yaml:"level"`
@@ -71,6 +71,7 @@ type RulePattern struct {
 }
 
 type Rule struct {
+	Id             string        `mapstructure:"id" json:"id" yaml:"id"`
 	Disabled       bool          `mapstructure:"disabled" json:"disabled" yaml:"disabled"`
 	Type           string        `mapstructure:"type" json:"type" yaml:"type"`
 	Languages      []string      `mapstructure:"languages" json:"languages" yaml:"languages"`
@@ -97,12 +98,6 @@ type MetaVar struct {
 	Regex  string `mapstructure:"regex" json:"regex" yaml:"regex"`
 }
 
-//go:embed policies.yml
-var defaultPolicies []byte
-
-//go:embed custom_detectors/*
-var customDetectorFS embed.FS
-
 //go:embed policies/*
 var policiesFs embed.FS
 
@@ -121,6 +116,7 @@ func FromOptions(opts flag.Options) (Config, error) {
 	onlyDetector := opts.DetectorOptions.OnlyDetector
 	skipDetector := opts.DetectorOptions.SkipDetector
 
+	// TODO: fix these and use detector ID
 	validDetectors := make(map[string]bool)
 	for key := range detectors {
 		validDetectors[key] = true
@@ -174,39 +170,33 @@ func FromOptions(opts flag.Options) (Config, error) {
 	onlyPolicy := opts.PolicyOptions.OnlyPolicy
 	skipPolicy := opts.PolicyOptions.SkipPolicy
 
-	policyDisplayIds := make(map[string]bool)
-	for key := range policies {
-		policy := policies[key]
-		policyDisplayIds[policy.DisplayId] = true
-	}
-
-	var invalidPolicyDisplayIds []string
+	var invalidPolicyIds []string
 	for key := range onlyPolicy {
-		if !policyDisplayIds[key] {
-			invalidPolicyDisplayIds = append(invalidPolicyDisplayIds, key)
+		if policies[key] == nil {
+			invalidPolicyIds = append(invalidPolicyIds, key)
 		}
 	}
 
 	for key := range skipPolicy {
-		if !policyDisplayIds[key] {
-			invalidPolicyDisplayIds = append(invalidPolicyDisplayIds, key)
+		if policies[key] == nil {
+			invalidPolicyIds = append(invalidPolicyIds, key)
 		}
 	}
 
-	if len(invalidPolicyDisplayIds) > 0 {
-		return Config{}, fmt.Errorf("unknown policy ids %s", invalidPolicyDisplayIds)
+	if len(invalidPolicyIds) > 0 {
+		return Config{}, fmt.Errorf("unknown policy ids %s", invalidPolicyIds)
 	}
 
 	// apply policy options
 	for key := range policies {
 		policy := policies[key]
 
-		if len(onlyPolicy) > 0 && !onlyPolicy[policy.DisplayId] {
+		if len(onlyPolicy) > 0 && !onlyPolicy[policy.Id] {
 			delete(policies, key)
 			continue
 		}
 
-		if skipPolicy[policy.DisplayId] {
+		if skipPolicy[policy.Id] {
 			delete(policies, key)
 			continue
 		}
@@ -262,47 +252,89 @@ func (rulePattern *RulePattern) UnmarshalYAML(unmarshal func(interface{}) error)
 }
 
 func DefaultCustomDetector() map[string]Rule {
-	customDetectorsDir := "custom_detectors"
+	policiesDir := "policies"
 	rules := make(map[string]Rule)
 
-	dirEntries, err := customDetectorFS.ReadDir(customDetectorsDir)
+	// policies dir
+	dirEntries, err := policiesFs.ReadDir(policiesDir)
 	if err != nil {
-		log.Fatal().Msgf("failed to read custom detectors dir %e", err)
+		log.Fatal().Msgf("failed to read policies dir %e", err)
 	}
 
+	// each policy
 	for _, entry := range dirEntries {
-		fileName := entry.Name()
-
-		ext := filepath.Ext(fileName)
-		ruleName := strings.TrimSuffix(fileName, ext)
-
-		if ext != ".yaml" && ext != ".yml" {
+		policyId := entry.Name()
+		if !strings.HasPrefix(policyId, "CR-") {
+			// not an actual policy dir
 			continue
 		}
 
-		fileContent, err := customDetectorFS.ReadFile(customDetectorsDir + "/" + fileName)
+		policyDir := policiesDir + "/" + policyId
+		policyDirEntries, err := policiesFs.ReadDir(policyDir)
 		if err != nil {
-			log.Fatal().Msgf("failed to read custom detector file %e", err)
+			log.Fatal().Msgf("failed to read policy dir %s %e", policyDir, err)
 		}
 
-		var rule Rule
-		err = yaml.Unmarshal(fileContent, &rule)
-		if err != nil {
-			log.Fatal().Msgf("failed to unmarshal database file %e", err)
-		}
+		// each language
+		for _, entry := range policyDirEntries {
+			language := entry.Name()
+			if filepath.Ext(language) != "" {
+				// is a file not a folder
+				continue
+			}
 
-		rules[ruleName] = rule
+			customDetectorFile := policyDir + "/" + language + "/detector.yml"
+			customDetector, err := policiesFs.ReadFile(customDetectorFile)
+			if err != nil {
+				log.Fatal().Msgf("failed to read custom detector file %s %e", customDetectorFile, err)
+			}
+
+			var rule Rule
+			err = yaml.Unmarshal(customDetector, &rule)
+			if err != nil {
+				log.Fatal().Msgf("failed to unmarshal custom detector file %s %e", customDetectorFile, err)
+			}
+
+			rule.Id = policyId
+			rules[rule.Id] = rule
+		}
 	}
 
 	return rules
 }
 
 func DefaultPolicies() map[string]*Policy {
-	var policies map[string]*Policy
+	policies := make(map[string]*Policy)
+	policiesDir := "policies"
 
-	err := yaml.Unmarshal(defaultPolicies, &policies)
+	// policies dir
+	dirEntries, err := policiesFs.ReadDir(policiesDir)
 	if err != nil {
-		log.Fatal().Msgf("failed to unmarshal database file %e", err)
+		log.Fatal().Msgf("failed to read policies dir %e", err)
+	}
+
+	// each policy
+	for _, entry := range dirEntries {
+		policyId := entry.Name()
+		if !strings.HasPrefix(policyId, "CR-") {
+			// not an actual policy dir
+			continue
+		}
+
+		policyFilename := policiesDir + "/" + policyId + "/rule.yml"
+		policyFile, err := policiesFs.ReadFile(policyFilename)
+		if err != nil {
+			log.Fatal().Msgf("failed to read policy file %s %e", policyFilename, err)
+		}
+
+		var policy Policy
+		err = yaml.Unmarshal(policyFile, &policy)
+		if err != nil {
+			log.Fatal().Msgf("failed to unmarshal policy file %s %e", policyFilename, err)
+		}
+
+		policy.Id = policyId
+		policies[policy.Id] = &policy
 	}
 
 	return policies

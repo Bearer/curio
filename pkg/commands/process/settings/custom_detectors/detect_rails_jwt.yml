@@ -1,6 +1,0 @@
-type: "risk"
-patterns:
-  - |
-    JWT.encode(<$ARGUMENT>)
-languages:
-  - ruby

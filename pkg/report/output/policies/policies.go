@@ -44,7 +44,7 @@ type PolicyOutput struct {
 
 type PolicyResult struct {
 	PolicyName        string   `json:"policy_name" yaml:"policy_name"`
-	PolicyDisplayId   string   `json:"policy_display_id" yaml:"policy_display_id"`
+	PolicyId          string   `json:"policy_id" yaml:"policy_id"`
 	PolicyDescription string   `json:"policy_description" yaml:"policy_description"`
 	LineNumber        int      `json:"line_number,omitempty" yaml:"line_number,omitempty"`
 	Filename          string   `json:"filename,omitempty" yaml:"filename,omitempty"`
@@ -103,7 +103,7 @@ func GetOutput(dataflow *dataflow.DataFlow, config settings.Config) (map[string]
 				policyResult := PolicyResult{
 					PolicyName:        policy.Name,
 					PolicyDescription: policy.Description,
-					PolicyDisplayId:   policy.DisplayId,
+					PolicyId:          policy.Id,
 					Filename:          policyOutput.Filename,
 					LineNumber:        policyOutput.LineNumber,
 					CategoryGroups:    policyOutput.CategoryGroups,
@@ -147,7 +147,7 @@ func BuildReportString(policyResults map[string][]PolicyResult, policies map[str
 		settings.LevelLow,
 	} {
 		for _, policyFailure := range policyResults[policyLevel] {
-			policyFailures[policyLevel][policyFailure.PolicyDisplayId] = true
+			policyFailures[policyLevel][policyFailure.PolicyId] = true
 			writePolicyFailureToString(reportStr, policyFailure, policyLevel)
 		}
 	}
@@ -165,7 +165,7 @@ func writePolicyListToString(reportStr *strings.Builder, policies map[string]*se
 	policyList := []string{}
 	for key := range policies {
 		policy := policies[key]
-		policyList = append(policyList, color.HiBlackString("- "+policy.Name+" ["+policy.DisplayId+"]\n"))
+		policyList = append(policyList, color.HiBlackString("- "+policy.Name+" ["+policy.Id+"]\n"))
 	}
 
 	sort.Strings(policyList)
@@ -232,8 +232,8 @@ func writeSummaryToString(
 func writePolicyFailureToString(reportStr *strings.Builder, policyFailure PolicyResult, policySeverity string) {
 	reportStr.WriteString("\n\n")
 	reportStr.WriteString(formatSeverity(policySeverity))
-	reportStr.WriteString(policyFailure.PolicyName + " [" + policyFailure.PolicyDisplayId + "]" + "\n")
-	reportStr.WriteString(color.HiBlackString("https://curio.sh/reference/policies/#" + policyFailure.PolicyDisplayId + "\n"))
+	reportStr.WriteString(policyFailure.PolicyName + " [" + policyFailure.PolicyId + "]" + "\n")
+	reportStr.WriteString(color.HiBlackString("https://curio.sh/reference/policies/#" + policyFailure.PolicyId + "\n"))
 	reportStr.WriteString("\n")
 	if policyFailure.DetailedContext != "" {
 		reportStr.WriteString("Detected: " + policyFailure.DetailedContext + "\n")

@@ -1,8 +1,0 @@
-type: "risk"
-patterns:
-  - |
-    Net::FTP.open do
-      $ANYTHING
-    end
-languages:
-  - ruby

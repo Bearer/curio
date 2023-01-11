@@ -1,7 +1,0 @@
-type: "risk"
-patterns:
-  - |
-    $_ = OpenSSL::PKey::DSA.new()
-languages:
-  - "ruby"
-detect_presence: true
