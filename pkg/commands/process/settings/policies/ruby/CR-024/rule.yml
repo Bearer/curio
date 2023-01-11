@@ -1,0 +1,12 @@
+description: "A weak encryption or hashing library can lead to data breaches and greater security risk. This policy checks for the use of weak encryption and hashing libraries or algorithms."
+name: "Avoid weak encryption library."
+id: "CR-024"
+query: |
+  policy_failure = data.bearer.weak_encryption_library.policy_failure
+modules:
+  - path: policies/shared/common.rego
+    name: bearer.common
+  - path: policies/ruby/shared/encryption.rego
+    name: bearer.ruby_encryption
+  - path: policies/ruby/CR-024.rego
+    name: bearer.cr_024

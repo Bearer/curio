@@ -1,0 +1,158 @@
+CR-024:
+  type: "risk"
+  patterns:
+    - |
+      Digest::SHA1.hexidigest(<$DATA_TYPE>)
+    - |
+      Digest::MD5.hexdigest(<$DATA_TYPE>)
+    - pattern: |
+        OpenSSL::PKey::$LIBRARY.new($_, <$DATA_TYPE>)
+      filters:
+        - variable: LIBRARY
+        - values:
+            - DSA
+            - RSA
+    - pattern: |
+        RC4.new(...).encrypt(<$DATA_TYPE>)
+      filters: []
+    - pattern: |
+        OpenSSL::PKey::RSA.new($_, <$DATA_TYPE>)
+      filters: []
+    - pattern: |
+        OpenSSL::PKey::RSA.new(...).$METHOD(<$DATA_TYPE>)
+      filters:
+        - variable: METHOD
+          values:
+            - private_decrypt
+            - private_encrypt
+            - public_decrypt
+            - public_encrypt
+    - pattern: |
+        OpenSSL::PKey::DSA.new($_, <$DATA_TYPE>)
+      filters: []
+    - pattern: |
+        OpenSSL::PKey::$LIBRARY.new(...).$METHOD($_, <$DATA_TYPE>)
+      filters:
+        - variable: $LIBRARY
+          values:
+            - DSA
+            - RSA
+        - variable: METHOD
+          values:
+            - export
+            - to_pem
+            - to_s
+    - pattern: |
+        Crypt::Blowfish.new(...).encrypt_pair
+      filters: []
+    - pattern: |
+        Crypt::Blowfish.new(...).$METHOD(<$DATA_TYPE>)
+      filters:
+        - variable: METHOD
+          values:
+            - encrypt_pair
+            - encrypt_string
+            - encrypt_block
+            - decrypt_pair
+            - decrypt_string
+            - decrypt_block
+  languages:
+    - "ruby"
+CR-024-1:
+  name: "encrypt method call"
+  type: "risk"
+  patterns:
+    - pattern: |
+        $_.$METHOD(<$DATA_TYPE>)
+      filters:
+        - variable: METHOD
+          values:
+            - encrypt
+            - encrypt!
+            - decrypt
+  languages:
+    - "ruby"
+CR-024-2:
+  name: "Blowfish init"
+  type: "risk"
+  patterns:
+    - |
+      $_ = Crypt::Blowfish.new(...)
+  languages:
+    - "ruby"
+  detect_presence: true
+CR-024-3:
+  name: "OpenSSL PKey DSA init"
+  type: "risk"
+  patterns:
+    - |
+      $_ = OpenSSL::PKey::DSA.new()
+  languages:
+    - "ruby"
+  detect_presence: true
+CR-024-4:
+  name: "OpenSSL PKey RSA init"
+  type: "risk"
+  patterns:
+    - |
+      $_ = OpenSSL::PKey::RSA.new()
+  languages:
+    - "ruby"
+  detect_presence: true
+CR-024-5:
+  name: "RC4 init"
+  type: "risk"
+  patterns:
+    - |
+      $_ = RC4.new()
+  languages:
+    - "ruby"
+  detect_presence: true
+CR-024-6:
+  name: "Blowfish method call"
+  type: "risk"
+  patterns:
+    - pattern: |
+        $_.$METHOD(<$DATA_TYPE>)
+      filters:
+        - variable: METHOD
+          values:
+            - encrypt_pair
+            - encrypt_string
+            - encrypt_block
+            - decrypt_pair
+            - decrypt_string
+            - decrypt_block
+  languages:
+    - "ruby"
+CR-024-7:
+  name: "OpenSSL PKey method calls"
+  type: "risk"
+  patterns:
+    - pattern: |
+        $_.$METHOD(<$DATA_TYPE>)
+      filters:
+        - variable: METHOD
+          values:
+            - export
+            - to_pem
+            - to_s
+  languages:
+    - "ruby"
+CR-024-8:
+  name: "OpenSSL PKey RSA method calls"
+  type: "risk"
+  patterns:
+    - pattern: |
+        $_.$METHOD(<$DATA_TYPE>)
+      filters:
+        - variable: METHOD
+          values:
+            - private_decrypt
+            - private_encrypt
+            - public_decrypt
+            - public_encrypt
+  languages:
+    - "ruby"
+
+

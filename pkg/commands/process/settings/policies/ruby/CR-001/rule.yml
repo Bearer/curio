@@ -1,0 +1,9 @@
+name: "Do not send sensitive data to loggers."
+id: "CR-001"
+query: |
+  policy_failure = data.bearer.leakage.policy_failure
+modules:
+  - path: policies/common.rego
+    name: bearer.common
+  - path: policies/ruby/CR-001/policy.rego
+    name: bearer.cr_001

@@ -1,0 +1,11 @@
+name: "Force strong password encryption."
+id: "CR-023"
+query: |
+  policy_failure = data.bearer.weak_password_encryption.policy_failure
+modules:
+  - path: policies/shared/common.rego
+    name: bearer.common
+  - path: policies/ruby/shared/encryption.rego
+    name: bearer.ruby_encryption
+  - path: policies/ruby/CR-023/policy.rego
+    name: bearer.cr_023

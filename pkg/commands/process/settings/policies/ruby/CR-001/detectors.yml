@@ -1,0 +1,9 @@
+CR-001:
+  type: "risk"
+  patterns:
+    - |
+      logger.info(<$ARGUMENT>)
+    - |
+      Rails.logger.info(<$ARGUMENT>)
+  languages:
+    - ruby
